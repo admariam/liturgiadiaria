@@ -40,11 +40,12 @@ layout: default
 (function(){
   var btn = document.querySelector('.btn-compartilhar');
   if(!btn) return;
+  var ehCelular = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   btn.addEventListener('click', async function(){
     var url = btn.dataset.url;
     var texto = btn.dataset.data + ' · ' + btn.dataset.site + ' · ' + btn.dataset.titulo;
     var completo = texto + '\n' + url;
-    if (navigator.share) {
+    if (ehCelular && navigator.share) {
       try { await navigator.share({ text: completo }); return; }
       catch(e){ if(e.name==='AbortError') return; }
     }
