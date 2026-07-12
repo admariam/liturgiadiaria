@@ -13,6 +13,7 @@ defaults:
       type: "posts"
     values:
       layout: "reflexao"
+      autor: "Márcio Arias"
 
 exclude:
   - README.md
