@@ -341,12 +341,29 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
 }
 .reflexao-capa span { font-family: ui-monospace, monospace; font-size: 12px; color: var(--tinta-suave); background: #fff; padding: 6px 12px; border-radius: 6px; }
 
+
+/* --- barra do topo do post: voltar + compartilhar --- */
+.topo-barra { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+.topo-barra .voltar { margin: 0; }
+.btn-compartilhar {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 14px; font: inherit; font-size: 13px; font-weight: 600;
+  color: var(--tinta); background: #fff; border: 1px solid var(--linha);
+  border-radius: 999px; cursor: pointer;
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+.btn-compartilhar:hover { background: var(--accent-deep); color: #fff; border-color: var(--accent-deep); }
+.btn-compartilhar svg { flex-shrink: 0; }
+@media (max-width: 480px) {
+  .btn-compartilhar { padding: 6px 10px; font-size: 12px; }
+}
+
 .reflexao-cabecalho .tag { display: block; margin-bottom: 6px; }
 .reflexao-cabecalho .leituras { margin: 0 0 14px; font-size: 13px; font-style: italic; color: var(--tinta-suave); }
 .reflexao-cabecalho h1 { margin: 0; font-family: var(--display); font-size: clamp(26px, 4vw, 38px); font-weight: 700; line-height: 1.2; }
 .reflexao-cabecalho .data { margin: 10px 0 0; font-size: 13px; color: var(--tinta-suave); }
 
-.reflexao-texto { font-size: 17px; line-height: 1.75; color: var(--tinta); margin-top: 30px; }
+.reflexao-texto { font-size: 17px; line-height: 1.75; color: var(--tinta); margin-top: 30px; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
 .reflexao-texto p { margin: 0 0 18px; }
 
 .folhear {
