@@ -32,7 +32,8 @@
       <div class="caixa-lateral">
         <h4>Últimas reflexões</h4>
         <div class="lista-recentes">
-          {% for post in site.posts limit: 4 %}
+          {% assign recentes = site.posts | where_exp: "post", "post.date <= site.time" %}
+          {% for post in recentes limit: 4 %}
           <a href="{{ post.url | relative_url }}">
             <span class="data">{{ post.date | date: "%d.%m" }}</span>
             <span class="titulo">{{ post.title }}</span>
