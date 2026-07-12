@@ -45,7 +45,7 @@ layout: default
     var texto = btn.dataset.data + ' · ' + btn.dataset.site + ' · ' + btn.dataset.titulo;
     var completo = texto + '\n' + url;
     if (navigator.share) {
-      try { await navigator.share({ title: btn.dataset.titulo, text: texto, url: url }); return; }
+      try { await navigator.share({ text: completo }); return; }
       catch(e){ if(e.name==='AbortError') return; }
     }
     window.open('https://wa.me/?text=' + encodeURIComponent(completo), '_blank', 'noopener');
