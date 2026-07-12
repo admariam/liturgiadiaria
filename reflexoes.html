@@ -8,7 +8,8 @@ permalink: /reflexoes/
   <p>Todas as reflexões publicadas, mês a mês.</p>
 </div>
 
-{% assign posts_por_mes = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+{% assign publicados = site.posts | where_exp: "post", "post.date <= site.time" %}
+{% assign posts_por_mes = publicados | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
 {% for grupo in posts_por_mes %}
   {% assign partes = grupo.name | split: '-' %}
   <h2 class="mes-rotulo">{{ site.data.meses[partes[1]] }} de {{ partes[0] }}</h2>
