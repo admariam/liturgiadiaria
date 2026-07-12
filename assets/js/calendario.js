@@ -58,7 +58,8 @@
   fetch(raiz.dataset.feed)
     .then(function (r) { return r.json(); })
     .then(function (lista) {
-      lista.forEach(function (p) { posts[p.date] = p; });
+      var limite = chave(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
+      lista.forEach(function (p) { if (p.date <= limite) posts[p.date] = p; });
       render();
     })
     .catch(render);
