@@ -3,6 +3,7 @@ title: "Não vim trazer paz, mas espada"
 celebracao: "Segunda-feira da 15ª Semana do Tempo Comum"
 evangelho: "Mt 10,34–11,1"
 leituras: "Is 1,10-17 · Sl 49(50) · Mt 10,34–11,1"
+imagem: /assets/img/2026-07-13.jpg
 resumo: "A espada de Jesus é o corte que reordena os amores — e no fim do discurso, a promessa mais delicada: nada do que se dá por causa de Cristo cai no esquecimento, nem um copo de água fresca."
 ---
 
