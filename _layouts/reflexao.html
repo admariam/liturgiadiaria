@@ -42,7 +42,9 @@ layout: default
   if(!btn) return;
   var ehCelular = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   btn.addEventListener('click', async function(){
-    var url = btn.dataset.url;
+    var base = btn.dataset.url;
+    var sep = base.indexOf('?') === -1 ? '?' : '&';
+    var url = base + sep + 's=' + Date.now().toString(36);
     var texto = btn.dataset.data + ' · ' + btn.dataset.site + ' · ' + btn.dataset.titulo;
     var completo = texto + '\n' + url;
     if (ehCelular && navigator.share) {
