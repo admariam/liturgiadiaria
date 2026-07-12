@@ -345,7 +345,6 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
 .reflexao-cabecalho .leituras { margin: 0 0 14px; font-size: 13px; font-style: italic; color: var(--tinta-suave); }
 .reflexao-cabecalho h1 { margin: 0; font-family: var(--display); font-size: clamp(26px, 4vw, 38px); font-weight: 700; line-height: 1.2; }
 .reflexao-cabecalho .data { margin: 10px 0 0; font-size: 13px; color: var(--tinta-suave); }
-.reflexao-cabecalho .autor { margin: 2px 0 0; font-size: 12.5px; font-style: italic; color: var(--tinta-suave); letter-spacing: .02em; }
 
 .reflexao-texto { font-size: 17px; line-height: 1.75; color: var(--tinta); margin-top: 30px; }
 .reflexao-texto p { margin: 0 0 18px; }
