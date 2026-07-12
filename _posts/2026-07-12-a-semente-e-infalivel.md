@@ -1,5 +1,5 @@
 ---
-title: "A semente é infalível; a variável é o solo"
+title: "O amor que semeia sem medida"
 celebracao: "15º Domingo do Tempo Comum · Ano A"
 evangelho: "Mt 13,1-23"
 leituras: "Is 55,10-11 · Sl 64(65) · Rm 8,18-23 · Mt 13,1-23"
