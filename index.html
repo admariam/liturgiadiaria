@@ -22,7 +22,7 @@ layout: default
       <a class="btn-primario" href="{{ atual.url | relative_url }}">Ler reflexão completa →</a>
       {% assign anterior_i = i | plus: 1 %}
       {% assign anterior = site.posts[anterior_i] %}
-      {% if i > 0 %}{% assign seguinte_i = i | minus: 1 %}{% assign seguinte = site.posts[seguinte_i] %}{% endif %}
+      {% if i > 0 %}{% assign seguinte_i = i | minus: 1 %}{% assign seguinte = site.posts[seguinte_i] %}{% assign sts = seguinte.date | date: '%s' | plus: 0 %}{% if sts > agora_ts %}{% assign seguinte = nil %}{% endif %}{% endif %}
       {% if anterior %}<a class="btn-fantasma" href="{{ anterior.url | relative_url }}">‹ anterior</a>{% endif %}
       {% if seguinte %}<a class="btn-fantasma" href="{{ seguinte.url | relative_url }}">seguinte ›</a>{% endif %}
     </div>
@@ -38,7 +38,8 @@ layout: default
 
 <h2 class="secao-titulo">Últimas reflexões</h2>
 <div class="grade-cartoes">
-  {% for post in site.posts limit: 6 offset: 1 %}
+  {% assign publicados = site.posts | where_exp: "post", "post.date <= site.time" %}
+  {% for post in publicados limit: 7 %}{% if post.url == atual.url %}{% continue %}{% endif %}
   <a class="cartao" href="{{ post.url | relative_url }}">
     <div class="cartao-capa">
       {% if post.imagem %}
