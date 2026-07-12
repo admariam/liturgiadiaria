@@ -1,0 +1,396 @@
+/* ============================================
+   Reflexões da Liturgia Diária
+   design: cores institucionais (azul + dourado), tipografia sans-serif
+   ============================================ */
+
+:root {
+  --papel: oklch(98% 0.01 85);
+  --papel-2: oklch(95% 0.012 85);
+  --tinta: oklch(22% 0.02 60);
+  --tinta-suave: oklch(48% 0.02 60);
+  --fio: oklch(90% 0.014 70);
+
+  --primary: oklch(38% 0.10 250);
+  --primary-deep: oklch(27% 0.09 250);
+  --accent: oklch(76% 0.14 85);
+  --accent-deep: oklch(46% 0.13 65);
+
+  --display: "Sora", -apple-system, sans-serif;
+  --texto: "Source Sans 3", -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--texto);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+button { font: inherit; }
+
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--primary); }
+a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: 2px; }
+
+/* --- cabeçalho --- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(253, 252, 249, .92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--fio);
+}
+
+.site-header-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--tinta);
+  white-space: nowrap;
+}
+
+.site-nav { display: flex; align-items: center; gap: 4px; }
+
+.site-nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tinta-suave);
+}
+
+.site-nav a:hover { color: var(--tinta-suave); background: var(--papel-2); }
+.site-nav a.ativo { background: var(--primary); color: #fff; }
+.site-nav a.ativo:hover { color: #fff; }
+
+/* --- layout com coluna lateral --- */
+.pagina {
+  display: flex;
+  gap: 36px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  align-items: flex-start;
+}
+
+.pagina main { flex: 1; min-width: 0; }
+
+.lateral {
+  width: 300px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --- hero (reflexão do dia, na home) --- */
+.hero {
+  background: linear-gradient(135deg, var(--primary-deep), var(--primary));
+  border-radius: 22px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  color: #fff;
+  box-shadow: 0 24px 48px -24px rgba(20, 20, 30, .45);
+}
+
+.hero-texto { padding: 44px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+
+.hero-topo { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+.selo {
+  background: var(--accent);
+  color: var(--primary-deep);
+  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.hero-data { font-size: 13px; opacity: .85; }
+.hero-celebracao { margin: 0; font-size: 13px; opacity: .88; font-weight: 600; }
+
+.hero-texto h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(26px, 3.2vw, 40px);
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.hero-resumo { margin: 0; font-size: 15px; line-height: 1.6; opacity: .94; max-width: 48ch; }
+.hero-leituras { margin: 0; font-size: 12px; opacity: .72; font-style: italic; }
+
+.hero-acoes { display: flex; gap: 10px; margin-top: 10px; align-items: center; flex-wrap: wrap; }
+
+.btn-primario {
+  background: var(--accent);
+  color: var(--primary-deep);
+  font-weight: 700;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.btn-fantasma {
+  background: rgba(255, 255, 255, .14);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .32);
+  padding: 11px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.hero-capa {
+  position: relative;
+  background: repeating-linear-gradient(135deg, rgba(255,255,255,.10) 0 14px, rgba(255,255,255,.04) 14px 28px);
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotulo-capa {
+  font-family: ui-monospace, monospace;
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, .75);
+  background: rgba(0, 0, 0, .18);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* --- grade de cartões --- */
+.secao-titulo {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 48px 0 20px;
+}
+
+.grade-cartoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .grade-cartoes { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .grade-cartoes { grid-template-columns: 1fr; }
+}
+
+.cartao {
+  background: #fff;
+  border: 1px solid var(--fio);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-capa {
+  background: repeating-linear-gradient(135deg, var(--papel-2) 0 12px, var(--fio) 12px 24px);
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartao-capa span { font-family: ui-monospace, monospace; font-size: 10px; color: var(--tinta-suave); }
+
+.cartao-corpo { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; }
+
+.tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
+.cartao h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.32;
+  color: var(--tinta);
+}
+
+.cartao p { margin: 0; font-size: 13px; line-height: 1.5; color: var(--tinta-suave); }
+.cartao .data { font-size: 11.5px; color: var(--tinta-suave); margin-top: 4px; }
+
+/* --- caixas da barra lateral --- */
+.caixa-lateral {
+  background: #fff;
+  border: 1px solid var(--fio);
+  border-radius: 16px;
+  padding: 16px 16px 18px;
+}
+
+.caixa-lateral h4 { margin: 0 0 12px; font-family: var(--display); font-weight: 700; font-size: 13px; }
+
+.lista-recentes { display: flex; flex-direction: column; gap: 12px; }
+.lista-recentes a { display: flex; flex-direction: column; gap: 2px; }
+.lista-recentes .data { font-size: 11px; color: var(--accent-deep); font-weight: 700; }
+.lista-recentes .titulo { font-size: 13px; color: var(--tinta); line-height: 1.35; }
+
+/* --- calendário --- */
+.cal-topo { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+
+.cal-seta {
+  background: none;
+  border: 1px solid var(--fio);
+  border-radius: 6px;
+  color: var(--tinta-suave);
+  cursor: pointer;
+  padding: 3px 9px;
+  font-size: 14px;
+}
+
+.cal-seta:hover { color: var(--primary); border-color: var(--primary); }
+
+.cal-mes { font-family: var(--display); font-weight: 700; font-size: 13px; text-transform: capitalize; }
+
+table.cal { width: 100%; border-collapse: collapse; text-align: center; }
+table.cal th { font-size: 10px; color: var(--tinta-suave); font-weight: 600; padding: 4px 0; }
+table.cal td { padding: 2px; height: 32px; }
+
+table.cal td a, table.cal td span {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+table.cal td span { color: var(--tinta-suave); }
+table.cal td a { background: oklch(94% 0.03 85); color: var(--accent-deep); font-weight: 700; cursor: pointer; }
+table.cal td a:hover { background: var(--primary); color: #fff; }
+table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color: #fff; font-weight: 700; }
+
+/* --- índice de reflexões --- */
+.indice-cabecalho h1 { font-family: var(--display); font-size: 30px; font-weight: 700; margin: 0 0 8px; }
+.indice-cabecalho p { color: var(--tinta-suave); font-size: 15px; margin: 0 0 32px; }
+
+.mes-rotulo {
+  font-family: var(--display);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--accent-deep);
+  margin: 32px 0 6px;
+}
+.mes-rotulo:first-child { margin-top: 0; }
+
+.linha-indice {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid var(--fio);
+  padding: 16px 4px;
+}
+
+.linha-indice .dia { font-family: var(--display); font-weight: 700; font-size: 20px; color: var(--primary); min-width: 40px; }
+.linha-indice .info { flex: 1; min-width: 0; }
+.linha-indice .info .tag { display: block; }
+.linha-indice .info h3 { margin: 2px 0 0; font-family: var(--display); font-size: 16px; font-weight: 600; color: var(--tinta); }
+.linha-indice .seta { color: var(--tinta-suave); font-size: 14px; }
+
+/* --- página da reflexão individual --- */
+.voltar { display: inline-block; color: var(--tinta-suave); font-size: 13px; margin-bottom: 22px; }
+
+.reflexao-capa {
+  background: repeating-linear-gradient(135deg, var(--papel-2) 0 14px, var(--fio) 14px 28px);
+  height: 240px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.reflexao-capa span { font-family: ui-monospace, monospace; font-size: 12px; color: var(--tinta-suave); background: #fff; padding: 6px 12px; border-radius: 6px; }
+
+.reflexao-cabecalho .tag { display: block; margin-bottom: 6px; }
+.reflexao-cabecalho .leituras { margin: 0 0 14px; font-size: 13px; font-style: italic; color: var(--tinta-suave); }
+.reflexao-cabecalho h1 { margin: 0; font-family: var(--display); font-size: clamp(26px, 4vw, 38px); font-weight: 700; line-height: 1.2; }
+.reflexao-cabecalho .data { margin: 10px 0 0; font-size: 13px; color: var(--tinta-suave); }
+
+.reflexao-texto { font-size: 17px; line-height: 1.75; color: var(--tinta); margin-top: 30px; }
+.reflexao-texto p { margin: 0 0 18px; }
+
+.folhear {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid var(--fio);
+}
+
+.folhear a, .folhear span.vazia {
+  background: none;
+  border: 1px solid var(--fio);
+  color: var(--tinta-suave);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  display: inline-block;
+}
+.folhear a:hover { color: var(--primary); border-color: var(--primary); }
+
+.vazio { text-align: center; font-style: italic; color: var(--tinta-suave); padding: 3rem 0; }
+
+/* --- rodapé --- */
+.site-footer {
+  text-align: center;
+  padding: 36px 24px 44px;
+  border-top: 1px solid var(--fio);
+  max-width: 1180px;
+  margin: 24px auto 0;
+}
+
+.site-footer .rubrica { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent-deep); }
+.site-footer .citacao { margin: 8px 0 0; font-family: var(--display); font-size: 15px; font-style: italic; color: var(--tinta-suave); }
+
+/* --- telas estreitas --- */
+@media (max-width: 760px) {
+  .pagina { flex-direction: column; }
+  .lateral { order: -1; width: 100%; max-width: 22rem; margin: 0 auto; position: static; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-capa { min-height: 160px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

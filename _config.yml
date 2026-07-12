@@ -1,0 +1,20 @@
+title: Reflexões da Liturgia Diária
+description: Reflexões sobre as leituras da missa, dia a dia.
+lang: pt-BR
+url: "https://admariam.github.io"
+baseurl: "/liturgiadiaria"
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "reflexao"
+
+exclude:
+  - README.md
+
+future: true

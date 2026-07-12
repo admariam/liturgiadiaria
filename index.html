@@ -1,0 +1,86 @@
+---
+layout: default
+---
+{% assign agora_ts = site.time | date: '%s' | plus: 0 %}
+{% assign atual = nil %}
+{% for post in site.posts %}
+  {% assign pts = post.date | date: '%s' | plus: 0 %}
+  {% if atual == nil and pts <= agora_ts %}{% assign atual = post %}{% assign i = forloop.index0 %}{% endif %}
+{% endfor %}
+{% if atual %}
+<section class="hero">
+  <div class="hero-texto">
+    <div class="hero-topo">
+      <span class="selo">Reflexão do dia</span>
+      <span class="hero-data">{{ atual.date | date: "%d.%m.%Y" }}</span>
+    </div>
+    <p class="hero-celebracao">{{ atual.celebracao }}</p>
+    <h1>{{ atual.title }}</h1>
+    <p class="hero-resumo">{{ atual.resumo | default: atual.excerpt | strip_html | truncate: 200 }}</p>
+    {% if atual.leituras %}<p class="hero-leituras">{{ atual.leituras }}</p>{% endif %}
+    <div class="hero-acoes">
+      <a class="btn-primario" href="{{ atual.url | relative_url }}">Ler reflexão completa →</a>
+      {% assign anterior_i = i | plus: 1 %}
+      {% assign anterior = site.posts[anterior_i] %}
+      {% if i > 0 %}{% assign seguinte_i = i | minus: 1 %}{% assign seguinte = site.posts[seguinte_i] %}{% endif %}
+      {% if anterior %}<a class="btn-fantasma" href="{{ anterior.url | relative_url }}">‹ anterior</a>{% endif %}
+      {% if seguinte %}<a class="btn-fantasma" href="{{ seguinte.url | relative_url }}">seguinte ›</a>{% endif %}
+    </div>
+  </div>
+  <div class="hero-capa">
+    {% if atual.imagem %}
+    <div style="position:absolute;inset:0;background-image:url('{{ atual.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
+    {% else %}
+    <span class="rotulo-capa">imagem de capa</span>
+    {% endif %}
+  </div>
+</section>
+
+<h2 class="secao-titulo">Últimas reflexões</h2>
+<div class="grade-cartoes">
+  {% for post in site.posts limit: 6 offset: 1 %}
+  <a class="cartao" href="{{ post.url | relative_url }}">
+    <div class="cartao-capa">
+      {% if post.imagem %}
+      <div style="position:absolute;inset:0;background-image:url('{{ post.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
+      {% else %}
+      <span>capa</span>
+      {% endif %}
+    </div>
+    <div class="cartao-corpo">
+      <span class="tag">{{ post.celebracao }}</span>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.resumo | default: post.excerpt | strip_html | truncate: 110 }}</p>
+      <span class="data">{{ post.date | date: "%d.%m" }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+{% assign proxima = site.posts.last %}
+<div class="vazio">
+  {% if proxima %}
+  <p>A reflexão de {{ proxima.date | date: "%d.%m" }} já está preparada.</p>
+  <p><a class="btn-primario" href="{{ proxima.url | relative_url }}" style="color:#fff;">seguinte ›</a></p>
+  {% else %}
+  <p>Ainda não há reflexões publicadas.</p>
+  {% endif %}
+</div>
+{% endif %}
+<script>
+(function () {
+  fetch('{{ "/posts.json" | relative_url }}')
+    .then(function (r) { return r.json(); })
+    .then(function (lista) {
+      var d = new Date();
+      var hoje = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+      var alvo = null;
+      lista.forEach(function (p) { if (p.date <= hoje && (!alvo || p.date > alvo.date)) alvo = p; });
+      {% if atual %}
+      var atualData = "{{ atual.date | date: '%Y-%m-%d' }}";
+      if (alvo && atualData !== alvo.date) location.replace(alvo.url);
+      {% endif %}
+    })
+    .catch(function () {});
+})();
+</script>

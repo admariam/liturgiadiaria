@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article>
+  <a class="voltar" href="{{ '/' | relative_url }}">← Voltar</a>
+  {% if page.imagem %}
+  <div class="reflexao-capa" style="background-image:url('{{ page.imagem | relative_url }}');background-size:cover;background-position:center;">
+  </div>
+  {% else %}
+  <div class="reflexao-capa"><span>imagem de capa</span></div>
+  {% endif %}
+  <header class="reflexao-cabecalho">
+    <span class="tag">{{ page.celebracao }}</span>
+    {% if page.leituras %}<p class="leituras">{{ page.leituras }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="data">{{ page.date | date: "%d.%m.%Y" }}</p>
+  </header>
+  <div class="reflexao-texto">
+    {{ content }}
+  </div>
+  <nav class="folhear" aria-label="Navegar entre reflexões">
+    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}">‹ anterior</a>{% else %}<span class="vazia"></span>{% endif %}
+    {% if page.next %}<a href="{{ page.next.url | relative_url }}">seguinte ›</a>{% else %}<span class="vazia"></span>{% endif %}
+  </nav>
+</article>

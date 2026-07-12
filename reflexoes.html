@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Índice de Reflexões"
+permalink: /reflexoes/
+---
+<div class="indice-cabecalho">
+  <h1>Índice de Reflexões</h1>
+  <p>Todas as reflexões publicadas, mês a mês.</p>
+</div>
+
+{% assign posts_por_mes = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+{% for grupo in posts_por_mes %}
+  {% assign partes = grupo.name | split: '-' %}
+  <h2 class="mes-rotulo">{{ site.data.meses[partes[1]] }} de {{ partes[0] }}</h2>
+  {% for post in grupo.items %}
+  <a class="linha-indice" href="{{ post.url | relative_url }}">
+    <span class="dia">{{ post.date | date: "%d" }}</span>
+    <div class="info">
+      <span class="tag">{{ post.celebracao }}</span>
+      <h3>{{ post.title }}</h3>
+    </div>
+    <span class="seta">→</span>
+  </a>
+  {% endfor %}
+{% endfor %}
