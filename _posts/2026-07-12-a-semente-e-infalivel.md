@@ -3,6 +3,7 @@ title: "A semente é infalível; a variável é o solo"
 celebracao: "15º Domingo do Tempo Comum · Ano A"
 evangelho: "Mt 13,1-23"
 leituras: "Is 55,10-11 · Sl 64(65) · Rm 8,18-23 · Mt 13,1-23"
+imagem: /assets/img/2026-07-12.jpg
 resumo: "A parábola do semeador revela um Deus que não faz triagem: a Palavra é lançada sobre todo tipo de solo, e cabe a nós prepará-lo."
 ---
 Irmãos, alguém já parou para calcular quantas palavras a gente ouve por dia? Mensagens de manhã cedo, áudios de WhatsApp em velocidade dupla, notícia no rádio, propaganda no caminho, reunião, televisão, mais mensagens antes de dormir. Nós somos, provavelmente, a geração mais bombardeada de palavras de toda a história humana. E talvez, por isso mesmo, a que menos escuta. As palavras entram por um ouvido e saem pelo outro porque não encontram onde pousar. Viraram ruído de fundo. A gente ouve tudo e não retém quase nada.
