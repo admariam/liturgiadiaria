@@ -50,9 +50,8 @@
       <div class="caixa-lateral">
         <h4>Últimas reflexões</h4>
         <div class="lista-recentes">
-          {% assign recentes = site.posts | where_exp: "post", "post.date <= site.time" %}
-          {% for post in recentes limit: 4 %}
-          <a href="{{ post.url | relative_url }}">
+          {% for post in site.posts limit: 10 %}
+          <a href="{{ post.url | relative_url }}" class="recente-item" data-post-data="{{ post.date | date: '%Y-%m-%d' }}">
             <span class="data">{{ post.date | date: "%d.%m" }}</span>
             <span class="titulo">{{ post.title }}</span>
           </a>
@@ -66,6 +65,18 @@
     <p class="rubrica">Rm 10,17</p>
     <p class="citacao">«A fé provém da pregação, e a pregação é pela palavra de Cristo.»</p>
   </footer>
+  <script id="filtra-recentes">
+(function () {
+  var d = new Date();
+  var HOJE = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  var itens = document.querySelectorAll('.recente-item');
+  var mostrados = 0;
+  itens.forEach(function (a) {
+    if (a.getAttribute('data-post-data') > HOJE || mostrados >= 4) { a.style.display = 'none'; return; }
+    mostrados++;
+  });
+})();
+</script>
   <script src="{{ '/assets/js/calendario.js' | relative_url }}" defer></script>
 </body>
 </html>
