@@ -1,14 +1,9 @@
 ---
 layout: default
 ---
-{% assign agora_ts = site.time | date: '%s' | plus: 0 %}
-{% assign atual = nil %}
-{% for post in site.posts %}
-  {% assign pts = post.date | date: '%s' | plus: 0 %}
-  {% if atual == nil and pts <= agora_ts %}{% assign atual = post %}{% assign i = forloop.index0 %}{% endif %}
-{% endfor %}
-{% if atual %}
-<section class="hero">
+{% assign posts_ord = site.posts %}
+{% assign atual = posts_ord.first %}
+<section class="hero" data-post-data="{{ atual.date | date: '%Y-%m-%d' }}">
   <div class="hero-texto">
     <div class="hero-topo">
       <span class="selo">Reflexão do dia</span>
@@ -20,11 +15,6 @@ layout: default
     {% if atual.leituras %}<p class="hero-leituras">{{ atual.leituras }}</p>{% endif %}
     <div class="hero-acoes">
       <a class="btn-primario" href="{{ atual.url | relative_url }}">Ler reflexão completa →</a>
-      {% assign anterior_i = i | plus: 1 %}
-      {% assign anterior = site.posts[anterior_i] %}
-      {% if i > 0 %}{% assign seguinte_i = i | minus: 1 %}{% assign seguinte = site.posts[seguinte_i] %}{% assign sts = seguinte.date | date: '%s' | plus: 0 %}{% if sts > agora_ts %}{% assign seguinte = nil %}{% endif %}{% endif %}
-      {% if anterior %}<a class="btn-fantasma" href="{{ anterior.url | relative_url }}">‹ anterior</a>{% endif %}
-      {% if seguinte %}<a class="btn-fantasma" href="{{ seguinte.url | relative_url }}">seguinte ›</a>{% endif %}
     </div>
   </div>
   <div class="hero-capa">
@@ -38,9 +28,8 @@ layout: default
 
 <h2 class="secao-titulo">Últimas reflexões</h2>
 <div class="grade-cartoes">
-  {% assign publicados = site.posts | where_exp: "post", "post.date <= site.time" %}
-  {% for post in publicados limit: 7 %}{% if post.url == atual.url %}{% continue %}{% endif %}
-  <a class="cartao" href="{{ post.url | relative_url }}">
+  {% for post in site.posts %}
+  <a class="cartao" href="{{ post.url | relative_url }}" data-post-data="{{ post.date | date: '%Y-%m-%d' }}">
     <div class="cartao-capa">
       {% if post.imagem %}
       <div style="position:absolute;inset:0;background-image:url('{{ post.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
@@ -57,31 +46,32 @@ layout: default
   </a>
   {% endfor %}
 </div>
-{% else %}
-{% assign proxima = site.posts.last %}
-<div class="vazio">
-  {% if proxima %}
-  <p>A reflexão de {{ proxima.date | date: "%d.%m" }} já está preparada.</p>
-  <p><a class="btn-primario" href="{{ proxima.url | relative_url }}" style="color:#fff;">seguinte ›</a></p>
-  {% else %}
-  <p>Ainda não há reflexões publicadas.</p>
-  {% endif %}
-</div>
-{% endif %}
+
 <script>
 (function () {
-  fetch('{{ "/posts.json" | relative_url }}')
-    .then(function (r) { return r.json(); })
-    .then(function (lista) {
-      var d = new Date();
-      var hoje = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
-      var alvo = null;
-      lista.forEach(function (p) { if (p.date <= hoje && (!alvo || p.date > alvo.date)) alvo = p; });
-      {% if atual %}
-      var atualData = "{{ atual.date | date: '%Y-%m-%d' }}";
-      if (alvo && atualData !== alvo.date) location.replace(alvo.url);
-      {% endif %}
-    })
-    .catch(function () {});
+  function hoje() {
+    var d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+  var HOJE = hoje();
+
+  // Esconde cartões de dias futuros e mantém no máximo 6 visíveis
+  var cartoes = document.querySelectorAll('.grade-cartoes .cartao');
+  var visiveis = 0;
+  var maisRecenteVisivel = null;
+  cartoes.forEach(function (c) {
+    var data = c.getAttribute('data-post-data');
+    if (data > HOJE) { c.style.display = 'none'; return; }
+    if (!maisRecenteVisivel || data > maisRecenteVisivel.getAttribute('data-post-data')) {
+      maisRecenteVisivel = c;
+    }
+  });
+  // O cartão mais recente já é o herói; esconde ele da grade e limita a 6
+  cartoes.forEach(function (c) {
+    if (c === maisRecenteVisivel) { c.style.display = 'none'; return; }
+    if (c.style.display === 'none') return;
+    visiveis++;
+    if (visiveis > 6) c.style.display = 'none';
+  });
 })();
 </script>
