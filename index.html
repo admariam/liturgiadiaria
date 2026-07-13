@@ -1,27 +1,48 @@
 ---
 layout: default
 ---
-{% assign posts_ord = site.posts %}
-{% assign atual = posts_ord.first %}
-<section class="hero" data-post-data="{{ atual.date | date: '%Y-%m-%d' }}">
+{% for post in site.posts %}
+<section class="hero hero-candidato" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" style="display:none;">
   <div class="hero-texto">
     <div class="hero-topo">
       <span class="selo">Reflexão do dia</span>
-      <span class="hero-data">{{ atual.date | date: "%d.%m.%Y" }}</span>
+      <span class="hero-data">{{ post.date | date: "%d.%m.%Y" }}</span>
     </div>
-    <p class="hero-celebracao">{{ atual.celebracao }}</p>
-    <h1>{{ atual.title }}</h1>
-    <p class="hero-resumo">{{ atual.resumo | default: atual.excerpt | strip_html | truncate: 200 }}</p>
-    {% if atual.leituras %}<p class="hero-leituras">{{ atual.leituras }}</p>{% endif %}
+    <p class="hero-celebracao">{{ post.celebracao }}</p>
+    <h1>{{ post.title }}</h1>
+    <p class="hero-resumo">{{ post.resumo | default: post.excerpt | strip_html | truncate: 200 }}</p>
+    {% if post.leituras %}<p class="hero-leituras">{{ post.leituras }}</p>{% endif %}
     <div class="hero-acoes">
-      <a class="btn-primario" href="{{ atual.url | relative_url }}">Ler reflexão completa →</a>
+      <a class="btn-primario" href="{{ post.url | relative_url }}">Ler reflexão completa →</a>
     </div>
   </div>
   <div class="hero-capa">
-    {% if atual.imagem %}
-    <div style="position:absolute;inset:0;background-image:url('{{ atual.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
+    {% if post.imagem %}
+    <div style="position:absolute;inset:0;background-image:url('{{ post.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
     {% else %}
     <span class="rotulo-capa">imagem de capa</span>
     {% endif %}
   </div>
 </section>
+{% endfor %}
+<div class="vazio" id="hero-vazio" style="display:none;"><p>Ainda não há reflexões publicadas.</p></div>
+
+<script>
+(function () {
+  var d = new Date();
+  var HOJE = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  var candidatos = Array.prototype.slice.call(document.querySelectorAll('.hero-candidato'));
+  var escolhido = null;
+  candidatos.forEach(function (s) {
+    var data = s.getAttribute('data-post-data');
+    if (data <= HOJE && (!escolhido || data > escolhido.getAttribute('data-post-data'))) {
+      escolhido = s;
+    }
+  });
+  if (escolhido) {
+    escolhido.style.display = '';
+  } else {
+    document.getElementById('hero-vazio').style.display = '';
+  }
+})();
+</script>
