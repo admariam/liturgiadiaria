@@ -8,19 +8,35 @@ permalink: /reflexoes/
   <p>Todas as reflexões publicadas, mês a mês.</p>
 </div>
 
-{% assign publicados = site.posts | where_exp: "post", "post.date <= site.time" %}
-{% assign posts_por_mes = publicados | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+{% assign posts_por_mes = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
 {% for grupo in posts_por_mes %}
   {% assign partes = grupo.name | split: '-' %}
-  <h2 class="mes-rotulo">{{ site.data.meses[partes[1]] }} de {{ partes[0] }}</h2>
-  {% for post in grupo.items %}
-  <a class="linha-indice" href="{{ post.url | relative_url }}">
-    <span class="dia">{{ post.date | date: "%d" }}</span>
-    <div class="info">
-      <span class="tag">{{ post.celebracao }}</span>
-      <h3>{{ post.title }}</h3>
-    </div>
-    <span class="seta">→</span>
-  </a>
-  {% endfor %}
+  <div class="grupo-mes" data-mes="{{ grupo.name }}">
+    <h2 class="mes-rotulo">{{ site.data.meses[partes[1]] }} de {{ partes[0] }}</h2>
+    {% for post in grupo.items %}
+    <a class="linha-indice" href="{{ post.url | relative_url }}" data-post-data="{{ post.date | date: '%Y-%m-%d' }}">
+      <span class="dia">{{ post.date | date: "%d" }}</span>
+      <div class="info">
+        <span class="tag">{{ post.celebracao }}</span>
+        <h3>{{ post.title }}</h3>
+      </div>
+      <span class="seta">→</span>
+    </a>
+    {% endfor %}
+  </div>
 {% endfor %}
+
+<script>
+(function () {
+  var d = new Date();
+  var HOJE = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  document.querySelectorAll('.linha-indice').forEach(function (l) {
+    if (l.getAttribute('data-post-data') > HOJE) l.style.display = 'none';
+  });
+  // esconde mês que ficou totalmente vazio
+  document.querySelectorAll('.grupo-mes').forEach(function (g) {
+    var visiveis = g.querySelectorAll('.linha-indice:not([style*="none"])').length;
+    if (visiveis === 0) g.style.display = 'none';
+  });
+})();
+</script>
