@@ -26,15 +26,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=8">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=9">
 </head>
 <body>
   <a class="banner-topo" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}">
-    <img src="{{ '/assets/img/banner.jpg' | relative_url }}" alt="{{ site.title }}">
+    <img src="{{ '/assets/img/banner.jpg' | relative_url }}" alt="">
+    <span class="banner-nome">{{ site.title }}</span>
   </a>
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="ativo"{% endif %}>Início</a>
         <a href="{{ '/reflexoes/' | relative_url }}"{% if page.url contains '/reflexoes/' %} class="ativo"{% endif %}>Reflexões</a>
