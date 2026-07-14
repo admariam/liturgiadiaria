@@ -45,6 +45,7 @@ layout: default
       <div class="card-secao-info">
         <span class="card-secao-nome">Artigos</span>
         <h3>{% if ua %}{{ ua.title }}{% else %}Em breve{% endif %}</h3>
+        {% if ua %}<p class="card-secao-trecho">{{ ua.content | strip_html | strip_newlines | truncate: 180 }}</p>{% endif %}
       </div>
     </a>
     <a class="btn-ver-mais" href="{{ '/artigos/' | relative_url }}">Ver mais</a>
@@ -59,6 +60,7 @@ layout: default
       <div class="card-secao-info">
         <span class="card-secao-nome">Catequeses</span>
         <h3>{% if uc %}{{ uc.title }}{% else %}Em breve{% endif %}</h3>
+        {% if uc %}<p class="card-secao-trecho">{{ uc.content | strip_html | strip_newlines | truncate: 180 }}</p>{% endif %}
       </div>
     </a>
     <a class="btn-ver-mais" href="{{ '/catequeses/' | relative_url }}">Ver mais</a>
@@ -73,6 +75,7 @@ layout: default
       <div class="card-secao-info">
         <span class="card-secao-nome">Pregações</span>
         <h3>{% if up %}{{ up.title }}{% else %}Em breve{% endif %}</h3>
+        {% if up %}<p class="card-secao-trecho">{{ up.content | strip_html | strip_newlines | truncate: 180 }}</p>{% endif %}
       </div>
     </a>
     <a class="btn-ver-mais" href="{{ '/pregacoes/' | relative_url }}">Ver mais</a>
