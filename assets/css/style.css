@@ -533,3 +533,43 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
   .banner-topo img { height: 130px; }
   .banner-nome { font-size: 26px; bottom: 12px; }
 }
+
+/* ===== Notas de rodapé ===== */
+sup[role="doc-noteref"] a,
+.reflexao-texto sup a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--accent-deep);
+  padding: 0 1px;
+}
+sup[role="doc-noteref"] a:hover,
+.reflexao-texto sup a:hover { color: var(--primary); }
+
+.footnotes {
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid var(--fio);
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--tinta-suave);
+}
+.footnotes::before {
+  content: "Notas";
+  display: block;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--tinta);
+  margin-bottom: 10px;
+}
+.footnotes ol { margin: 0; padding-left: 20px; }
+.footnotes li { margin-bottom: 8px; text-align: left; }
+.footnotes li p { margin: 0; text-align: left; }
+.footnotes a.reversefootnote {
+  text-decoration: none;
+  color: var(--accent-deep);
+  margin-left: 4px;
+}
