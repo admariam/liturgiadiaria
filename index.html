@@ -27,6 +27,29 @@ layout: default
 {% endfor %}
 <div class="vazio" id="hero-vazio" style="display:none;"><p>Ainda não há reflexões publicadas.</p></div>
 
+
+<h2 class="secao-titulo">Explore também</h2>
+<div class="faixa-secoes">
+  <a class="card-secao" href="{{ '/artigos/' | relative_url }}">
+    <span class="card-secao-icone">✍</span>
+    <h3>Artigos</h3>
+    <p>Textos de aprofundamento, do autor e de fontes referenciadas.</p>
+    <span class="card-secao-link">Ver artigos →</span>
+  </a>
+  <a class="card-secao" href="{{ '/catequeses/' | relative_url }}">
+    <span class="card-secao-icone">✚</span>
+    <h3>Catequeses</h3>
+    <p>Os temas da fé, explicados passo a passo.</p>
+    <span class="card-secao-link">Ver catequeses →</span>
+  </a>
+  <a class="card-secao" href="{{ '/pregacoes/' | relative_url }}">
+    <span class="card-secao-icone">☩</span>
+    <h3>Pregações</h3>
+    <p>Homilias e pregações.</p>
+    <span class="card-secao-link">Ver pregações →</span>
+  </a>
+</div>
+
 <script>
 (function () {
   var d = new Date();
