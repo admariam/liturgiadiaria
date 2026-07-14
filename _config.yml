@@ -7,12 +7,44 @@ baseurl: "/liturgiadiaria"
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
+collections:
+  artigos:
+    output: true
+    permalink: /artigos/:name/
+  catequeses:
+    output: true
+    permalink: /catequeses/:name/
+  pregacoes:
+    output: true
+    permalink: /pregacoes/:name/
+
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "reflexao"
+      autor: "Márcio Arias"
+  - scope:
+      path: ""
+      type: "artigos"
+    values:
+      layout: "secao"
+      secao: "artigos"
+      autor: "Márcio Arias"
+  - scope:
+      path: ""
+      type: "catequeses"
+    values:
+      layout: "secao"
+      secao: "catequeses"
+      autor: "Márcio Arias"
+  - scope:
+      path: ""
+      type: "pregacoes"
+    values:
+      layout: "secao"
+      secao: "pregacoes"
       autor: "Márcio Arias"
 
 exclude:
