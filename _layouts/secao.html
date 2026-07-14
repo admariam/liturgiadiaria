@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% assign colecao = site[page.secao] | sort: 'date' | reverse %}
+<article>
+  <div class="topo-barra">
+    <a class="voltar" href="{{ '/' | append: page.secao | append: '/' | relative_url }}">← {{ page.secao_titulo | default: page.secao | capitalize }}</a>
+    <button type="button" class="btn-compartilhar"
+            data-url="{{ site.url }}{{ page.url | relative_url }}"
+            data-titulo="{{ page.title | escape }}"
+            data-data="{{ page.date | date: '%d.%m.%Y' }}"
+            data-site="{{ site.title | escape }}"
+            aria-label="Compartilhar" title="Compartilhar">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 19c0-5 4-8 10-8"/>
+        <polyline points="13 5 21 11 13 17"/>
+      </svg>
+    </button>
+  </div>
+  {% if page.imagem %}
+  <div class="reflexao-capa" style="background-image:url('{{ page.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
+  {% endif %}
+  <header class="reflexao-cabecalho">
+    {% if page.categoria %}<span class="tag">{{ page.categoria }}</span>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="data">{{ page.date | date: "%d.%m.%Y" }}{% if page.autor %} — <em class="autor">por {{ page.autor }}</em>{% endif %}{% if page.fonte %} · <span class="fonte">{% if page.fonte_url %}<a href="{{ page.fonte_url }}" target="_blank" rel="noopener">{{ page.fonte }}</a>{% else %}{{ page.fonte }}{% endif %}</span>{% endif %}</p>
+  </header>
+  <div class="reflexao-texto">
+    {{ content }}
+  </div>
+  <nav class="folhear" aria-label="Navegar">
+    <a href="{{ '/' | append: page.secao | append: '/' | relative_url }}">ver todos →</a>
+  </nav>
+</article>
+<script id="share-script">
+(function(){
+  var btn = document.querySelector('.btn-compartilhar');
+  if(!btn) return;
+  var ehCelular = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  btn.addEventListener('click', async function(){
+    var base = btn.dataset.url;
+    var sep = base.indexOf('?') === -1 ? '?' : '&';
+    var url = base + sep + 's=' + Date.now().toString(36);
+    var texto = btn.dataset.data + ' · ' + btn.dataset.site + ' · ' + btn.dataset.titulo;
+    var completo = texto + '\n' + url;
+    if (ehCelular && navigator.share) {
+      try { await navigator.share({ text: completo }); return; }
+      catch(e){ if(e.name==='AbortError') return; }
+    }
+    window.open('https://wa.me/?text=' + encodeURIComponent(completo), '_blank', 'noopener');
+  });
+})();
+</script>
