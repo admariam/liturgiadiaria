@@ -5,6 +5,7 @@ date: 2026-07-14
 autor: "Bispo Robert Barron"
 fonte: "Word on Fire"
 fonte_url: "https://www.wordonfire.org/articles/barron/el-desafio-de-nuestra-senora-de-guadalupe/?queryID=475bc42af2e2a1316639df4f5b3b431d"
+imagem: /assets/img/artigo-guadalupe.jpg
 resumo: "Nossa Senhora de Guadalupe aparece como a mulher vestida de sol do Apocalipse — uma guerreira que desafia os deuses falsos e converte um povo inteiro ao Deus do amor."
 ---
 
