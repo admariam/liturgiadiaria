@@ -417,16 +417,15 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin: 10px 0 40px;
+  margin: 34px 0 40px;
 }
 .card-secao {
-  display: block;
-  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
   background: var(--papel-2, #fff);
   border: 1px solid var(--fio, #e5ddcd);
   border-radius: 12px;
-  text-decoration: none;
-  color: inherit;
+  overflow: hidden;
   transition: transform .12s ease, box-shadow .15s ease, border-color .15s ease;
 }
 .card-secao:hover {
@@ -434,15 +433,35 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
   box-shadow: 0 10px 26px -16px rgba(60,45,30,.5);
   border-color: var(--accent-deep, #7a5a2f);
 }
-.card-secao-icone {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 44px; height: 44px; margin-bottom: 14px;
-  font-size: 22px; color: var(--accent-deep, #7a5a2f);
-  background: rgba(122,90,47,.08); border-radius: 10px;
+.card-secao-topo { text-decoration: none; color: inherit; display: block; }
+.card-secao-capa {
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  background: repeating-linear-gradient(135deg, var(--papel-2,#f3ecdd) 0 12px, var(--fio,#e5ddcd) 12px 24px);
+  display: flex; align-items: center; justify-content: center;
 }
-.card-secao h3 { margin: 0 0 8px; font-size: 20px; }
-.card-secao p { margin: 0 0 14px; font-size: 14.5px; color: var(--tinta-suave, #6b6152); line-height: 1.5; }
-.card-secao-link { font-size: 14px; font-weight: 600; color: var(--accent-deep, #7a5a2f); }
+.card-secao-capa .card-secao-icone {
+  font-size: 34px; color: var(--accent-deep, #7a5a2f);
+}
+.card-secao-info { padding: 16px 18px 6px; }
+.card-secao-nome {
+  display: inline-block;
+  font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent-deep, #7a5a2f); margin-bottom: 6px;
+}
+.card-secao-info h3 { margin: 0; font-size: 18px; line-height: 1.3; }
+.btn-ver-mais {
+  margin: 12px 18px 18px;
+  display: inline-block; text-align: center;
+  padding: 9px 14px; font-size: 14px; font-weight: 600;
+  color: var(--accent-deep, #7a5a2f);
+  background: rgba(122,90,47,.07);
+  border: 1px solid var(--fio, #e5ddcd);
+  border-radius: 8px; text-decoration: none;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.btn-ver-mais:hover { background: var(--accent-deep, #7a5a2f); color: #fff; border-color: var(--accent-deep, #7a5a2f); }
 
 /* fonte referenciada no cabeçalho de um post de seção */
 .reflexao-cabecalho .fonte { font-style: italic; }
