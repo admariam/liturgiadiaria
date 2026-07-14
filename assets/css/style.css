@@ -481,3 +481,26 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
 @media (max-width: 720px) {
   .faixa-secoes { grid-template-columns: 1fr; gap: 14px; }
 }
+
+/* ===== Banner do topo ===== */
+.banner-topo {
+  display: block;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.banner-topo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 10px 10px;
+}
+@media (max-width: 720px) {
+  .banner-topo { padding: 0; }
+  .banner-topo img {
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+  }
+}
