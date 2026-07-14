@@ -28,26 +28,55 @@ layout: default
 <div class="vazio" id="hero-vazio" style="display:none;"><p>Ainda não há reflexões publicadas.</p></div>
 
 
-<h2 class="secao-titulo">Explore também</h2>
 <div class="faixa-secoes">
-  <a class="card-secao" href="{{ '/artigos/' | relative_url }}">
-    <span class="card-secao-icone">✍</span>
-    <h3>Artigos</h3>
-    <p>Textos de aprofundamento, do autor e de fontes referenciadas.</p>
-    <span class="card-secao-link">Ver artigos →</span>
-  </a>
-  <a class="card-secao" href="{{ '/catequeses/' | relative_url }}">
-    <span class="card-secao-icone">✚</span>
-    <h3>Catequeses</h3>
-    <p>Os temas da fé, explicados passo a passo.</p>
-    <span class="card-secao-link">Ver catequeses →</span>
-  </a>
-  <a class="card-secao" href="{{ '/pregacoes/' | relative_url }}">
-    <span class="card-secao-icone">☩</span>
-    <h3>Pregações</h3>
-    <p>Homilias e pregações.</p>
-    <span class="card-secao-link">Ver pregações →</span>
-  </a>
+  {% assign a = site.artigos | sort: 'date' | reverse %}
+  {% assign c = site.catequeses | sort: 'date' | reverse %}
+  {% assign p = site.pregacoes | sort: 'date' | reverse %}
+  {% assign ua = a.first %}
+  {% assign uc = c.first %}
+  {% assign up = p.first %}
+
+  <div class="card-secao">
+    <a class="card-secao-topo" href="{% if ua %}{{ ua.url | relative_url }}{% else %}{{ '/artigos/' | relative_url }}{% endif %}">
+      <div class="card-secao-capa">
+        {% if ua.imagem %}<div style="position:absolute;inset:0;background-image:url('{{ ua.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
+        {% else %}<span class="card-secao-icone">✍</span>{% endif %}
+      </div>
+      <div class="card-secao-info">
+        <span class="card-secao-nome">Artigos</span>
+        <h3>{% if ua %}{{ ua.title }}{% else %}Em breve{% endif %}</h3>
+      </div>
+    </a>
+    <a class="btn-ver-mais" href="{{ '/artigos/' | relative_url }}">Ver mais</a>
+  </div>
+
+  <div class="card-secao">
+    <a class="card-secao-topo" href="{% if uc %}{{ uc.url | relative_url }}{% else %}{{ '/catequeses/' | relative_url }}{% endif %}">
+      <div class="card-secao-capa">
+        {% if uc.imagem %}<div style="position:absolute;inset:0;background-image:url('{{ uc.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
+        {% else %}<span class="card-secao-icone">✚</span>{% endif %}
+      </div>
+      <div class="card-secao-info">
+        <span class="card-secao-nome">Catequeses</span>
+        <h3>{% if uc %}{{ uc.title }}{% else %}Em breve{% endif %}</h3>
+      </div>
+    </a>
+    <a class="btn-ver-mais" href="{{ '/catequeses/' | relative_url }}">Ver mais</a>
+  </div>
+
+  <div class="card-secao">
+    <a class="card-secao-topo" href="{% if up %}{{ up.url | relative_url }}{% else %}{{ '/pregacoes/' | relative_url }}{% endif %}">
+      <div class="card-secao-capa">
+        {% if up.imagem %}<div style="position:absolute;inset:0;background-image:url('{{ up.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
+        {% else %}<span class="card-secao-icone">☩</span>{% endif %}
+      </div>
+      <div class="card-secao-info">
+        <span class="card-secao-nome">Pregações</span>
+        <h3>{% if up %}{{ up.title }}{% else %}Em breve{% endif %}</h3>
+      </div>
+    </a>
+    <a class="btn-ver-mais" href="{{ '/pregacoes/' | relative_url }}">Ver mais</a>
+  </div>
 </div>
 
 <script>
