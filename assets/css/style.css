@@ -411,3 +411,43 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* ===== Seções: faixa de cards na home ===== */
+.faixa-secoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 10px 0 40px;
+}
+.card-secao {
+  display: block;
+  padding: 26px 22px;
+  background: var(--papel-2, #fff);
+  border: 1px solid var(--fio, #e5ddcd);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .12s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.card-secao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px -16px rgba(60,45,30,.5);
+  border-color: var(--accent-deep, #7a5a2f);
+}
+.card-secao-icone {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; margin-bottom: 14px;
+  font-size: 22px; color: var(--accent-deep, #7a5a2f);
+  background: rgba(122,90,47,.08); border-radius: 10px;
+}
+.card-secao h3 { margin: 0 0 8px; font-size: 20px; }
+.card-secao p { margin: 0 0 14px; font-size: 14.5px; color: var(--tinta-suave, #6b6152); line-height: 1.5; }
+.card-secao-link { font-size: 14px; font-weight: 600; color: var(--accent-deep, #7a5a2f); }
+
+/* fonte referenciada no cabeçalho de um post de seção */
+.reflexao-cabecalho .fonte { font-style: italic; }
+.reflexao-cabecalho .fonte a { color: var(--accent-deep, #7a5a2f); }
+
+@media (max-width: 720px) {
+  .faixa-secoes { grid-template-columns: 1fr; gap: 14px; }
+}
