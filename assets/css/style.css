@@ -42,9 +42,9 @@ a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(46, 26, 14, .96);
+  background: rgba(11, 11, 11, .96);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(246, 173, 7, .35);
+  border-bottom: 1px solid rgba(246, 173, 7, .38);
 }
 
 .site-header-inner {
@@ -80,8 +80,8 @@ a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border
 }
 
 .site-nav a:hover { color: #f6ad07; background: rgba(246, 173, 7, .10); }
-.site-nav a.ativo { background: #f6ad07; color: #2e1a0e; }
-.site-nav a.ativo:hover { background: #f6ad07; color: #2e1a0e; }
+.site-nav a.ativo { background: #f6ad07; color: #0b0b0b; }
+.site-nav a.ativo:hover { background: #f6ad07; color: #0b0b0b; }
 
 /* --- layout com coluna lateral --- */
 .pagina {
@@ -492,7 +492,7 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
   margin: 0;
   padding: 0;
   line-height: 0;
-  background: #2e1a0e;
+  background: #0b0b0b;
 }
 .banner-topo img {
   display: block;
@@ -509,9 +509,10 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
   inset: 0;
   pointer-events: none;
   background: linear-gradient(to bottom,
-    rgba(46, 26, 14, .06) 38%,
-    rgba(46, 26, 14, .52) 72%,
-    rgba(46, 26, 14, .94) 100%);
+    rgba(0, 0, 0, .04) 34%,
+    rgba(0, 0, 0, .48) 70%,
+    rgba(0, 0, 0, .88) 90%,
+    #0b0b0b 100%);
 }
 .banner-nome {
   position: absolute;
