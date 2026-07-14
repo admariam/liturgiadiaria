@@ -5,6 +5,7 @@ date: 2026-07-14
 autor: "Bento XVI"
 fonte: "Vaticano · Audiência Geral"
 fonte_url: "https://www.vatican.va/content/benedict-xvi/pt/audiences/2012/documents/hf_ben-xvi_aud_20121031.html"
+imagem: /assets/img/catequese-ano-da-fe.jpg
 resumo: "A fé é ato pessoal, mas nasce, cresce e vive na Igreja: só é deveras minha se for também a nossa fé, a fé comum da única Igreja."
 ---
 
