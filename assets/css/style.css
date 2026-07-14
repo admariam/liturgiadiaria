@@ -50,10 +50,10 @@ a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border
 .site-header-inner {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 14px 24px;
+  padding: 10px 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -486,6 +486,7 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
 
 /* ===== Banner do topo ===== */
 .banner-topo {
+  position: relative;
   display: block;
   width: 100%;
   margin: 0;
@@ -501,6 +502,33 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
   object-position: center;
   border-radius: 0;
 }
+/* véu escuro subindo do rodapé: dá leitura ao nome e emenda no menu */
+.banner-topo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom,
+    rgba(46, 26, 14, .06) 38%,
+    rgba(46, 26, 14, .52) 72%,
+    rgba(46, 26, 14, .94) 100%);
+}
+.banner-nome {
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 20px;
+  z-index: 2;
+  text-align: center;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: .01em;
+  color: #f7eddb;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, .6);
+}
+.banner-topo:hover .banner-nome { color: #f6ad07; }
 @media (max-width: 720px) {
   .banner-topo img { height: 130px; }
+  .banner-nome { font-size: 26px; bottom: 12px; }
 }
