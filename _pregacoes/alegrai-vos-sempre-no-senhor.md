@@ -3,11 +3,10 @@ title: "Alegrai-vos sempre no Senhor, repito: alegrai-vos"
 categoria: "Grupo de Oração Chama Viva"
 date: 2026-07-08
 autor: "Márcio Arias"
+local: "Fl 4,4 · Grupo de Oração Chama Viva · 08 de julho de 2026"
 imagem: /assets/img/pregacao-alegrai-vos.jpg
 resumo: "Paulo manda alegrar-se sempre — e estava preso. A alegria não brota das circunstâncias, mas de um Senhor que está perto e não se ausenta nem no cárcere."
 ---
-
-*Fl 4,4 · Grupo de Oração Chama Viva · 08 de julho de 2026*
 
 Há um domingo no ano em que a Igreja, no meio de um tempo de espera, para tudo e dá uma ordem que parece fora de lugar: **alegrai-vos**. É o Domingo *Gaudete*, o domingo cor-de-rosa do Advento, o domingo da alegria. E a razão dessa alegria não está em nós, nem nas nossas circunstâncias, nem naquilo que conseguimos ou deixamos de conseguir. Ela está inteira numa notícia: *o Senhor está perto*. O Advento se resume nisto. A distância acabou. Não é que devamos produzir alegria dentro do peito por força de vontade — é que uma Presença se aproximou, e a alegria é a resposta natural do coração que acredita nisso.
 
