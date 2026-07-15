@@ -26,7 +26,7 @@ layout: default
     <span class="tag">{{ page.celebracao }}</span>
     {% if page.leituras %}<p class="leituras">{{ page.leituras }}</p>{% endif %}
     <h1>{{ page.title }}</h1>
-    <p class="data">{{ page.date | date: "%d.%m.%Y" }}{% if page.autor %} — <em class="autor">por {{ page.autor }}</em>{% endif %}</p>
+    <p class="data">{{ page.date | date: "%d.%m.%Y" }}{% if page.autor %} · <em class="autor">por {{ page.autor }}</em>{% endif %}</p>
   </header>
   <div class="reflexao-texto">
     {{ content }}
