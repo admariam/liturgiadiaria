@@ -23,7 +23,7 @@ layout: default
   <header class="reflexao-cabecalho">
     {% if page.categoria %}<span class="tag">{{ page.categoria }}</span>{% endif %}
     <h1>{{ page.title }}</h1>
-    <p class="data">{{ page.date | date: "%d.%m.%Y" }}{% if page.autor %} — <em class="autor">por {{ page.autor }}</em>{% endif %}{% if page.local %} · <span class="local-ref">{{ page.local }}</span>{% endif %}{% if page.fonte %} · <span class="fonte">{% if page.fonte_url %}<a href="{{ page.fonte_url }}" target="_blank" rel="noopener">{{ page.fonte }}</a>{% else %}{{ page.fonte }}{% endif %}</span>{% endif %}</p>
+    <p class="data">{{ page.date | date: "%d.%m.%Y" }}{% if page.autor %} · <em class="autor">por {{ page.autor }}</em>{% endif %}{% if page.local %} · <span class="local-ref">{{ page.local }}</span>{% endif %}{% if page.fonte %} · <span class="fonte">{% if page.fonte_url %}<a href="{{ page.fonte_url }}" target="_blank" rel="noopener">{{ page.fonte }}</a>{% else %}{{ page.fonte }}{% endif %}</span>{% endif %}</p>
   </header>
   <div class="reflexao-texto">
     {{ content }}
