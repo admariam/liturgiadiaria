@@ -3,7 +3,7 @@ title: "Alegrai-vos sempre no Senhor, repito: alegrai-vos"
 categoria: "Kerigma"
 date: 2026-07-08
 autor: "Márcio Arias"
-local: "Fl 4,4 · Grupo de Oração Chama Viva · 08 de julho de 2026"
+local: "Grupo de Oração Chama Viva"
 imagem: /assets/img/pregacao-alegrai-vos.jpg
 resumo: "Paulo manda alegrar-se sempre — e estava preso. A alegria não brota das circunstâncias, mas de um Senhor que está perto e não se ausenta nem no cárcere."
 ---
