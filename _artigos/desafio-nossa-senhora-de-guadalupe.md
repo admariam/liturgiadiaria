@@ -11,7 +11,7 @@ resumo: "Nossa Senhora de Guadalupe aparece como a mulher vestida de sol do Apoc
 
 O que é maravilhoso é que Nossa Senhora de Guadalupe se apareça como uma jovem grávida, vestida com o sol. O livro do Apocalipse descreve uma Maria com precisão desta maneira.[^ap] Mas não deveríamos interpretar esse simbolismo de um modo sentimental ou superficial. A mulher vestida de sol e com a lua a seus pés é retratada no Apocalipse exatamente como uma guerreira. Diante dela se encontra um dragão terrível que tem a intenção de devorar seu menino tão logo nasça. Através da graça de Deus, o menino é libertado do perigo, mas o dragão fica furioso e lança uma torrente de água pela boca para destruir a mãe e o menino. A razão do nascimento deste menino causou uma guerra no céu, onde o dragão enfrentou Miguel e seus anjos.
 
-A Senhora de Tepeyac[^tepeyac] também é uma guerreira. Ela disse a Juan Diego[^juandiego]: "Sou a sempre Virgem Maria, Mãe de Deus Verdadeiro". Ao dizer isso, estava retirando a legitimidade e derrubando do trono qualquer pessoa que reivindicasse falsamente esse título. De pé diante do sol e sobre a lua, com as estrelas do céu espalhadas em sua capa, La Señora[^senora] estava mostrando sua superioridade sobre os elementos cósmicos adorados pelos astecas. Os deuses sob cuja custódia viviam eram sanguinários, fomentavam a guerra imperialista e exigiam sacrifícios humanos. Maria apresentou-se a si mesma como mãe de um Deus que não exige violência e que, ao contrário, num ato de amor toma sobre si mesma toda a violência do mundo. No fim, isso constitui o desafio que o Deus verdadeiro dirige contra os deuses falsos.
+A Senhora de Tepeyac[^tepeyac] também é uma guerreira. Ela disse a Juan Diego: "Sou a sempre Virgem Maria, Mãe de Deus Verdadeiro". Ao dizer isso, estava retirando a legitimidade e derrubando do trono qualquer pessoa que reivindicasse falsamente esse título. De pé diante do sol e sobre a lua, com as estrelas do céu espalhadas em sua capa, La Señora estava mostrando sua superioridade sobre os elementos cósmicos adorados pelos astecas. Os deuses sob cuja custódia viviam eram sanguinários, fomentavam a guerra imperialista e exigiam sacrifícios humanos. Maria apresentou-se a si mesma como mãe de um Deus que não exige violência e que, ao contrário, num ato de amor toma sobre si mesma toda a violência do mundo. No fim, isso constitui o desafio que o Deus verdadeiro dirige contra os deuses falsos.
 
 Quero ser muito claro sobre algo: quando condeno a adoração de deuses falsos realizada pelos astecas, não estou de maneira nenhuma inocentando os espanhóis que cometeram inúmeras atrocidades e infligiram terríveis sofrimentos aos povos nativos do Novo Mundo. Basta ler os escritos apaixonados do padre dominicano Bartolomé de las Casas[^lascasas] para conhecer os terríveis detalhes. Esse respeito foi devido apenas aos espanhóis que se mantinham realmente fiéis ao Deus autenticamente proclamado pelo cristianismo.
 
@@ -22,10 +22,6 @@ O desafio que enfrentamos todos aqueles que atualmente a honramos é unir-nos a 
 [^ap]: Apocalipse 12,1-9 — a visão da "mulher vestida de sol, com a lua sob os pés e uma coroa de doze estrelas", e do dragão que espreita o filho que vai nascer.
 
 [^tepeyac]: Colina ao norte da Cidade do México onde, em dezembro de 1531, Nossa Senhora apareceu. No local está hoje a Basílica de Guadalupe.
-
-[^juandiego]: Indígena chichimeca convertido ao cristianismo, a quem a Virgem apareceu no Tepeyac e pediu que se erguesse ali um templo. A imagem de Guadalupe ficou impressa na sua *tilma* — o manto de fibra de agave que ele usava. Foi canonizado em 2002.
-
-[^senora]: "A Senhora", em espanhol — como o povo se refere a Nossa Senhora de Guadalupe.
 
 [^lascasas]: Frei espanhol da Ordem dos Pregadores (1484-1566). Testemunhou e denunciou as atrocidades cometidas contra os povos indígenas, e ficou conhecido como o "defensor dos índios".
 
