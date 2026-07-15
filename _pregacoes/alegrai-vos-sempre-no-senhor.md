@@ -1,6 +1,6 @@
 ---
 title: "Alegrai-vos sempre no Senhor, repito: alegrai-vos"
-categoria: "Grupo de Oração Chama Viva"
+categoria: "Kerigma"
 date: 2026-07-08
 autor: "Márcio Arias"
 local: "Fl 4,4 · Grupo de Oração Chama Viva · 08 de julho de 2026"
