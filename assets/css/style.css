@@ -417,7 +417,7 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
 /* ===== Seções: faixa de cards na home ===== */
 .faixa-secoes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
   margin: 34px 0 40px;
 }
@@ -480,7 +480,10 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
 .reflexao-cabecalho .fonte { font-style: italic; }
 .reflexao-cabecalho .fonte a { color: var(--accent-deep, #7a5a2f); }
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
+  .faixa-secoes { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
   .faixa-secoes { grid-template-columns: 1fr; gap: 14px; }
 }
 
@@ -573,3 +576,29 @@ sup[role="doc-noteref"] a:hover,
   color: var(--accent-deep);
   margin-left: 4px;
 }
+
+/* ===== Caixa "leia o original" (Leituras) ===== */
+.caixa-fonte {
+  display: block;
+  margin: 34px 0 0;
+  padding: 20px 22px;
+  background: rgba(122, 90, 47, .06);
+  border: 1px solid var(--fio);
+  border-left: 3px solid var(--accent-deep);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background .15s ease, border-color .15s ease;
+}
+.caixa-fonte:hover { background: rgba(122, 90, 47, .12); }
+.caixa-fonte-rotulo {
+  display: block; font-size: 11.5px; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent-deep); margin-bottom: 6px;
+}
+.caixa-fonte-titulo {
+  display: block; font-family: var(--display); font-weight: 700;
+  font-size: 18px; line-height: 1.3; margin-bottom: 4px;
+}
+.caixa-fonte-onde { display: block; font-size: 14px; color: var(--tinta-suave); font-style: italic; }
+.reflexao-cabecalho .tempo { font-style: italic; }
