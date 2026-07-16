@@ -1,8 +1,8 @@
 title: "Ide, Anunciai"
 description: Reflexões sobre as leituras da missa, dia a dia.
 lang: pt-BR
-url: "https://admariam.github.io"
-baseurl: "/liturgiadiaria"
+url: "https://ideanunciai.com.br"
+baseurl: ""
 
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
