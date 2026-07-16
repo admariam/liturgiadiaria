@@ -17,6 +17,9 @@ collections:
   pregacoes:
     output: true
     permalink: /pregacoes/:name/
+  leituras:
+    output: true
+    permalink: /leituras/:name/
 
 defaults:
   - scope:
@@ -46,6 +49,12 @@ defaults:
       layout: "secao"
       secao: "pregacoes"
       autor: "Márcio Arias"
+  - scope:
+      path: ""
+      type: "leituras"
+    values:
+      layout: "leitura"
+      secao: "leituras"
 
 exclude:
   - README.md
