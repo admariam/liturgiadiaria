@@ -32,9 +32,11 @@ layout: default
   {% assign a = site.artigos | sort: 'date' | reverse %}
   {% assign c = site.catequeses | sort: 'date' | reverse %}
   {% assign p = site.pregacoes | sort: 'date' | reverse %}
+  {% assign l = site.leituras | sort: 'date' | reverse %}
   {% assign ua = a.first %}
   {% assign uc = c.first %}
   {% assign up = p.first %}
+  {% assign ul = l.first %}
 
   <div class="card-secao">
     <a class="card-secao-topo" href="{% if ua %}{{ ua.url | relative_url }}{% else %}{{ '/artigos/' | relative_url }}{% endif %}">
@@ -79,6 +81,21 @@ layout: default
       </div>
     </a>
     <a class="btn-ver-mais" href="{{ '/pregacoes/' | relative_url }}">Ver mais</a>
+  </div>
+
+  <div class="card-secao">
+    <a class="card-secao-topo" href="{% if ul %}{{ ul.url | relative_url }}{% else %}{{ '/leituras/' | relative_url }}{% endif %}">
+      <div class="card-secao-capa">
+        {% if ul.imagem %}<div style="position:absolute;inset:0;background-image:url('{{ ul.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
+        {% else %}<span class="card-secao-icone">❧</span>{% endif %}
+      </div>
+      <div class="card-secao-info">
+        <span class="card-secao-nome">Leituras</span>
+        <h3>{% if ul %}{{ ul.title }}{% else %}Em breve{% endif %}</h3>
+        {% if ul %}<p class="card-secao-trecho">{{ ul.content | strip_html | strip_newlines | truncate: 180 }}</p>{% endif %}
+      </div>
+    </a>
+    <a class="btn-ver-mais" href="{{ '/leituras/' | relative_url }}">Ver mais</a>
   </div>
 </div>
 
