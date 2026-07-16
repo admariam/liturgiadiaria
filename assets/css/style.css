@@ -602,3 +602,15 @@ sup[role="doc-noteref"] a:hover,
 }
 .caixa-fonte-onde { display: block; font-size: 14px; color: var(--tinta-suave); font-style: italic; }
 .reflexao-cabecalho .tempo { font-style: italic; }
+
+.reflexao-cabecalho .subtitulo {
+  margin: 8px 0 0;
+  font-family: var(--display);
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--tinta-suave);
+}
+@media (max-width: 620px) {
+  .reflexao-cabecalho .subtitulo { font-size: 16px; }
+}
