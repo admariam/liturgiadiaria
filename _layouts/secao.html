@@ -23,11 +23,18 @@ layout: default
   <header class="reflexao-cabecalho">
     {% if page.categoria %}<span class="tag">{{ page.categoria }}</span>{% endif %}
     <h1>{{ page.title }}</h1>
-    <p class="data">{{ page.date | date: "%d.%m.%Y" }}{% if page.autor %} · <em class="autor">por {{ page.autor }}</em>{% endif %}{% if page.local %} · <span class="local-ref">{{ page.local }}</span>{% endif %}{% if page.fonte %} · <span class="fonte">{% if page.fonte_url %}<a href="{{ page.fonte_url }}" target="_blank" rel="noopener">{{ page.fonte }}</a>{% else %}{{ page.fonte }}{% endif %}</span>{% endif %}</p>
+    <p class="data">{{ page.date | date: "%d.%m.%Y" }}{% if page.autor %} · <em class="autor">por {{ page.autor }}</em>{% endif %}{% if page.ensino_de %} · <span class="local-ref">sobre o ensino de {{ page.ensino_de }}</span>{% endif %}{% if page.local %} · <span class="local-ref">{{ page.local }}</span>{% endif %}{% if page.fonte %} · <span class="fonte">{% if page.fonte_url %}<a href="{{ page.fonte_url }}" target="_blank" rel="noopener">{{ page.fonte }}</a>{% else %}{{ page.fonte }}{% endif %}</span>{% endif %}</p>
   </header>
   <div class="reflexao-texto">
     {{ content }}
   </div>
+  {% if page.fonte_url %}
+  <a class="caixa-fonte" href="{{ page.fonte_url }}" target="_blank" rel="noopener">
+    <span class="caixa-fonte-rotulo">Leia o texto completo</span>
+    <span class="caixa-fonte-titulo">{{ page.titulo_original | default: page.title }}</span>
+    <span class="caixa-fonte-onde">{% if page.ensino_de %}{{ page.ensino_de }} · {% endif %}{{ page.fonte }} →</span>
+  </a>
+  {% endif %}
   <nav class="folhear" aria-label="Navegar">
     <a href="{{ '/' | append: page.secao | append: '/' | relative_url }}">ver todos →</a>
   </nav>
