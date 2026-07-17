@@ -6,9 +6,7 @@ layout: default
     <a class="voltar" href="{{ '/leituras/' | relative_url }}">← Leituras</a>
     <button type="button" class="btn-compartilhar"
             data-url="{{ site.url }}{{ page.url | relative_url }}"
-            data-titulo="{{ page.title | escape }}"
-            data-data="{{ page.date | date: '%d.%m.%Y' }}"
-            data-site="{{ site.title | escape }}"
+            data-legenda="Leituras · {{ page.title | escape }}"
             aria-label="Compartilhar" title="Compartilhar">
       <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M4 19c0-5 4-8 10-8"/>
@@ -47,7 +45,7 @@ layout: default
     var base = btn.dataset.url;
     var sep = base.indexOf('?') === -1 ? '?' : '&';
     var url = base + sep + 's=' + Date.now().toString(36);
-    var texto = btn.dataset.data + ' · ' + btn.dataset.site + ' · ' + btn.dataset.titulo;
+    var texto = btn.dataset.legenda;
     var completo = texto + '\n' + url;
     if (ehCelular && navigator.share) {
       try { await navigator.share({ text: completo }); return; }
