@@ -1,0 +1,69 @@
+# Santo do dia — memórias, festas e solenidades principais (calendário romano/Brasil)
+# chave: MM-DD | nome + frase curta
+"01-01": { nome: "Santa Maria, Mãe de Deus", frase: "No primeiro dia do ano, a Igreja confia o tempo às mãos da Mãe." }
+"01-06": { nome: "Epifania do Senhor", frase: "Os magos seguem a estrela e encontram o Rei num presépio." }
+"01-17": { nome: "Santo Antão", frase: "O pai dos monges, que trocou tudo pelo deserto e por Deus." }
+"01-20": { nome: "São Sebastião", frase: "Soldado e mártir, fiel a Cristo até as flechas." }
+"01-24": { nome: "São Francisco de Sales", frase: "Doutor da doçura: a santidade cabe em qualquer estado de vida." }
+"01-25": { nome: "Conversão de São Paulo", frase: "No caminho de Damasco, o perseguidor virou apóstolo." }
+"01-28": { nome: "São Tomás de Aquino", frase: "O Doutor Angélico, que pôs a razão a serviço da fé." }
+"01-31": { nome: "São João Bosco", frase: "Pai e mestre da juventude, santo da alegria e da bondade." }
+"02-02": { nome: "Apresentação do Senhor", frase: "Luz para iluminar as nações; a candelária da fé." }
+"02-11": { nome: "Nossa Senhora de Lourdes", frase: "\"Eu sou a Imaculada Conceição\", disse a Senhora a Bernadette." }
+"02-14": { nome: "São Cirilo e São Metódio", frase: "Apóstolos dos eslavos, levaram o Evangelho em língua do povo." }
+"02-22": { nome: "Cátedra de São Pedro", frase: "A rocha sobre a qual Cristo edificou a sua Igreja." }
+"03-19": { nome: "São José", frase: "O justo que guardou em silêncio o Filho de Deus." }
+"03-25": { nome: "Anunciação do Senhor", frase: "\"Faça-se em mim segundo a tua palavra\": o sim que mudou a história." }
+"04-25": { nome: "São Marcos, Evangelista", frase: "O evangelho mais breve e mais veloz: eis o Filho de Deus." }
+"04-29": { nome: "Santa Catarina de Sena", frase: "Doutora da Igreja, ousou falar a papas com o fogo do amor." }
+"05-01": { nome: "São José Operário", frase: "O trabalho das mãos santificado pelo carpinteiro de Nazaré." }
+"05-03": { nome: "São Filipe e São Tiago", frase: "\"Mostra-nos o Pai\" — e Cristo respondeu: quem me vê, vê o Pai." }
+"05-13": { nome: "Nossa Senhora de Fátima", frase: "Em Fátima, a Mãe pediu oração, penitência e o terço rezado." }
+"05-14": { nome: "São Matias, Apóstolo", frase: "Escolhido para completar os Doze depois da Ascensão." }
+"05-31": { nome: "Visitação de Nossa Senhora", frase: "Maria corre à serra e o Magnificat irrompe em sua boca." }
+"06-13": { nome: "Santo Antônio de Pádua", frase: "Doutor evangélico, achador do perdido e amigo dos pobres." }
+"06-24": { nome: "Natividade de São João Batista", frase: "A voz que clama no deserto: preparai o caminho do Senhor." }
+"06-29": { nome: "São Pedro e São Paulo", frase: "A rocha e o apóstolo dos gentios, colunas da Igreja." }
+"07-03": { nome: "São Tomé, Apóstolo", frase: "\"Meu Senhor e meu Deus\": a dúvida que virou confissão." }
+"07-16": { nome: "Nossa Senhora do Carmo", frase: "A Mãe do escapulário, sinal de proteção e de entrega." }
+"07-22": { nome: "Santa Maria Madalena", frase: "Apóstola dos apóstolos, a primeira a anunciar: eu vi o Senhor." }
+"07-25": { nome: "São Tiago, Apóstolo", frase: "O primeiro dos Doze a beber o cálice do martírio." }
+"07-26": { nome: "São Joaquim e Sant'Ana", frase: "Os avós de Jesus, guardiões da promessa em família." }
+"07-29": { nome: "Santa Marta", frase: "A anfitriã de Betânia que serviu o Senhor em sua casa." }
+"07-31": { nome: "Santo Inácio de Loyola", frase: "Soldado convertido, fundou a Companhia para a maior glória de Deus." }
+"08-04": { nome: "São João Maria Vianney", frase: "O Cura d'Ars, que passava a vida no confessionário." }
+"08-06": { nome: "Transfiguração do Senhor", frase: "No Tabor, a glória velada de Cristo se deixa entrever." }
+"08-08": { nome: "São Domingos", frase: "Fundador dos pregadores, uniu estudo, oração e pobreza." }
+"08-10": { nome: "São Lourenço", frase: "Diácono mártir: os pobres são o verdadeiro tesouro da Igreja." }
+"08-11": { nome: "Santa Clara de Assis", frase: "Seguiu Francisco na pobreza e guardou o olhar em Cristo." }
+"08-15": { nome: "Assunção de Nossa Senhora", frase: "A Mãe é elevada ao céu em corpo e alma: primícia da esperança." }
+"08-22": { nome: "Nossa Senhora Rainha", frase: "Coroada nos céus, intercede como Rainha e Mãe." }
+"08-24": { nome: "São Bartolomeu, Apóstolo", frase: "O israelita sem falsidade que Jesus viu sob a figueira." }
+"08-27": { nome: "Santa Mônica", frase: "A mãe que chorou e rezou anos até a conversão do filho." }
+"08-28": { nome: "Santo Agostinho", frase: "\"Tarde te amei\": o coração inquieto que descansou em Deus." }
+"09-08": { nome: "Natividade de Nossa Senhora", frase: "Nasce a aurora que anuncia o Sol da justiça." }
+"09-14": { nome: "Exaltação da Santa Cruz", frase: "A cruz, antes tormento, tornou-se trono e glória." }
+"09-15": { nome: "Nossa Senhora das Dores", frase: "Junto à cruz, a Mãe permanece de pé, associada à Paixão." }
+"09-21": { nome: "São Mateus, Evangelista", frase: "O cobrador de impostos que deixou tudo e seguiu o Mestre." }
+"09-29": { nome: "São Miguel, São Gabriel e São Rafael", frase: "Os arcanjos: quem como Deus, o anúncio e o remédio de Deus." }
+"09-30": { nome: "São Jerônimo", frase: "Traduziu a Escritura; ignorar as Escrituras é ignorar Cristo." }
+"10-01": { nome: "Santa Teresinha do Menino Jesus", frase: "O pequeno caminho: fazer as coisas pequenas com grande amor." }
+"10-02": { nome: "Santos Anjos da Guarda", frase: "Deus confia cada um de nós ao cuidado de um anjo." }
+"10-04": { nome: "São Francisco de Assis", frase: "O pobre de Assis, irmão de toda criatura, imagem de Cristo." }
+"10-07": { nome: "Nossa Senhora do Rosário", frase: "No terço, contemplamos com Maria a vida de Jesus." }
+"10-12": { nome: "Nossa Senhora Aparecida", frase: "Padroeira do Brasil, achada nas águas por pescadores pobres." }
+"10-15": { nome: "Santa Teresa de Ávila", frase: "Doutora da oração: nada te perturbe, só Deus basta." }
+"10-18": { nome: "São Lucas, Evangelista", frase: "O evangelista da misericórdia e da ternura de Deus." }
+"10-28": { nome: "São Simão e São Judas Tadeu", frase: "Apóstolos fiéis; Judas Tadeu, advogado das causas difíceis." }
+"11-01": { nome: "Todos os Santos", frase: "A multidão imensa que ninguém pode contar, diante do Cordeiro." }
+"11-02": { nome: "Finados", frase: "Rezamos pelos que partiram, na esperança da ressurreição." }
+"11-09": { nome: "Dedicação da Basílica de Latrão", frase: "A mãe de todas as igrejas; nós somos o templo vivo de Deus." }
+"11-21": { nome: "Apresentação de Nossa Senhora", frase: "Desde menina, consagrada e voltada inteiramente a Deus." }
+"11-30": { nome: "Santo André, Apóstolo", frase: "O primeiro chamado, que levou o irmão Pedro a Jesus." }
+"12-03": { nome: "São Francisco Xavier", frase: "Missionário incansável, levou o Evangelho até o Oriente." }
+"12-08": { nome: "Imaculada Conceição", frase: "Preservada do pecado desde o primeiro instante, cheia de graça." }
+"12-12": { nome: "Nossa Senhora de Guadalupe", frase: "A Morena do Tepeyac, Mãe que apareceu com o rosto do povo." }
+"12-25": { nome: "Natal do Senhor", frase: "O Verbo se fez carne e habitou entre nós." }
+"12-26": { nome: "Santo Estêvão", frase: "O primeiro mártir, que morreu perdoando como o Mestre." }
+"12-27": { nome: "São João, Apóstolo e Evangelista", frase: "O discípulo amado, que reclinou a cabeça sobre o peito do Senhor." }
+"12-28": { nome: "Santos Inocentes", frase: "As primeiras vidas dadas por Cristo, sem sequer o saberem." }
