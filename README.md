@@ -23,3 +23,4 @@ imagem: "/assets/img/nome-do-arquivo.jpg"   # opcional — se omitido, mostra um
 O índice da página inicial (`/`) e a listagem completa (`/reflexoes/`) se atualizam sozinhos.
 
 *"A fé provém da pregação, e a pregação é pela palavra de Cristo." (Rm 10,17)*
+<!-- rebuild 1784674491 -->
