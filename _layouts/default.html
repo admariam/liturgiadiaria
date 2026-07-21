@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=13">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=14">
 </head>
 <body>
   <a class="banner-topo" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}">
@@ -76,7 +76,7 @@
         <div class="caixa-lateral">
           <h4>Últimas reflexões</h4>
           <div class="lista-recentes">
-            {% for post in site.posts limit: 15 %}
+            {% for post in site.posts limit: 10 %}
             <a href="{{ post.url | relative_url }}" class="recente-item" data-post-data="{{ post.date | date: '%Y-%m-%d' }}">
               <span class="data">{{ post.date | date: "%d.%m" }}</span>
               <span class="titulo">{{ post.title }}</span>
