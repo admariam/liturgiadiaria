@@ -614,3 +614,31 @@ sup[role="doc-noteref"] a:hover,
 @media (max-width: 620px) {
   .reflexao-cabecalho .subtitulo { font-size: 16px; }
 }
+
+/* ===== Santo do dia (home) ===== */
+.santo-do-dia {
+  max-width: 1180px;
+  margin: 8px auto 44px;
+  padding: 26px 28px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(122,90,47,.05), rgba(122,90,47,.02));
+  border: 1px solid var(--fio);
+  border-radius: 14px;
+}
+.santo-rotulo {
+  display: inline-block;
+  font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--accent-deep); margin-bottom: 8px;
+}
+.santo-nome {
+  margin: 0 0 8px; font-family: var(--display);
+  font-size: 26px; line-height: 1.2; color: var(--tinta);
+}
+.santo-frase {
+  margin: 0 auto; max-width: 640px;
+  font-size: 16px; font-style: italic; line-height: 1.55; color: var(--tinta-suave);
+}
+@media (max-width: 620px) {
+  .santo-do-dia { margin: 4px 0 32px; padding: 22px 20px; border-radius: 0; }
+  .santo-nome { font-size: 22px; }
+}
