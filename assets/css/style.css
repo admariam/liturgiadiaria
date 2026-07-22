@@ -429,7 +429,7 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
   box-shadow: 0 10px 26px -16px rgba(60,45,30,.5);
   border-color: var(--accent-deep, #7a5a2f);
 }
-.card-secao-topo { text-decoration: none; color: inherit; display: block; }
+.card-secao-topo { text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1 1 auto; }
 .card-secao-capa {
   position: relative;
   overflow: hidden;
@@ -460,6 +460,7 @@ table.cal td.hoje a, table.cal td.hoje span { background: var(--primary); color:
 
 .btn-ver-mais {
   margin: 12px 18px 18px;
+  margin-top: auto;
   display: inline-block; text-align: center;
   padding: 9px 14px; font-size: 14px; font-weight: 600;
   color: var(--accent-deep, #7a5a2f);
@@ -612,34 +613,46 @@ sup[role="doc-noteref"] a:hover,
 /* ===== Santo do dia (home) ===== */
 .santo-do-dia {
   max-width: 1180px;
-  margin: 8px auto 44px;
-  padding: 26px 28px;
+  margin: 8px auto 0;
+  padding: 40px 28px 44px;
   text-align: center;
-  background: linear-gradient(180deg, rgba(122,90,47,.05), rgba(122,90,47,.02));
+  position: relative;
+  background:
+    radial-gradient(ellipse at top, rgba(246,173,7,.10), transparent 62%),
+    linear-gradient(180deg, rgba(122,90,47,.07), rgba(122,90,47,.03));
   border: 1px solid var(--fio);
-  border-radius: 14px;
+  border-top: 3px solid var(--accent-deep);
+  border-radius: 14px 14px 0 0;
+}
+.santo-do-dia::before {
+  content: "✦";
+  display: block;
+  font-size: 15px;
+  color: var(--accent-deep);
+  margin-bottom: 14px;
+  opacity: .8;
 }
 .santo-rotulo {
   display: inline-block;
-  font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--accent-deep); margin-bottom: 8px;
+  font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--accent-deep); margin-bottom: 12px;
 }
 .santo-nome {
-  margin: 0 0 8px; font-family: var(--display);
-  font-size: 26px; line-height: 1.2; color: var(--tinta);
+  margin: 0 0 12px; font-family: var(--display);
+  font-size: 30px; line-height: 1.15; color: var(--tinta);
 }
 .santo-frase {
   margin: 0 auto; max-width: 640px;
   font-size: 16px; font-style: italic; line-height: 1.55; color: var(--tinta-suave);
 }
 @media (max-width: 620px) {
-  .santo-do-dia { margin: 4px 0 32px; padding: 22px 20px; border-radius: 0; }
+  .santo-do-dia { margin: 4px 0 0; padding: 32px 20px 36px; border-radius: 0; }
   .santo-nome { font-size: 22px; }
 }
 
 /* ===== Rodapé ===== */
 .site-footer {
-  margin-top: 60px;
+  margin-top: 0;
   background: #0b0b0b;
   color: #cfc4b0;
   border-top: 1px solid rgba(246,173,7,.3);
@@ -647,7 +660,7 @@ sup[role="doc-noteref"] a:hover,
 .rodape-inner {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 40px 24px 30px;
+  padding: 22px 24px;
   text-align: center;
 }
 .rodape-versiculo { margin-bottom: 26px; }
