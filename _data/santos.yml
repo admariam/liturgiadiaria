@@ -50,65 +50,65 @@
 "12-26": { nome: "Santo Estêvão", frase: "O primeiro mártir, que morreu perdoando como o Mestre." }
 "12-27": { nome: "São João, Apóstolo e Evangelista", frase: "O discípulo amado, que reclinou a cabeça sobre o peito do Senhor." }
 "12-28": { nome: "Santos Inocentes", frase: "As primeiras vidas dadas por Cristo, sem sequer o saberem." }
-"07-01": { nome: "São Teodorico", frase: "Abade que governou sua comunidade com prudência e profunda vida espiritual." }
-"07-02": { nome: "São Pedro de Luxemburgo", frase: "Bispo francês conhecido pela humildade, penitência e caridade para com os pobres." }
-"07-03": { nome: "São Tomé, Apóstolo", frase: "Passou da dúvida à firme profissão de fé ao encontrar Cristo ressuscitado." }
-"07-04": { nome: "Santa Isabel de Portugal", frase: "Rainha que promoveu a paz entre reinos e dedicou-se intensamente aos pobres." }
-"07-05": { nome: "Santo Antônio Maria Zaccaria", frase: "Fundou os Barnabitas para renovar a vida cristã e a devoção à Eucaristia." }
-"07-06": { nome: "Santa Maria Goretti", frase: "Jovem mártir que perdoou o agressor antes de morrer: exemplo de pureza e perdão." }
-"07-07": { nome: "Beatos Ulma e seus sete filhos", frase: "Família polonesa martirizada por esconder judeus na Segunda Guerra." }
-"07-08": { nome: "Santos Priscila e Áquila", frase: "Casal que colaborou com São Paulo; sua casa foi uma das primeiras igrejas." }
-"07-09": { nome: "Santa Paulina", frase: "Primeira santa canonizada do Brasil, dedicou a vida aos pobres e doentes." }
-"07-10": { nome: "Santa Verônica Giuliani", frase: "Religiosa capuchinha que viveu profunda união com a Paixão de Cristo." }
-"07-11": { nome: "São Bento", frase: "Pai do monaquismo ocidental e autor da Regra: ora et labora, reza e trabalha." }
-"07-12": { nome: "Santos Luís e Zélia Martin", frase: "Pais de Santa Teresinha, viveram a santidade no matrimônio e na família." }
-"07-13": { nome: "Santa Teresa dos Andes", frase: "Primeira santa chilena, entrou jovem no Carmelo em intensa união com Deus." }
-"07-14": { nome: "São Camilo de Lellis", frase: "Fundador dos Camilianos, patrono dos hospitais e dos que cuidam dos doentes." }
-"07-15": { nome: "São Boaventura", frase: "Bispo franciscano e Doutor da Igreja, o ‘Doutor Seráfico’." }
-"07-16": { nome: "Nossa Senhora do Carmo", frase: "A Mãe do escapulário, protetora da Ordem Carmelita." }
-"07-17": { nome: "Santas Teresa de Santo Agostinho e Companheiras", frase: "Carmelitas martirizadas na Revolução Francesa, cantando até o fim." }
-"07-18": { nome: "Santo Arnulfo", frase: "Bispo dedicado à evangelização, marcado pela simplicidade e firmeza na fé." }
-"07-19": { nome: "São Símaco", frase: "Papa que trabalhou pela unidade da Igreja em tempos de divisão." }
-"07-20": { nome: "Santa Margarida de Antioquia", frase: "Virgem e mártir, firme diante das perseguições dos primeiros séculos." }
-"07-21": { nome: "São Lourenço de Brindisi", frase: "Capuchinho e Doutor da Igreja, grande pregador e conhecedor das Escrituras." }
-"07-22": { nome: "Santa Maria Madalena", frase: "Primeira testemunha da Ressurreição e anunciadora aos Apóstolos." }
-"07-23": { nome: "Santa Brígida da Suécia", frase: "Mística e fundadora, uma das padroeiras da Europa." }
-"07-24": { nome: "São Charbel Makhlouf", frase: "Monge maronita libanês de intensa oração, penitência e silêncio." }
-"07-25": { nome: "São Tiago Maior", frase: "Apóstolo, o primeiro dos Doze a derramar o sangue pelo Evangelho." }
-"07-26": { nome: "Santos Joaquim e Ana", frase: "Pais de Maria e avós de Jesus, padroeiros dos avós e das famílias." }
-"07-27": { nome: "São Titus Brandsma", frase: "Carmelita que resistiu ao nazismo e morreu em campo de concentração." }
-"07-28": { nome: "São Vítor I", frase: "Papa africano que fortaleceu a unidade litúrgica da Igreja." }
-"07-29": { nome: "Santos Marta, Maria e Lázaro", frase: "Os irmãos de Betânia, amigos de Jesus: acolhida, contemplação e confiança." }
-"07-30": { nome: "São Pedro Crisólogo", frase: "Bispo e Doutor da Igreja, o ‘Doutor da Palavra de Ouro’." }
-"07-31": { nome: "Santo Inácio de Loyola", frase: "Fundador da Companhia de Jesus e autor dos Exercícios Espirituais." }
-"08-01": { nome: "Santo Afonso de Ligório", frase: "Bispo, fundador dos Redentoristas e Doutor da Igreja, mestre da vida moral." }
-"08-02": { nome: "São Pedro Julião Eymard", frase: "Fundou a Congregação do Santíssimo, grande apóstolo da adoração eucarística." }
-"08-03": { nome: "Santo Eufrônio", frase: "Bispo dedicado ao povo e firme defensor da fé, marcado pelo zelo pastoral." }
-"08-04": { nome: "São João Maria Vianney", frase: "O Cura d'Ars, patrono dos sacerdotes, que passava a vida no confessionário." }
-"08-05": { nome: "Dedicação da Basílica de Santa Maria Maior", frase: "A mais antiga igreja do Ocidente dedicada à Virgem Maria." }
-"08-06": { nome: "Transfiguração do Senhor", frase: "No Tabor, a glória de Cristo se manifesta diante de Pedro, Tiago e João." }
-"08-07": { nome: "Santos Sisto II e Companheiros", frase: "Papa e diáconos mártires na perseguição de Valeriano." }
-"08-08": { nome: "São Domingos de Gusmão", frase: "Fundador dos Pregadores, apóstolo da verdade e do Santo Rosário." }
-"08-09": { nome: "Santa Teresa Benedita da Cruz", frase: "Edith Stein, filósofa judia convertida, carmelita mártir em Auschwitz." }
-"08-10": { nome: "São Lourenço", frase: "Diácono mártir: os pobres são o verdadeiro tesouro da Igreja." }
-"08-11": { nome: "Santa Clara de Assis", frase: "Fundadora das Clarissas, viveu radicalmente a pobreza e a confiança em Deus." }
-"08-12": { nome: "Santa Joana Francisca de Chantal", frase: "Fundou, com São Francisco de Sales, a Ordem da Visitação." }
-"08-13": { nome: "Santa Dulce dos Pobres", frase: "O ‘Anjo Bom da Bahia’, que deu a vida aos pobres, enfermos e abandonados." }
-"08-14": { nome: "São Maximiliano Maria Kolbe", frase: "Franciscano que deu a vida por outro prisioneiro em Auschwitz." }
-"08-15": { nome: "Assunção da Virgem Maria", frase: "Maria é elevada em corpo e alma ao Céu: sinal da nossa esperança." }
-"08-16": { nome: "Santo Estêvão da Hungria", frase: "Primeiro rei cristão da Hungria, governou com justiça e fé." }
-"08-17": { nome: "São Jacinto de Cracóvia", frase: "Dominicano que evangelizou a Europa Oriental, amante da Eucaristia e de Maria." }
-"08-18": { nome: "Santa Helena", frase: "Mãe de Constantino; segundo a tradição, encontrou a verdadeira Cruz." }
-"08-19": { nome: "São João Eudes", frase: "Difundiu a devoção aos Sagrados Corações de Jesus e Maria." }
-"08-20": { nome: "São Bernardo de Claraval", frase: "Abade cisterciense e Doutor da Igreja, terno devoto da Virgem Maria." }
-"08-21": { nome: "São Pio X", frase: "Papa das reformas litúrgicas, incentivou a comunhão frequente." }
-"08-22": { nome: "Nossa Senhora Rainha", frase: "Maria, Rainha do Céu e da Terra, associada ao reinado de Cristo." }
-"08-23": { nome: "Santa Rosa de Lima", frase: "Primeira santa das Américas, penitente e serva dos pobres." }
-"08-24": { nome: "São Bartolomeu, Apóstolo", frase: "O israelita sem falsidade, que evangelizou e morreu mártir por Cristo." }
-"08-25": { nome: "São Luís IX de França", frase: "Rei que governou com justiça, humildade e profunda fé cristã." }
-"08-26": { nome: "Beato João Paulo I", frase: "O papa do sorriso, testemunho de simplicidade, alegria e humildade." }
-"08-27": { nome: "Santa Mônica", frase: "Mãe de Agostinho, perseverou anos em oração pela conversão do filho." }
-"08-28": { nome: "Santo Agostinho", frase: "Bispo de Hipona e Doutor da Igreja: a fé que busca a inteligência." }
-"08-29": { nome: "Martírio de São João Batista", frase: "O Precursor, morto por denunciar a injustiça: fiel à verdade até o fim." }
-"08-30": { nome: "Santa Narcisa de Jesús", frase: "Leiga equatoriana de intensa oração, penitência e caridade." }
-"08-31": { nome: "São Raimundo Nonato", frase: "Mercedário que resgatava cativos, patrono das gestantes e recém-nascidos." }
+"07-01": { nome: "São Teodorico", frase: "Abade que governou sua comunidade com prudência e profunda vida espiritual. Ensinou que a santidade se constrói na fidelidade silenciosa de cada dia." }
+"07-02": { nome: "São Pedro de Luxemburgo", frase: "Bispo francês conhecido pela humildade, penitência e caridade para com os pobres. Jovem de nobre família, escolheu a pobreza de Cristo acima de todas as honras." }
+"07-03": { nome: "São Tomé, Apóstolo", frase: "Passou da dúvida à firme profissão de fé ao encontrar Cristo ressuscitado. ‘Meu Senhor e meu Deus’ tornou-se a mais bela confissão da divindade de Jesus." }
+"07-04": { nome: "Santa Isabel de Portugal", frase: "Rainha que promoveu a paz entre reinos e dedicou-se intensamente aos pobres. Ficou conhecida como a ‘rainha pacificadora’, que preferia reconciliar a vencer." }
+"07-05": { nome: "Santo Antônio Maria Zaccaria", frase: "Fundou os Barnabitas para renovar a vida cristã e a devoção à Eucaristia. Médico de corpos, tornou-se médico de almas pela pregação ardente do Evangelho." }
+"07-06": { nome: "Santa Maria Goretti", frase: "Jovem mártir que perdoou o agressor antes de morrer: exemplo de pureza e perdão. Sua misericórdia converteu o próprio assassino, presente depois em sua canonização." }
+"07-07": { nome: "Beatos Ulma e seus sete filhos", frase: "Família polonesa martirizada por esconder judeus na Segunda Guerra. A primeira família inteira beatificada junta, testemunho do amor que arrisca tudo pelo próximo." }
+"07-08": { nome: "Santos Priscila e Áquila", frase: "Casal que colaborou com São Paulo; sua casa foi uma das primeiras igrejas. Mostram que o lar cristão é o primeiro lugar onde a fé se acende e se transmite." }
+"07-09": { nome: "Santa Paulina", frase: "Primeira santa canonizada do Brasil, dedicou a vida aos pobres e doentes. Nascida na Itália e criada no Brasil, fez do cuidado dos esquecidos a sua missão." }
+"07-10": { nome: "Santa Verônica Giuliani", frase: "Religiosa capuchinha que viveu profunda união com a Paixão de Cristo. Sua vida foi uma escola de oração e de entrega total ao amor crucificado." }
+"07-11": { nome: "São Bento", frase: "Pai do monaquismo ocidental e autor da Regra: ora et labora, reza e trabalha. Patrono da Europa, ensinou que Deus se encontra tanto na oração quanto no trabalho." }
+"07-12": { nome: "Santos Luís e Zélia Martin", frase: "Pais de Santa Teresinha, viveram a santidade no matrimônio e na família. O primeiro casal canonizado junto, prova de que o amor conjugal é caminho de santidade." }
+"07-13": { nome: "Santa Teresa dos Andes", frase: "Primeira santa chilena, entrou jovem no Carmelo em intensa união com Deus. Morreu aos dezenove anos, deixando cartas que ainda hoje inflamam corações." }
+"07-14": { nome: "São Camilo de Lellis", frase: "Fundador dos Camilianos, patrono dos hospitais e dos que cuidam dos doentes. Viu no rosto de cada enfermo o próprio Cristo a ser servido com ternura." }
+"07-15": { nome: "São Boaventura", frase: "Bispo franciscano e Doutor da Igreja, o ‘Doutor Seráfico’. Uniu profundidade teológica e amor ardente, mostrando que saber e amar caminham juntos." }
+"07-16": { nome: "Nossa Senhora do Carmo", frase: "A Mãe do escapulário, protetora da Ordem Carmelita. Sinal do seu manto materno que acompanha e protege os filhos no caminho da fé." }
+"07-17": { nome: "Santas Teresa de Santo Agostinho e Companheiras", frase: "Carmelitas martirizadas na Revolução Francesa, cantando até o fim. Ofereceram a vida pela paz da Igreja, subindo ao cadafalso em oração." }
+"07-18": { nome: "Santo Arnulfo", frase: "Bispo dedicado à evangelização, marcado pela simplicidade e firmeza na fé. Deixou os cargos do mundo para servir a Deus e ao povo com o coração livre." }
+"07-19": { nome: "São Símaco", frase: "Papa que trabalhou pela unidade da Igreja em tempos de divisão. Defendeu a fé e cuidou dos pobres em meio às tempestades do seu tempo." }
+"07-20": { nome: "Santa Margarida de Antioquia", frase: "Virgem e mártir, firme diante das perseguições dos primeiros séculos. Sua coragem inspirou gerações de cristãos a não temer quem mata apenas o corpo." }
+"07-21": { nome: "São Lourenço de Brindisi", frase: "Capuchinho e Doutor da Igreja, grande pregador e conhecedor das Escrituras. Dominava muitas línguas e as punha todas a serviço do anúncio do Evangelho." }
+"07-22": { nome: "Santa Maria Madalena", frase: "Primeira testemunha da Ressurreição e anunciadora aos Apóstolos. Chamada ‘apóstola dos apóstolos’, correu a anunciar: eu vi o Senhor." }
+"07-23": { nome: "Santa Brígida da Suécia", frase: "Mística e fundadora, uma das padroeiras da Europa. Esposa, mãe e viúva, uniu a vida de família à mais alta contemplação." }
+"07-24": { nome: "São Charbel Makhlouf", frase: "Monge maronita libanês de intensa oração, penitência e silêncio. No escondimento do eremitério, tornou-se fonte de inúmeras graças e curas." }
+"07-25": { nome: "São Tiago Maior", frase: "Apóstolo, o primeiro dos Doze a derramar o sangue pelo Evangelho. Do desejo de um trono ao cálice do martírio, seguiu Cristo até o fim." }
+"07-26": { nome: "Santos Joaquim e Ana", frase: "Pais de Maria e avós de Jesus, padroeiros dos avós e das famílias. Guardaram em silêncio a promessa que floresceria na Mãe do Salvador." }
+"07-27": { nome: "São Titus Brandsma", frase: "Carmelita que resistiu ao nazismo e morreu em campo de concentração. Jornalista e mestre, defendeu a verdade e a liberdade da fé até o martírio." }
+"07-28": { nome: "São Vítor I", frase: "Papa africano que fortaleceu a unidade litúrgica da Igreja. Trabalhou para que todos celebrassem unidos o mistério da Páscoa do Senhor." }
+"07-29": { nome: "Santos Marta, Maria e Lázaro", frase: "Os irmãos de Betânia, amigos de Jesus: acolhida, contemplação e confiança. Em sua casa, o Senhor encontrou repouso e a amizade que consola o coração." }
+"07-30": { nome: "São Pedro Crisólogo", frase: "Bispo e Doutor da Igreja, o ‘Doutor da Palavra de Ouro’. Suas homílias breves e ardentes ainda hoje aquecem a fé de quem as lê." }
+"07-31": { nome: "Santo Inácio de Loyola", frase: "Fundador da Companhia de Jesus e autor dos Exercícios Espirituais. Ensinou a buscar e achar a Deus em todas as coisas, para a maior glória divina." }
+"08-01": { nome: "Santo Afonso de Ligório", frase: "Bispo, fundador dos Redentoristas e Doutor da Igreja, mestre da vida moral. Aproximou o povo simples de Deus pela pregação clara e pela confiança na misericórdia." }
+"08-02": { nome: "São Pedro Julião Eymard", frase: "Fundou a Congregação do Santíssimo, grande apóstolo da adoração eucarística. Toda a sua vida girou em torno de Jesus presente no Santíssimo Sacramento." }
+"08-03": { nome: "Santo Eufrônio", frase: "Bispo dedicado ao povo e firme defensor da fé, marcado pelo zelo pastoral. Guiou sua Igreja com sabedoria em tempos de dificuldade e provação." }
+"08-04": { nome: "São João Maria Vianney", frase: "O Cura d'Ars, patrono dos sacerdotes, que passava a vida no confessionário. Transformou uma pequena aldeia num centro de conversão pela força da santidade." }
+"08-05": { nome: "Dedicação da Basílica de Santa Maria Maior", frase: "A mais antiga igreja do Ocidente dedicada à Virgem Maria. Segundo a tradição, erguida onde a neve caiu em pleno verão, sinal do céu." }
+"08-06": { nome: "Transfiguração do Senhor", frase: "No Tabor, a glória de Cristo se manifesta diante de Pedro, Tiago e João. Um vislumbre da luz da Ressurreição, para firmar os discípulos diante da cruz." }
+"08-07": { nome: "Santos Sisto II e Companheiros", frase: "Papa e diáconos mártires na perseguição de Valeriano. Deram a vida junto ao altar, testemunhando a fé no auge do perigo." }
+"08-08": { nome: "São Domingos de Gusmão", frase: "Fundador dos Pregadores, apóstolo da verdade e do Santo Rosário. Combateu o erro não com a força, mas com a pregação e a oração." }
+"08-09": { nome: "Santa Teresa Benedita da Cruz", frase: "Edith Stein, filósofa judia convertida, carmelita mártir em Auschwitz. Buscou a verdade com a razão e a encontrou plenamente na cruz de Cristo." }
+"08-10": { nome: "São Lourenço", frase: "Diácono mártir: os pobres são o verdadeiro tesouro da Igreja. Entregou aos famintos os bens da Igreja e a própria vida entre as chamas." }
+"08-11": { nome: "Santa Clara de Assis", frase: "Fundadora das Clarissas, viveu radicalmente a pobreza e a confiança em Deus. Seguiu Francisco no seguimento de Cristo, guardando o olhar fixo no Senhor." }
+"08-12": { nome: "Santa Joana Francisca de Chantal", frase: "Fundou, com São Francisco de Sales, a Ordem da Visitação. Mostrou que a santidade floresce também no coração das mães e das viúvas." }
+"08-13": { nome: "Santa Dulce dos Pobres", frase: "O ‘Anjo Bom da Bahia’, que deu a vida aos pobres, enfermos e abandonados. Primeira santa brasileira nascida no país, acolheu quem ninguém queria acolher." }
+"08-14": { nome: "São Maximiliano Maria Kolbe", frase: "Franciscano que deu a vida por outro prisioneiro em Auschwitz. O amor que ofereceu a própria morte para salvar um pai de família." }
+"08-15": { nome: "Assunção da Virgem Maria", frase: "Maria é elevada em corpo e alma ao Céu: sinal da nossa esperança. Nela contemplamos o destino que Deus prepara para todos os seus filhos." }
+"08-16": { nome: "Santo Estêvão da Hungria", frase: "Primeiro rei cristão da Hungria, governou com justiça e fé. Consagrou seu povo a Maria e edificou uma nação sobre o Evangelho." }
+"08-17": { nome: "São Jacinto de Cracóvia", frase: "Dominicano que evangelizou a Europa Oriental, amante da Eucaristia e de Maria. Percorreu milhares de quilômetros levando Cristo a povos distantes." }
+"08-18": { nome: "Santa Helena", frase: "Mãe de Constantino; segundo a tradição, encontrou a verdadeira Cruz. Já idosa, empreendeu a busca pelos lugares santos com fé de menina." }
+"08-19": { nome: "São João Eudes", frase: "Difundiu a devoção aos Sagrados Corações de Jesus e Maria. Ensinou a contemplar o amor de Deus no coração aberto do Redentor." }
+"08-20": { nome: "São Bernardo de Claraval", frase: "Abade cisterciense e Doutor da Igreja, terno devoto da Virgem Maria. Sua palavra doce e ardente lhe valeu o título de ‘Doutor Melífluo’." }
+"08-21": { nome: "São Pio X", frase: "Papa das reformas litúrgicas, incentivou a comunhão frequente. Abriu a mesa eucarística às crianças e a todos os que buscam a Cristo." }
+"08-22": { nome: "Nossa Senhora Rainha", frase: "Maria, Rainha do Céu e da Terra, associada ao reinado de Cristo. Coroada como Mãe e Rainha, intercede por nós junto ao seu Filho." }
+"08-23": { nome: "Santa Rosa de Lima", frase: "Primeira santa das Américas, penitente e serva dos pobres. Uniu vida de intensa penitência ao cuidado dos doentes e necessitados." }
+"08-24": { nome: "São Bartolomeu, Apóstolo", frase: "O israelita sem falsidade, que evangelizou e morreu mártir por Cristo. Reconhecido por Jesus por seu coração reto e sincero." }
+"08-25": { nome: "São Luís IX de França", frase: "Rei que governou com justiça, humildade e profunda fé cristã. Provou que o poder pode ser exercido como serviço e caridade." }
+"08-26": { nome: "Beato João Paulo I", frase: "O papa do sorriso, testemunho de simplicidade, alegria e humildade. Em apenas trinta e três dias, marcou a Igreja com sua bondade mansa." }
+"08-27": { nome: "Santa Mônica", frase: "Mãe de Agostinho, perseverou anos em oração pela conversão do filho. Suas lágrimas e súplicas alcançaram a graça que transformou a história." }
+"08-28": { nome: "Santo Agostinho", frase: "Bispo de Hipona e Doutor da Igreja: a fé que busca a inteligência. ‘Tarde te amei, ó Beleza tão antiga e tão nova’, confessou o coração inquieto." }
+"08-29": { nome: "Martírio de São João Batista", frase: "O Precursor, morto por denunciar a injustiça: fiel à verdade até o fim. Preferiu perder a cabeça a calar a voz de Deus diante do poder." }
+"08-30": { nome: "Santa Narcisa de Jesús", frase: "Leiga equatoriana de intensa oração, penitência e caridade. Viveu como costureira simples, mas com a alma toda voltada para Deus." }
+"08-31": { nome: "São Raimundo Nonato", frase: "Mercedário que resgatava cativos, patrono das gestantes e recém-nascidos. Chegou a se oferecer como refém para libertar os prisioneiros." }
