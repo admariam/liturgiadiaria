@@ -102,12 +102,12 @@ layout: default
 <!-- Santo do dia (mostrado via JS conforme a data real) -->
 <section class="santo-do-dia" id="santo-do-dia" style="display:none">
   <span class="santo-rotulo">Santo do dia</span>
-  <h2 class="santo-nome" id="santo-nome"></h2>
+  <h2 class="santo-nome"><span id="santo-nome"></span><span class="santo-anos" id="santo-anos"></span></h2>
   <p class="santo-frase" id="santo-frase"></p>
 </section>
 <script type="application/json" id="santos-dados">
 {% raw %}{{% endraw %}
-{% for s in site.data.santos.lista %}"{{ s.data }}": {"nome": {{ s.nome | jsonify }}, "frase": {{ s.frase | jsonify }}}{% unless forloop.last %},{% endunless %}
+{% for s in site.data.santos.lista %}"{{ s.data }}": {"nome": {{ s.nome | jsonify }}, "anos": {{ s.anos | jsonify }}, "frase": {{ s.frase | jsonify }}}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% raw %}}{% endraw %}
 </script>
@@ -120,6 +120,7 @@ layout: default
     var s = dados[chave];
     if (s) {
       document.getElementById('santo-nome').textContent = s.nome;
+      document.getElementById('santo-anos').textContent = s.anos ? ' (' + s.anos + ')' : '';
       document.getElementById('santo-frase').textContent = s.frase;
       document.getElementById('santo-do-dia').style.display = '';
     }
