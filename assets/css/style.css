@@ -96,7 +96,7 @@ a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border
 .pagina main { flex: 1; min-width: 0; }
 
 .lateral {
-  width: 300px;
+  width: 260px;
   flex-shrink: 0;
   position: sticky;
   top: 84px;
