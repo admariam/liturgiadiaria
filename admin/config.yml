@@ -124,4 +124,5 @@ collections:
             fields:
               - { name: data, label: "Data (mês-dia)", widget: string, hint: "Formato MM-DD. Ex.: 07-22 para 22 de julho" }
               - { name: nome, label: "Nome", widget: string }
+              - { name: anos, label: "Anos (nascimento · falecimento)", widget: string, required: false, hint: "Ex.: 1815 · 1888 — deixe vazio nas festas" }
               - { name: frase, label: "Frase", widget: text }
