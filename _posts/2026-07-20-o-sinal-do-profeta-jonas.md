@@ -1,5 +1,6 @@
 ---
 title: "O sinal do profeta Jonas"
+date: 2026-07-20
 celebracao: "Segunda-feira da 16ª Semana do Tempo Comum"
 evangelho: "Mt 12,38-42"
 leituras: "Mq 6,1-4.6-8 · Sl 49(50) · Mt 12,38-42"

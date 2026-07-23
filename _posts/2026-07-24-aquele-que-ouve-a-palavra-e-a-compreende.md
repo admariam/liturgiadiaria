@@ -1,5 +1,6 @@
 ---
 title: "Aquele que ouve a Palavra e a compreende"
+date: 2026-07-24
 celebracao: "Sexta-feira da 16ª Semana do Tempo Comum"
 evangelho: "Mt 13,18-23"
 leituras: "Jr 3,14-17 · Cânt. Jr 31 · Mt 13,18-23"

@@ -1,5 +1,6 @@
 ---
 title: "Eu vi o Senhor"
+date: 2026-07-22
 celebracao: "Santa Maria Madalena"
 evangelho: "Jo 20,1-2.11-18"
 leituras: "Ct 3,1-4a · Sl 62(63) · Jo 20,1-2.11-18"

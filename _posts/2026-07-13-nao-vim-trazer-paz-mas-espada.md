@@ -1,5 +1,6 @@
 ---
 title: "Não vim trazer paz, mas espada"
+date: 2026-07-13
 celebracao: "Segunda-feira da 15ª Semana do Tempo Comum"
 evangelho: "Mt 10,34–11,1"
 leituras: "Is 1,10-17 · Sl 49(50) · Mt 10,34–11,1"

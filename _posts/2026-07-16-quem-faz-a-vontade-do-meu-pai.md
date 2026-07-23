@@ -1,5 +1,6 @@
 ---
 title: "Quem faz a vontade do meu Pai"
+date: 2026-07-16
 celebracao: "Bem-aventurada Virgem Maria do Monte Carmelo"
 evangelho: "Mt 12,46-50"
 leituras: "Mq 2,1-5 · Sl 9 · Mt 12,46-50"

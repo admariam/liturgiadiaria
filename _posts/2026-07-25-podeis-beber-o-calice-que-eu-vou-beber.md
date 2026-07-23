@@ -1,5 +1,6 @@
 ---
 title: "Podeis beber o cálice que eu vou beber?"
+date: 2026-07-25
 celebracao: "São Tiago, Apóstolo"
 evangelho: "Mt 20,20-28"
 leituras: "2Cor 4,7-15 · Sl 125(126) · Mt 20,20-28"

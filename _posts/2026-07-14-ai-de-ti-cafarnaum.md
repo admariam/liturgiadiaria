@@ -1,5 +1,6 @@
 ---
 title: "Ai de ti, Cafarnaum"
+date: 2026-07-14
 celebracao: "Terça-feira da 15ª Semana do Tempo Comum"
 evangelho: "Mt 11,20-24"
 leituras: "Is 7,1-9 · Sl 47(48) · Mt 11,20-24"

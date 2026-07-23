@@ -1,5 +1,6 @@
 ---
 title: "O amor que semeia sem medida"
+date: 2026-07-12
 celebracao: "15º Domingo do Tempo Comum · Ano A"
 evangelho: "Mt 13,1-23"
 leituras: "Is 55,10-11 · Sl 64(65) · Rm 8,18-23 · Mt 13,1-23"

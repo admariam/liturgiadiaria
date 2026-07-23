@@ -18,8 +18,10 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     extension: md
     format: yaml-frontmatter
-    summary: "{{day}}.{{month}} · {{title}}"
+    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
     sortable_fields: ["date", "title"]
+    view_filters: []
+    view_groups: []
     fields:
       - { name: title, label: "Título", widget: string }
       - { name: date, label: "Data", widget: datetime, date_format: "DD.MM.YYYY", time_format: false, format: "YYYY-MM-DD" }
@@ -36,6 +38,8 @@ collections:
     folder: "_artigos"
     create: true
     slug: "{{slug}}"
+    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
+    sortable_fields: ["date", "title"]
     extension: md
     format: yaml-frontmatter
     fields:
@@ -54,6 +58,8 @@ collections:
     folder: "_leituras"
     create: true
     slug: "{{slug}}"
+    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
+    sortable_fields: ["date", "title"]
     extension: md
     format: yaml-frontmatter
     fields:
@@ -74,6 +80,8 @@ collections:
     folder: "_catequeses"
     create: true
     slug: "{{slug}}"
+    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
+    sortable_fields: ["date", "title"]
     extension: md
     format: yaml-frontmatter
     fields:
@@ -97,6 +105,8 @@ collections:
     folder: "_pregacoes"
     create: true
     slug: "{{slug}}"
+    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
+    sortable_fields: ["date", "title"]
     extension: md
     format: yaml-frontmatter
     fields:

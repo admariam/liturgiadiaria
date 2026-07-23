@@ -1,5 +1,6 @@
 ---
 title: "Misericórdia quero, e não sacrifício"
+date: 2026-07-17
 celebracao: "Bem-aventurado Inácio de Azevedo e companheiros, mártires"
 evangelho: "Mt 12,1-8"
 leituras: "Is 38,1-6.21-22.7-8 · Cânt. Is 38 · Mt 12,1-8"

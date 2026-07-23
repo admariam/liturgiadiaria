@@ -1,5 +1,6 @@
 ---
 title: "Eu te louvo, ó Pai"
+date: 2026-07-15
 celebracao: "São Boaventura, bispo e doutor da Igreja · Memória"
 evangelho: "Mt 11,25-27"
 leituras: "Is 10,5-7.13-16 · Sl 93(94) · Mt 11,25-27"

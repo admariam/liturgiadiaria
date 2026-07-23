@@ -1,5 +1,6 @@
 ---
 title: "Deixai crescer juntos até a colheita"
+date: 2026-07-19
 celebracao: "16º Domingo do Tempo Comum · Ano A"
 evangelho: "Mt 13,24-43"
 leituras: "Sb 12,13.16-19 · Sl 85(86) · Rm 8,26-27 · Mt 13,24-43"

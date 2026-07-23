@@ -1,5 +1,6 @@
 ---
 title: "Não quebrará a cana rachada"
+date: 2026-07-18
 celebracao: "Sábado da 15ª Semana do Tempo Comum"
 evangelho: "Mt 12,14-21"
 leituras: "Mq 2,1-5 · Sl 9 · Mt 12,14-21"

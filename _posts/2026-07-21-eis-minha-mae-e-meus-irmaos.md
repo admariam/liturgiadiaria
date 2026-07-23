@@ -1,5 +1,6 @@
 ---
 title: "Eis minha mãe e meus irmãos"
+date: 2026-07-21
 celebracao: "Terça-feira da 16ª Semana do Tempo Comum"
 evangelho: "Mt 12,46-50"
 leituras: "Mq 7,14-15.18-20 · Sl 84(85) · Mt 12,46-50"
