@@ -48,7 +48,7 @@ a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border
 }
 
 .site-header-inner {
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 10px 24px;
   display: flex;
@@ -87,7 +87,7 @@ a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border
 .pagina {
   display: flex;
   gap: 36px;
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 32px 24px 64px;
   align-items: flex-start;
@@ -612,7 +612,7 @@ sup[role="doc-noteref"] a:hover,
 
 /* ===== Santo do dia (home) ===== */
 .santo-do-dia {
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 8px auto 0;
   padding: 40px 28px 44px;
   text-align: center;
@@ -658,7 +658,7 @@ sup[role="doc-noteref"] a:hover,
   border-top: 1px solid rgba(246,173,7,.3);
 }
 .rodape-inner {
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 22px 24px;
   text-align: center;
