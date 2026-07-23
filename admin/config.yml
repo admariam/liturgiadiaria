@@ -1,0 +1,110 @@
+backend:
+  name: github
+  repo: admariam/liturgiadiaria
+  branch: main
+  base_url: SUBSTITUIR_PELO_ENDERECO_DO_WORKER
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+locale: pt
+
+collections:
+  - name: reflexoes
+    label: "Reflexões"
+    label_singular: "Reflexão"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{day}}.{{month}} · {{title}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { name: title, label: "Título", widget: string }
+      - { name: date, label: "Data", widget: datetime, date_format: "DD.MM.YYYY", time_format: false, format: "YYYY-MM-DD" }
+      - { name: celebracao, label: "Celebração", widget: string, required: false, hint: "Ex.: 16º Domingo do Tempo Comum · Ano A" }
+      - { name: evangelho, label: "Evangelho", widget: string, required: false, hint: "Ex.: Mt 13,24-43" }
+      - { name: leituras, label: "Leituras", widget: string, required: false, hint: "Separe com · (ponto médio)" }
+      - { name: imagem, label: "Imagem de capa", widget: image, required: false }
+      - { name: resumo, label: "Resumo", widget: text, hint: "Aparece no card e no preview do WhatsApp" }
+      - { name: body, label: "Texto", widget: markdown }
+
+  - name: artigos
+    label: "Artigos"
+    label_singular: "Artigo"
+    folder: "_artigos"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: "Título", widget: string }
+      - { name: subtitulo, label: "Subtítulo", widget: string, required: false }
+      - { name: categoria, label: "Categoria", widget: string, required: false, hint: "Ex.: Mariologia, Vida de oração" }
+      - { name: date, label: "Data", widget: datetime, date_format: "DD.MM.YYYY", time_format: false, format: "YYYY-MM-DD" }
+      - { name: autor, label: "Autor", widget: string, default: "Márcio Arias" }
+      - { name: imagem, label: "Imagem de capa", widget: image, required: false }
+      - { name: resumo, label: "Resumo", widget: text }
+      - { name: body, label: "Texto", widget: markdown }
+
+  - name: leituras
+    label: "Leituras"
+    label_singular: "Leitura"
+    folder: "_leituras"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: "Título", widget: string }
+      - { name: categoria, label: "Categoria", widget: string, required: false }
+      - { name: date, label: "Data", widget: datetime, date_format: "DD.MM.YYYY", time_format: false, format: "YYYY-MM-DD" }
+      - { name: autor_original, label: "Autor do texto original", widget: string }
+      - { name: fonte, label: "Fonte", widget: string, hint: "Ex.: Word on Fire" }
+      - { name: fonte_url, label: "Link do texto original", widget: string }
+      - { name: tempo_leitura, label: "Tempo de leitura", widget: string, required: false, hint: "Ex.: 4 minutos" }
+      - { name: imagem, label: "Imagem de capa", widget: image, required: false }
+      - { name: resumo, label: "Resumo", widget: text }
+      - { name: body, label: "Comentário", widget: markdown, hint: "Sua análise do texto" }
+
+  - name: catequeses
+    label: "Catequeses"
+    label_singular: "Catequese"
+    folder: "_catequeses"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: "Título", widget: string }
+      - { name: subtitulo, label: "Subtítulo", widget: string, required: false }
+      - { name: categoria, label: "Categoria", widget: string, required: false, hint: "Ex.: Liturgia, Doutrina Social" }
+      - { name: date, label: "Data", widget: datetime, date_format: "DD.MM.YYYY", time_format: false, format: "YYYY-MM-DD" }
+      - { name: autor, label: "Autor da síntese", widget: string, default: "Márcio Arias" }
+      - { name: ensino_de, label: "Sobre o ensino de", widget: string, hint: "Ex.: Bento XVI, Leão XIV" }
+      - { name: local, label: "Local / ocasião", widget: string, required: false, hint: "Ex.: Audiência Geral · 31 de outubro de 2012" }
+      - { name: fonte, label: "Fonte", widget: string, required: false, hint: "Ex.: Vaticano" }
+      - { name: fonte_url, label: "Link da fonte", widget: string, required: false }
+      - { name: titulo_original, label: "Título original", widget: string, required: false }
+      - { name: imagem, label: "Imagem de capa", widget: image, required: false }
+      - { name: resumo, label: "Resumo", widget: text }
+      - { name: body, label: "Texto", widget: markdown }
+
+  - name: pregacoes
+    label: "Pregações"
+    label_singular: "Pregação"
+    folder: "_pregacoes"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: "Título", widget: string }
+      - { name: categoria, label: "Categoria", widget: string, required: false, hint: "Ex.: Kerigma" }
+      - { name: date, label: "Data", widget: datetime, date_format: "DD.MM.YYYY", time_format: false, format: "YYYY-MM-DD" }
+      - { name: autor, label: "Autor", widget: string, default: "Márcio Arias" }
+      - { name: local, label: "Local", widget: string, required: false, hint: "Ex.: Grupo de Oração Chama Viva" }
+      - { name: imagem, label: "Imagem de capa", widget: image, required: false }
+      - { name: resumo, label: "Resumo", widget: text }
+      - { name: body, label: "Texto", widget: markdown }
