@@ -18,12 +18,12 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     extension: md
     format: yaml-frontmatter
-    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
+    summary: "{{date | date('DD.MM.YYYY')}} · {{title}}"
     sortable_fields:
       fields: [date, title]
       default:
-        key: date
-        order: descending
+        field: date
+        direction: descending
     view_filters: []
     view_groups: []
     fields:
@@ -42,12 +42,12 @@ collections:
     folder: "_artigos"
     create: true
     slug: "{{slug}}"
-    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
+    summary: "{{date | date('DD.MM.YYYY')}} · {{title}}"
     sortable_fields:
       fields: [date, title]
       default:
-        key: date
-        order: descending
+        field: date
+        direction: descending
     extension: md
     format: yaml-frontmatter
     fields:
@@ -66,12 +66,12 @@ collections:
     folder: "_leituras"
     create: true
     slug: "{{slug}}"
-    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
+    summary: "{{date | date('DD.MM.YYYY')}} · {{title}}"
     sortable_fields:
       fields: [date, title]
       default:
-        key: date
-        order: descending
+        field: date
+        direction: descending
     extension: md
     format: yaml-frontmatter
     fields:
@@ -92,12 +92,12 @@ collections:
     folder: "_catequeses"
     create: true
     slug: "{{slug}}"
-    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
+    summary: "{{date | date('DD.MM.YYYY')}} · {{title}}"
     sortable_fields:
       fields: [date, title]
       default:
-        key: date
-        order: descending
+        field: date
+        direction: descending
     extension: md
     format: yaml-frontmatter
     fields:
@@ -121,12 +121,12 @@ collections:
     folder: "_pregacoes"
     create: true
     slug: "{{slug}}"
-    summary: "{{day}}.{{month}}.{{year}} · {{title}}"
+    summary: "{{date | date('DD.MM.YYYY')}} · {{title}}"
     sortable_fields:
       fields: [date, title]
       default:
-        key: date
-        order: descending
+        field: date
+        direction: descending
     extension: md
     format: yaml-frontmatter
     fields:
