@@ -2,7 +2,7 @@ backend:
   name: github
   repo: admariam/liturgiadiaria
   branch: main
-  base_url: SUBSTITUIR_PELO_ENDERECO_DO_WORKER
+  base_url: https://sveltia-cms-auth.marcioarias-teologia.workers.dev
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
