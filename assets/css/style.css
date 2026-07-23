@@ -706,3 +706,11 @@ sup[role="doc-noteref"] a:hover,
   hyphens: auto;
   -webkit-hyphens: auto;
 }
+
+.santo-anos {
+  font-size: .62em;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--tinta-suave);
+  white-space: nowrap;
+}
