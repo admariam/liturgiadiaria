@@ -19,7 +19,11 @@ collections:
     extension: md
     format: yaml-frontmatter
     summary: "{{day}}.{{month}}.{{year}} · {{title}}"
-    sortable_fields: ["date", "title"]
+    sortable_fields:
+      fields: [date, title]
+      default:
+        key: date
+        order: descending
     view_filters: []
     view_groups: []
     fields:
@@ -39,7 +43,11 @@ collections:
     create: true
     slug: "{{slug}}"
     summary: "{{day}}.{{month}}.{{year}} · {{title}}"
-    sortable_fields: ["date", "title"]
+    sortable_fields:
+      fields: [date, title]
+      default:
+        key: date
+        order: descending
     extension: md
     format: yaml-frontmatter
     fields:
@@ -59,7 +67,11 @@ collections:
     create: true
     slug: "{{slug}}"
     summary: "{{day}}.{{month}}.{{year}} · {{title}}"
-    sortable_fields: ["date", "title"]
+    sortable_fields:
+      fields: [date, title]
+      default:
+        key: date
+        order: descending
     extension: md
     format: yaml-frontmatter
     fields:
@@ -81,7 +93,11 @@ collections:
     create: true
     slug: "{{slug}}"
     summary: "{{day}}.{{month}}.{{year}} · {{title}}"
-    sortable_fields: ["date", "title"]
+    sortable_fields:
+      fields: [date, title]
+      default:
+        key: date
+        order: descending
     extension: md
     format: yaml-frontmatter
     fields:
@@ -106,7 +122,11 @@ collections:
     create: true
     slug: "{{slug}}"
     summary: "{{day}}.{{month}}.{{year}} · {{title}}"
-    sortable_fields: ["date", "title"]
+    sortable_fields:
+      fields: [date, title]
+      default:
+        key: date
+        order: descending
     extension: md
     format: yaml-frontmatter
     fields:
