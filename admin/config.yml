@@ -108,3 +108,20 @@ collections:
       - { name: imagem, label: "Imagem de capa", widget: image, required: false }
       - { name: resumo, label: "Resumo", widget: text }
       - { name: body, label: "Texto", widget: markdown }
+
+  - name: santos
+    label: "Santo do dia"
+    files:
+      - name: calendario
+        label: "Calendário dos santos"
+        file: "_data/santos.yml"
+        fields:
+          - name: lista
+            label: "Santos do ano"
+            label_singular: "Santo"
+            widget: list
+            summary: "{{fields.data}} — {{fields.nome}}"
+            fields:
+              - { name: data, label: "Data (mês-dia)", widget: string, hint: "Formato MM-DD. Ex.: 07-22 para 22 de julho" }
+              - { name: nome, label: "Nome", widget: string }
+              - { name: frase, label: "Frase", widget: text }
