@@ -4,6 +4,7 @@ subtitulo: "Como ver o Senhor perto, à luz da experiência de Maria Madalena e 
 categoria: "Vida de oração"
 date: 2026-07-22
 autor: "Márcio Arias"
+imagem: /assets/img/artigo-eu-vi-o-senhor.jpg
 resumo: "Ela foi a única que permaneceu junto ao sepulcro — e mesmo assim não o reconheceu. A cegueira de Madalena não vem de fé pequena: vem de buscar a pessoa certa na categoria errada."
 ---
 
