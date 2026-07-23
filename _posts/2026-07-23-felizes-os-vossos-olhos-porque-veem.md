@@ -4,7 +4,7 @@ celebracao: "Quinta-feira da 16ª Semana do Tempo Comum"
 evangelho: "Mt 13,10-17"
 leituras: "Jr 2,1-3.7-8.12-13 · Sl 35(36) · Mt 13,10-17"
 imagem: /assets/img/2026-07-23.jpg
-resumo: "A parábola não é uma fechadura, é o contrário: Deus se abaixando para falar em figuras que qualquer um entende. A cegueira nunca foi falta de luz do lado d'Ele — foi olho apertado do lado do homem."
+resumo: "Deus se abaixa e fala em figuras que qualquer criança entende: semente e terra, joio e trigo. Quem não enxerga não está no escuro; apertou os olhos."
 ---
 Os discípulos chegaram perto de Jesus com uma dúvida simples. Por que falas ao povo por parábolas? Por que essas historinhas de semente, de rede de pesca, de fermento, em vez de dizer as coisas claras? E Jesus responde com uma frase que, à primeira escuta, soa dura, quase injusta. A vós foi dado conhecer os segredos do Reino dos céus, mas a eles não foi dado. Parece Deus escolhendo alguns e deixando os outros de fora, no escuro de propósito.
 
