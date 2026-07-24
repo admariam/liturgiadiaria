@@ -230,3 +230,12 @@ img{max-width:100%;display:block}
 /* páginas internas sem lateral: coluna única de leitura */
 .pagina{display:block;max-width:var(--largura);margin:0 auto;padding-top:40px;padding-bottom:72px}
 .pagina main{max-width:840px;margin:0 auto;min-width:0}
+
+/* resumos justificados nos cards de reflexão */
+.rcard p{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+/* cards de leituras e evangelho: texto proporcional ao quadro */
+.dcard-leituras .refs{font-size:18.5px;line-height:1.65;margin:12px 0 12px}
+.dcard-leituras .celeb{font-size:15px;line-height:1.5}
+.dcard-ev h3{font-size:23px;margin:10px 0 10px}
+.dcard-ev p{font-size:15.5px;line-height:1.6}
+.dcard-santo p{font-size:15px}
