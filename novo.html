@@ -1,0 +1,292 @@
+---
+permalink: /novo/
+sitemap: false
+---
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>{{ site.title }} — prévia do novo layout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/novo.css' | relative_url }}?v=1">
+</head>
+<body>
+
+<!-- barra utilitária -->
+<div class="utilbar">
+  <div class="utilbar-in">
+    <span class="versiculo">“Ide e anunciai o Evangelho a toda criatura” · Mc 16,15</span>
+    <span class="dir">
+      <span class="data" id="data-hoje"></span>
+      <a href="{{ '/reflexoes/' | relative_url }}">Liturgia diária</a>
+    </span>
+  </div>
+</div>
+
+<!-- header -->
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="marca" href="{{ '/' | relative_url }}">
+      <span class="nome">Ide, Anunciai</span>
+      <span class="sobre">Reflexões diárias da Palavra</span>
+    </a>
+    <nav class="nav">
+      <a class="on" href="{{ '/' | relative_url }}">Início</a>
+      <a href="{{ '/reflexoes/' | relative_url }}">Reflexões</a>
+      <a href="{{ '/artigos/' | relative_url }}">Artigos</a>
+      <a href="{{ '/leituras/' | relative_url }}">Leituras</a>
+      <a href="{{ '/catequeses/' | relative_url }}">Catequeses</a>
+      <a href="{{ '/pregacoes/' | relative_url }}">Pregações</a>
+    </nav>
+    <div class="hdr-acoes">
+      <button class="btn-icone" id="btn-busca" aria-label="Buscar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </button>
+      <button class="btn-icone btn-menu" id="btn-menu" aria-label="Menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="buscabar" id="buscabar">
+    <div class="buscabar-in">
+      <input type="text" id="campo-busca" placeholder="Buscar reflexões, artigos, catequeses…">
+    </div>
+  </div>
+</header>
+
+{% assign recentes = site.posts | sort: 'date' | reverse %}
+
+<!-- hero + destaques (candidatos por data; o JS revela o de hoje) -->
+{% for post in recentes limit: 12 %}
+<div class="candidato" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" style="display:none">
+  <section class="hero">
+    {% if post.imagem %}
+      <div class="hero-bg"><img src="{{ post.imagem | relative_url }}" alt=""></div>
+    {% else %}
+      <div class="hero-bg vazio"></div>
+    {% endif %}
+    <div class="hero-scrim"></div>
+    <div class="hero-in">
+      <div class="hero-txt">
+        <div class="hero-kicker">Reflexão do dia · {{ post.date | date: '%d.%m' }}</div>
+        {% if post.celebracao %}<div class="hero-dia">{{ post.celebracao }}</div>{% endif %}
+        <h1>{{ post.title }}</h1>
+        {% if post.resumo %}<p class="hero-resumo">{{ post.resumo }}</p>{% endif %}
+        <a class="hero-cta" href="{{ post.url | relative_url }}">Ler reflexão completa →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="destaques">
+    <div class="dcard dcard-santo card-lift">
+      <div class="kicker">Santo do dia</div>
+      <h3><span class="santo-nome"></span><span class="anos"></span></h3>
+      <p class="santo-frase"></p>
+    </div>
+    <div class="dcard dcard-leituras card-lift">
+      <div class="kicker">Leituras de hoje</div>
+      <div class="refs">{{ post.leituras | default: post.evangelho }}</div>
+      {% if post.celebracao %}<div class="celeb">{{ post.celebracao }}</div>{% endif %}
+    </div>
+    <div class="dcard dcard-ev card-lift">
+      <div class="kicker">Evangelho</div>
+      <h3>{{ post.evangelho }}</h3>
+      <p>{{ post.title }}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<!-- reflexões recentes -->
+<section class="sec" id="reflexoes">
+  <div class="sec-hd">
+    <div>
+      <div class="sec-kicker">Palavra dia a dia</div>
+      <h2>Reflexões recentes</h2>
+    </div>
+    <a class="sec-link" href="{{ '/reflexoes/' | relative_url }}">Ver todas →</a>
+  </div>
+  <div class="filete"></div>
+  <div class="grid3" id="grade-recentes">
+    {% for post in recentes limit: 10 %}
+    <a class="rcard card-lift recente" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" href="{{ post.url | relative_url }}" style="display:none">
+      <div class="rcard-img">{% if post.imagem %}<img src="{{ post.imagem | relative_url }}" alt="">{% endif %}</div>
+      <div class="rcard-body">
+        <div class="kicker">{{ post.date | date: '%d.%m.%Y' }}{% if post.celebracao %} · {{ post.celebracao | truncate: 42 }}{% endif %}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.resumo | truncate: 150 }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- faixa de citação (só aparece se o post do dia tiver o campo citacao) -->
+{% for post in recentes limit: 12 %}{% if post.citacao %}
+<section class="citacao candidato-cit" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" style="display:none">
+  <div class="citacao-in">
+    <div class="aspas">“</div>
+    <blockquote>{{ post.citacao }}</blockquote>
+    <div class="ref">{{ post.evangelho }}</div>
+  </div>
+</section>
+{% endif %}{% endfor %}
+
+<!-- artigos / catequeses / pregações / leituras -->
+{% assign ua = site.artigos | sort: 'date' | reverse | first %}
+{% assign uc = site.catequeses | sort: 'date' | reverse | first %}
+{% assign up = site.pregacoes | sort: 'date' | reverse | first %}
+{% assign ul = site.leituras | sort: 'date' | reverse | first %}
+<section class="banda">
+  <div class="banda-in">
+    <div id="artigos">
+      <div class="bloco-hd"><h2>Artigos</h2><a href="{{ '/artigos/' | relative_url }}">Ver mais →</a></div>
+      {% if ua %}<a class="item" href="{{ ua.url | relative_url }}">
+        {% if ua.imagem %}<img class="mini" src="{{ ua.imagem | relative_url }}" alt="">{% endif %}
+        <div class="txt">
+          {% if ua.categoria %}<div class="cat">{{ ua.categoria }}</div>{% endif %}
+          <h3>{{ ua.title }}</h3><p>{{ ua.resumo | truncate: 130 }}</p>
+        </div></a>{% endif %}
+    </div>
+    <div id="catequeses">
+      <div class="bloco-hd"><h2>Catequeses</h2><a href="{{ '/catequeses/' | relative_url }}">Ver mais →</a></div>
+      {% if uc %}<a class="item" href="{{ uc.url | relative_url }}">
+        {% if uc.imagem %}<img class="mini" src="{{ uc.imagem | relative_url }}" alt="">{% endif %}
+        <div class="txt">
+          {% if uc.categoria %}<div class="cat">{{ uc.categoria }}</div>{% endif %}
+          <h3>{{ uc.title }}</h3><p>{{ uc.resumo | truncate: 130 }}</p>
+        </div></a>{% endif %}
+    </div>
+    <div id="pregacoes">
+      <div class="bloco-hd"><h2>Pregações</h2><a href="{{ '/pregacoes/' | relative_url }}">Ver mais →</a></div>
+      {% if up %}<a class="item" href="{{ up.url | relative_url }}">
+        {% if up.imagem %}<img class="mini" src="{{ up.imagem | relative_url }}" alt="">{% endif %}
+        <div class="txt">
+          {% if up.categoria %}<div class="cat">{{ up.categoria }}</div>{% endif %}
+          <h3>{{ up.title }}</h3><p>{{ up.resumo | truncate: 130 }}</p>
+        </div></a>{% endif %}
+    </div>
+    <div id="leituras">
+      <div class="bloco-hd"><h2>Leituras</h2><a href="{{ '/leituras/' | relative_url }}">Ver mais →</a></div>
+      {% if ul %}<a class="item" href="{{ ul.url | relative_url }}">
+        {% if ul.imagem %}<img class="mini" src="{{ ul.imagem | relative_url }}" alt="">{% endif %}
+        <div class="txt">
+          {% if ul.categoria %}<div class="cat">{{ ul.categoria }}</div>{% endif %}
+          <h3>{{ ul.title }}</h3><p>{{ ul.resumo | truncate: 130 }}</p>
+        </div></a>{% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- newsletter -->
+<section class="news">
+  <div class="news-card">
+    <div class="news-txt">
+      <div class="sobre">Receba a Palavra em seu e-mail</div>
+      <h2>Uma reflexão por dia, direto na sua caixa de entrada</h2>
+      <p>Todos os dias, a meditação sobre as leituras da missa — para começar o dia com a Palavra.</p>
+      <form class="news-form" onsubmit="return false">
+        <input type="email" placeholder="seu@email.com" aria-label="E-mail">
+        <button type="submit">Inscrever-se</button>
+      </form>
+    </div>
+    <div class="news-img">
+      {% assign capa = recentes | first %}
+      {% if capa.imagem %}<img src="{{ capa.imagem | relative_url }}" alt="">{% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- rodapé -->
+<footer class="rodape">
+  <div class="rodape-top">
+    <div class="rodape-marca">
+      <div class="nome">Ide, Anunciai</div>
+      <p>Reflexões sobre as leituras da missa, dia a dia. Uma obra de evangelização pela Palavra.</p>
+    </div>
+    <div class="rodape-cols">
+      <div class="rodape-col">
+        <h4>Conteúdo</h4>
+        <a href="{{ '/reflexoes/' | relative_url }}">Reflexões</a>
+        <a href="{{ '/artigos/' | relative_url }}">Artigos</a>
+        <a href="{{ '/leituras/' | relative_url }}">Leituras</a>
+      </div>
+      <div class="rodape-col">
+        <h4>Formação</h4>
+        <a href="{{ '/catequeses/' | relative_url }}">Catequeses</a>
+        <a href="{{ '/pregacoes/' | relative_url }}">Pregações</a>
+      </div>
+    </div>
+  </div>
+  <div class="rodape-bot">© 2026 Márcio Arias · Todos os direitos reservados</div>
+</footer>
+
+<script type="application/json" id="santos-dados">
+{% raw %}{{% endraw %}
+{% for s in site.data.santos.lista %}"{{ s.data }}": {"nome": {{ s.nome | jsonify }}, "anos": {{ s.anos | jsonify }}, "frase": {{ s.frase | jsonify }}}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+{% raw %}}{% endraw %}
+</script>
+<script>
+(function(){
+  var d = new Date();
+  var p = function(n){ return String(n).padStart(2,'0'); };
+  var HOJE = d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());
+
+  // data por extenso
+  var dias = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+  var meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+  var el = document.getElementById('data-hoje');
+  if (el) el.textContent = dias[d.getDay()]+', '+d.getDate()+' de '+meses[d.getMonth()]+' de '+d.getFullYear();
+
+  // escolhe o candidato do dia (mais recente que não seja futuro)
+  function escolher(sel){
+    var itens = Array.prototype.slice.call(document.querySelectorAll(sel));
+    var melhor = null;
+    itens.forEach(function(x){
+      var dt = x.getAttribute('data-post-data');
+      if (dt <= HOJE && (!melhor || dt > melhor.getAttribute('data-post-data'))) melhor = x;
+    });
+    if (melhor) melhor.style.display = '';
+    return melhor;
+  }
+  var heroAtivo = escolher('.candidato');
+  escolher('.candidato-cit');
+
+  // santo do dia dentro do bloco visível
+  try {
+    var dados = JSON.parse(document.getElementById('santos-dados').textContent);
+    var s = dados[p(d.getMonth()+1)+'-'+p(d.getDate())];
+    if (s && heroAtivo) {
+      heroAtivo.querySelector('.santo-nome').textContent = s.nome;
+      heroAtivo.querySelector('.anos').textContent = s.anos ? ' ('+s.anos+')' : '';
+      heroAtivo.querySelector('.santo-frase').textContent = s.frase;
+    } else if (heroAtivo) {
+      heroAtivo.querySelector('.dcard-santo').style.display = 'none';
+    }
+  } catch(e){}
+
+  // reflexões recentes: esconde futuras, pula a de hoje, mostra 3
+  var heroData = heroAtivo ? heroAtivo.getAttribute('data-post-data') : HOJE;
+  var mostradas = 0;
+  document.querySelectorAll('.recente').forEach(function(a){
+    var dt = a.getAttribute('data-post-data');
+    if (dt > HOJE || dt === heroData || mostradas >= 3) return;
+    a.style.display = '';
+    mostradas++;
+  });
+
+  // busca (abre a faixa; filtra os cards visíveis)
+  var bb = document.getElementById('buscabar');
+  document.getElementById('btn-busca').addEventListener('click', function(){
+    bb.classList.toggle('on');
+    if (bb.classList.contains('on')) document.getElementById('campo-busca').focus();
+  });
+})();
+</script>
+</body>
+</html>
