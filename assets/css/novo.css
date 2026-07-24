@@ -201,3 +201,28 @@ img{max-width:100%;display:block}
 .busca-res a:hover{background:var(--accentTint)}
 .busca-res .bs{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:700;margin-right:8px}
 .busca-vazio{padding:9px 12px;font-size:14px;color:var(--txt3)}
+
+/* card do grupo mais estreito */
+.news{max-width:860px}
+.news-txt{padding:40px 40px}
+
+/* ---- tema aplicado às páginas internas (sobrepõe o style.css antigo) ---- */
+:root{
+  --papel:oklch(98% 0.003 250);
+  --papel-2:#eef3f8;
+  --tinta:#182432;
+  --tinta-suave:oklch(44% 0.015 250);
+  --fio:oklch(91% 0.004 250);
+  --primary:#1a4d78;
+  --primary-deep:#123654;
+  --accent:#1a4d78;
+  --accent-deep:#1a4d78;
+  --display:'Lora',Georgia,serif;
+  --texto:'Source Sans 3',system-ui,-apple-system,sans-serif;
+}
+.pagina{max-width:var(--largura);padding-left:var(--pad);padding-right:var(--pad)}
+.pagina main h1,.pagina main h2,.pagina main h3{font-family:var(--serif)}
+.reflexao-cabecalho h1{font-family:var(--serif);letter-spacing:-.015em}
+.tag{color:var(--accent);letter-spacing:.14em}
+.reflexao-texto{font-family:var(--sans)}
+.lateral h4{font-family:var(--serif);color:var(--ink)}

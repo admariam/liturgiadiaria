@@ -1,110 +1,143 @@
 ---
-layout: default
+layout: home
+permalink: /
 ---
-{% for post in site.posts %}
-<section class="hero hero-candidato" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" style="display:none;">
-  <div class="hero-texto">
-    <div class="hero-topo">
-      <span class="selo">Reflexão do dia</span>
-      <span class="hero-data">{{ post.date | date: "%d.%m.%Y" }}</span>
-    </div>
-    <p class="hero-celebracao">{{ post.celebracao }}</p>
-    <h1>{{ post.title }}</h1>
-    <p class="hero-resumo">{{ post.resumo | default: post.excerpt | strip_html | truncate: 200 }}</p>
-    {% if post.leituras %}<p class="hero-leituras">{{ post.leituras }}</p>{% endif %}
-    <div class="hero-acoes">
-      <a class="btn-primario" href="{{ post.url | relative_url }}">Ler reflexão completa →</a>
-    </div>
-  </div>
-  <div class="hero-capa">
+{% assign recentes = site.posts | sort: 'date' | reverse %}
+
+<!-- hero + destaques (candidatos por data; o JS revela o de hoje) -->
+{% for post in recentes limit: 12 %}
+<div class="candidato" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" style="display:none">
+  <section class="hero">
     {% if post.imagem %}
-    <div style="position:absolute;inset:0;background-image:url('{{ post.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
+      <div class="hero-bg"><img src="{{ post.imagem | relative_url }}" alt=""></div>
     {% else %}
-    <span class="rotulo-capa">imagem de capa</span>
+      <div class="hero-bg vazio"></div>
     {% endif %}
-  </div>
-</section>
-{% endfor %}
-<div class="vazio" id="hero-vazio" style="display:none;"><p>Ainda não há reflexões publicadas.</p></div>
+    <div class="hero-scrim"></div>
+    <div class="hero-in">
+      <div class="hero-txt">
+        <div class="hero-kicker">Reflexão do dia · {{ post.date | date: '%d.%m' }}</div>
+        {% if post.celebracao %}<div class="hero-dia">{{ post.celebracao }}</div>{% endif %}
+        <h1>{{ post.title }}</h1>
+        {% if post.resumo %}<p class="hero-resumo">{{ post.resumo }}</p>{% endif %}
+        <a class="hero-cta" href="{{ post.url | relative_url }}">Ler reflexão completa →</a>
+      </div>
+    </div>
+  </section>
 
-
-<div class="faixa-secoes">
-  {% assign a = site.artigos | sort: 'date' | reverse %}
-  {% assign c = site.catequeses | sort: 'date' | reverse %}
-  {% assign p = site.pregacoes | sort: 'date' | reverse %}
-  {% assign l = site.leituras | sort: 'date' | reverse %}
-  {% assign ua = a.first %}
-  {% assign uc = c.first %}
-  {% assign up = p.first %}
-  {% assign ul = l.first %}
-
-  <div class="card-secao">
-    <a class="card-secao-topo" href="{% if ua %}{{ ua.url | relative_url }}{% else %}{{ '/artigos/' | relative_url }}{% endif %}">
-      <div class="card-secao-capa">
-        {% if ua.imagem %}<div style="position:absolute;inset:0;background-image:url('{{ ua.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
-        {% else %}<span class="card-secao-icone">✍</span>{% endif %}
-      </div>
-      <div class="card-secao-info">
-        <span class="card-secao-nome">Artigos</span>
-        <h3>{% if ua %}{{ ua.title }}{% else %}Em breve{% endif %}</h3>
-        {% if ua %}<p class="card-secao-trecho">{{ ua.content | strip_html | strip_newlines | truncate: 180 }}</p>{% endif %}
-      </div>
-    </a>
-    <a class="btn-ver-mais" href="{{ '/artigos/' | relative_url }}">Ver mais</a>
-  </div>
-
-  <div class="card-secao">
-    <a class="card-secao-topo" href="{% if uc %}{{ uc.url | relative_url }}{% else %}{{ '/catequeses/' | relative_url }}{% endif %}">
-      <div class="card-secao-capa">
-        {% if uc.imagem %}<div style="position:absolute;inset:0;background-image:url('{{ uc.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
-        {% else %}<span class="card-secao-icone">✚</span>{% endif %}
-      </div>
-      <div class="card-secao-info">
-        <span class="card-secao-nome">Catequeses</span>
-        <h3>{% if uc %}{{ uc.title }}{% else %}Em breve{% endif %}</h3>
-        {% if uc %}<p class="card-secao-trecho">{{ uc.content | strip_html | strip_newlines | truncate: 180 }}</p>{% endif %}
-      </div>
-    </a>
-    <a class="btn-ver-mais" href="{{ '/catequeses/' | relative_url }}">Ver mais</a>
-  </div>
-
-  <div class="card-secao">
-    <a class="card-secao-topo" href="{% if up %}{{ up.url | relative_url }}{% else %}{{ '/pregacoes/' | relative_url }}{% endif %}">
-      <div class="card-secao-capa">
-        {% if up.imagem %}<div style="position:absolute;inset:0;background-image:url('{{ up.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
-        {% else %}<span class="card-secao-icone">☩</span>{% endif %}
-      </div>
-      <div class="card-secao-info">
-        <span class="card-secao-nome">Pregações</span>
-        <h3>{% if up %}{{ up.title }}{% else %}Em breve{% endif %}</h3>
-        {% if up %}<p class="card-secao-trecho">{{ up.content | strip_html | strip_newlines | truncate: 180 }}</p>{% endif %}
-      </div>
-    </a>
-    <a class="btn-ver-mais" href="{{ '/pregacoes/' | relative_url }}">Ver mais</a>
-  </div>
-
-  <div class="card-secao">
-    <a class="card-secao-topo" href="{% if ul %}{{ ul.url | relative_url }}{% else %}{{ '/leituras/' | relative_url }}{% endif %}">
-      <div class="card-secao-capa">
-        {% if ul.imagem %}<div style="position:absolute;inset:0;background-image:url('{{ ul.imagem | relative_url }}');background-size:cover;background-position:center;"></div>
-        {% else %}<span class="card-secao-icone">❧</span>{% endif %}
-      </div>
-      <div class="card-secao-info">
-        <span class="card-secao-nome">Leituras</span>
-        <h3>{% if ul %}{{ ul.title }}{% else %}Em breve{% endif %}</h3>
-        {% if ul %}<p class="card-secao-trecho">{{ ul.content | strip_html | strip_newlines | truncate: 180 }}</p>{% endif %}
-      </div>
-    </a>
-    <a class="btn-ver-mais" href="{{ '/leituras/' | relative_url }}">Ver mais</a>
+  <div class="destaques">
+    <div class="dcard dcard-santo card-lift">
+      <div class="kicker">Santo do dia</div>
+      <h3><span class="santo-nome"></span><span class="anos"></span></h3>
+      <p class="santo-frase"></p>
+    </div>
+    <div class="dcard dcard-leituras card-lift">
+      <div class="kicker">Leituras de hoje</div>
+      <div class="refs">{{ post.leituras | default: post.evangelho }}</div>
+      {% if post.celebracao %}<div class="celeb">{{ post.celebracao }}</div>{% endif %}
+    </div>
+    <div class="dcard dcard-ev card-lift">
+      <div class="kicker">Evangelho</div>
+      <h3>{{ post.evangelho }}</h3>
+      <p>{{ post.title }}</p>
+    </div>
   </div>
 </div>
+{% endfor %}
 
-<!-- Santo do dia (mostrado via JS conforme a data real) -->
-<section class="santo-do-dia" id="santo-do-dia" style="display:none">
-  <span class="santo-rotulo">Santo do dia</span>
-  <h2 class="santo-nome"><span id="santo-nome"></span><span class="santo-anos" id="santo-anos"></span></h2>
-  <p class="santo-frase" id="santo-frase"></p>
+<!-- reflexões recentes -->
+<section class="sec" id="reflexoes">
+  <div class="sec-hd">
+    <div>
+      <div class="sec-kicker">Palavra dia a dia</div>
+      <h2>Reflexões recentes</h2>
+    </div>
+    <a class="sec-link" href="{{ '/reflexoes/' | relative_url }}">Ver todas →</a>
+  </div>
+  <div class="filete"></div>
+  <div class="grid3" id="grade-recentes">
+    {% for post in recentes limit: 10 %}
+    <a class="rcard card-lift recente" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" href="{{ post.url | relative_url }}" style="display:none">
+      <div class="rcard-img">{% if post.imagem %}<img src="{{ post.imagem | relative_url }}" alt="">{% endif %}</div>
+      <div class="rcard-body">
+        <div class="kicker">{{ post.date | date: '%d.%m.%Y' }}{% if post.celebracao %} · {{ post.celebracao | truncate: 42 }}{% endif %}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.resumo | truncate: 150 }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
 </section>
+
+<!-- faixa de citação (só aparece se o post do dia tiver o campo citacao) -->
+{% for post in recentes limit: 12 %}{% if post.citacao %}
+<section class="citacao candidato-cit" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" style="display:none">
+  <div class="citacao-in">
+    <div class="aspas">“</div>
+    <blockquote>{{ post.citacao }}</blockquote>
+    <div class="ref">{{ post.evangelho }}</div>
+  </div>
+</section>
+{% endif %}{% endfor %}
+
+<!-- artigos / catequeses / pregações / leituras -->
+{% assign ua = site.artigos | sort: 'date' | reverse | first %}
+{% assign uc = site.catequeses | sort: 'date' | reverse | first %}
+{% assign up = site.pregacoes | sort: 'date' | reverse | first %}
+{% assign ul = site.leituras | sort: 'date' | reverse | first %}
+<section class="banda">
+  <div class="banda-in">
+    <div id="artigos">
+      <div class="bloco-hd"><h2>Artigos</h2><a href="{{ '/artigos/' | relative_url }}">Ver mais →</a></div>
+      {% if ua %}<a class="item" href="{{ ua.url | relative_url }}">
+        {% if ua.imagem %}<img class="mini" src="{{ ua.imagem | relative_url }}" alt="">{% endif %}
+        <div class="txt">
+          {% if ua.categoria %}<div class="cat">{{ ua.categoria }}</div>{% endif %}
+          <h3>{{ ua.title }}</h3><p>{{ ua.resumo | truncate: 130 }}</p>
+        </div></a>{% endif %}
+    </div>
+    <div id="catequeses">
+      <div class="bloco-hd"><h2>Catequeses</h2><a href="{{ '/catequeses/' | relative_url }}">Ver mais →</a></div>
+      {% if uc %}<a class="item" href="{{ uc.url | relative_url }}">
+        {% if uc.imagem %}<img class="mini" src="{{ uc.imagem | relative_url }}" alt="">{% endif %}
+        <div class="txt">
+          {% if uc.categoria %}<div class="cat">{{ uc.categoria }}</div>{% endif %}
+          <h3>{{ uc.title }}</h3><p>{{ uc.resumo | truncate: 130 }}</p>
+        </div></a>{% endif %}
+    </div>
+    <div id="pregacoes">
+      <div class="bloco-hd"><h2>Pregações</h2><a href="{{ '/pregacoes/' | relative_url }}">Ver mais →</a></div>
+      {% if up %}<a class="item" href="{{ up.url | relative_url }}">
+        {% if up.imagem %}<img class="mini" src="{{ up.imagem | relative_url }}" alt="">{% endif %}
+        <div class="txt">
+          {% if up.categoria %}<div class="cat">{{ up.categoria }}</div>{% endif %}
+          <h3>{{ up.title }}</h3><p>{{ up.resumo | truncate: 130 }}</p>
+        </div></a>{% endif %}
+    </div>
+    <div id="leituras">
+      <div class="bloco-hd"><h2>Leituras</h2><a href="{{ '/leituras/' | relative_url }}">Ver mais →</a></div>
+      {% if ul %}<a class="item" href="{{ ul.url | relative_url }}">
+        {% if ul.imagem %}<img class="mini" src="{{ ul.imagem | relative_url }}" alt="">{% endif %}
+        <div class="txt">
+          {% if ul.categoria %}<div class="cat">{{ ul.categoria }}</div>{% endif %}
+          <h3>{{ ul.title }}</h3><p>{{ ul.resumo | truncate: 130 }}</p>
+        </div></a>{% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- newsletter -->
+<section class="news">
+  <div class="news-card news-solo">
+    <div class="news-txt">
+      <div class="sobre">Participe do nosso grupo</div>
+      <h2>Uma reflexão por dia, direto no seu celular</h2>
+      <p>Todos os dias, a meditação sobre as leituras da missa — para começar o dia com a Palavra.</p>
+      <a class="news-btn" href="#">Entrar no grupo →</a>
+    </div>
+  </div>
+</section>
+
 <script type="application/json" id="santos-dados">
 {% raw %}{{% endraw %}
 {% for s in site.data.santos.lista %}"{{ s.data }}": {"nome": {{ s.nome | jsonify }}, "anos": {{ s.anos | jsonify }}, "frase": {{ s.frase | jsonify }}}{% unless forloop.last %},{% endunless %}
@@ -114,36 +147,45 @@ layout: default
 <script>
 (function(){
   var d = new Date();
-  var chave = String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  var p = function(n){ return String(n).padStart(2,'0'); };
+  var HOJE = d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());
+
+  // escolhe o candidato do dia (mais recente que não seja futuro)
+  function escolher(sel){
+    var itens = Array.prototype.slice.call(document.querySelectorAll(sel));
+    var melhor = null;
+    itens.forEach(function(x){
+      var dt = x.getAttribute('data-post-data');
+      if (dt <= HOJE && (!melhor || dt > melhor.getAttribute('data-post-data'))) melhor = x;
+    });
+    if (melhor) melhor.style.display = '';
+    return melhor;
+  }
+  var heroAtivo = escolher('.candidato');
+  escolher('.candidato-cit');
+
+  // santo do dia dentro do bloco visível
   try {
     var dados = JSON.parse(document.getElementById('santos-dados').textContent);
-    var s = dados[chave];
-    if (s) {
-      document.getElementById('santo-nome').textContent = s.nome;
-      document.getElementById('santo-anos').textContent = s.anos ? ' (' + s.anos + ')' : '';
-      document.getElementById('santo-frase').textContent = s.frase;
-      document.getElementById('santo-do-dia').style.display = '';
+    var s = dados[p(d.getMonth()+1)+'-'+p(d.getDate())];
+    if (s && heroAtivo) {
+      heroAtivo.querySelector('.santo-nome').textContent = s.nome;
+      heroAtivo.querySelector('.anos').textContent = s.anos ? ' ('+s.anos+')' : '';
+      heroAtivo.querySelector('.santo-frase').textContent = s.frase;
+    } else if (heroAtivo) {
+      heroAtivo.querySelector('.dcard-santo').style.display = 'none';
     }
   } catch(e){}
-})();
-</script>
 
-<script>
-(function () {
-  var d = new Date();
-  var HOJE = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
-  var candidatos = Array.prototype.slice.call(document.querySelectorAll('.hero-candidato'));
-  var escolhido = null;
-  candidatos.forEach(function (s) {
-    var data = s.getAttribute('data-post-data');
-    if (data <= HOJE && (!escolhido || data > escolhido.getAttribute('data-post-data'))) {
-      escolhido = s;
-    }
+  // reflexões recentes: esconde futuras, pula a de hoje, mostra 3
+  var heroData = heroAtivo ? heroAtivo.getAttribute('data-post-data') : HOJE;
+  var mostradas = 0;
+  document.querySelectorAll('.recente').forEach(function(a){
+    var dt = a.getAttribute('data-post-data');
+    if (dt > HOJE || dt === heroData || mostradas >= 3) return;
+    a.style.display = '';
+    mostradas++;
   });
-  if (escolhido) {
-    escolhido.style.display = '';
-  } else {
-    document.getElementById('hero-vazio').style.display = '';
-  }
+
 })();
 </script>
