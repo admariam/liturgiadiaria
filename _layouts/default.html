@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=22">
-  <link rel="stylesheet" href="{{ '/assets/css/novo.css' | relative_url }}?v=3">
+  <link rel="stylesheet" href="{{ '/assets/css/novo.css' | relative_url }}?v=4">
 </head>
 <body>
   {% include cabecalho.html %}
@@ -36,57 +36,10 @@
     <main>
       {{ content }}
     </main>
-    <aside class="lateral">
-      {% assign sec = page.secao %}
-      {% if page.url contains '/artigos/' %}{% assign sec = 'artigos' %}{% endif %}
-      {% if page.url contains '/catequeses/' %}{% assign sec = 'catequeses' %}{% endif %}
-      {% if page.url contains '/pregacoes/' %}{% assign sec = 'pregacoes' %}{% endif %}
-      {% if page.url contains '/leituras/' %}{% assign sec = 'leituras' %}{% endif %}
-      {% if sec == 'artigos' or sec == 'catequeses' or sec == 'pregacoes' or sec == 'leituras' %}
-        {% assign colecao = site[sec] | sort: 'date' | reverse %}
-        <div class="caixa-lateral">
-          <h4>Últimos de {{ sec | capitalize }}</h4>
-          <div class="lista-recentes">
-            {% for item in colecao limit: 10 %}
-            <a href="{{ item.url | relative_url }}" class="recente-item">
-              <span class="data">{{ item.date | date: "%d.%m" }}</span>
-              <span class="titulo">{{ item.title }}</span>
-            </a>
-            {% endfor %}
-          </div>
-        </div>
-      {% else %}
-        <div class="caixa-lateral">
-          <nav id="calendario" aria-label="Calendário de reflexões" data-feed="{{ '/posts.json' | relative_url }}"></nav>
-        </div>
-        <div class="caixa-lateral">
-          <h4>Últimas reflexões</h4>
-          <div class="lista-recentes">
-            {% for post in site.posts limit: 10 %}
-            <a href="{{ post.url | relative_url }}" class="recente-item" data-post-data="{{ post.date | date: '%Y-%m-%d' }}">
-              <span class="data">{{ post.date | date: "%d.%m" }}</span>
-              <span class="titulo">{{ post.title }}</span>
-            </a>
-            {% endfor %}
-          </div>
-        </div>
-      {% endif %}
-    </aside>
   </div>
 
   {% include rodape.html %}
-  <script id="filtra-recentes">
-(function () {
-  var d = new Date();
-  var HOJE = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
-  var itens = document.querySelectorAll('.recente-item');
-  var mostrados = 0;
-  itens.forEach(function (a) {
-    if (a.getAttribute('data-post-data') > HOJE || mostrados >= 10) { a.style.display = 'none'; return; }
-    mostrados++;
-  });
-})();
-</script>
+
   <script src="{{ '/assets/js/calendario.js' | relative_url }}" defer></script>
 </body>
 </html>

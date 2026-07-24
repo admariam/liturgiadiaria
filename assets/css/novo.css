@@ -226,3 +226,7 @@ img{max-width:100%;display:block}
 .tag{color:var(--accent);letter-spacing:.14em}
 .reflexao-texto{font-family:var(--sans)}
 .lateral h4{font-family:var(--serif);color:var(--ink)}
+
+/* páginas internas sem lateral: coluna única de leitura */
+.pagina{display:block;max-width:var(--largura);margin:0 auto;padding-top:40px;padding-bottom:72px}
+.pagina main{max-width:840px;margin:0 auto;min-width:0}
