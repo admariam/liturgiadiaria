@@ -5,6 +5,7 @@ celebracao: "São Tiago, Apóstolo"
 evangelho: "Mt 20,20-28"
 leituras: "2Cor 4,7-15 · Sl 125(126) · Mt 20,20-28"
 imagem: /assets/img/2026-07-25.jpg
+citacao: "Podeis beber o cálice que eu devo beber?"
 resumo: "Eles pediram um trono; Jesus respondeu com um cálice. Tiago, que sonhou o lugar mais alto, foi o primeiro dos Doze a descer até o fim, dando o sangue — as primícias da colheita apostólica."
 ---
 A mãe de Tiago e João se aproximou de Jesus com os dois filhos, ajoelhou-se e pediu um favor. Que estes meus dois filhos se sentem, um à tua direita e outro à tua esquerda, no teu Reino. É o pedido de uma mãe que quer o melhor lugar para os seus. Não há maldade escancarada ali, há aquela ambição que costumamos achar até natural: chegar perto, subir, ficar nos primeiros lugares quando o Reino enfim aparecer em glória.

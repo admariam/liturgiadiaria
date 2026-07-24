@@ -5,6 +5,7 @@ celebracao: "16º Domingo do Tempo Comum · Ano A"
 evangelho: "Mt 13,24-43"
 leituras: "Sb 12,13.16-19 · Sl 85(86) · Rm 8,26-27 · Mt 13,24-43"
 imagem: /assets/img/2026-07-19.jpg
+citacao: "Deixai que cresçam um e outro até a colheita."
 resumo: "Os servos querem arrancar o joio na hora. O dono do campo diz não — e a razão surpreende: Deus é paciente porque é onipotente, e o tempo que Ele dá tem nome, chama-se chance de conversão."
 ---
 Irmãos, todo mundo aqui já fez, pelo menos uma vez na vida, a pergunta mais difícil da fé. Ela aparece quando abrimos o noticiário e vemos o corrupto prosperando, sorrindo, reeleito. Aparece quando o escândalo estoura — às vezes dentro da própria Igreja, e essa dói mais. Aparece quando o vizinho que zomba de Deus vive folgado, enquanto quem madruga para rezar carrega cruz atrás de cruz. A pergunta é essa: se Deus é bom e todo-poderoso, por que Ele não acaba logo com o mal? Por que não arranca de uma vez?

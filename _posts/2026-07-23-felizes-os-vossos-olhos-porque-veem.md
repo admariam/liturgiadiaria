@@ -5,6 +5,7 @@ celebracao: Quinta-feira da 16ª Semana do Tempo Comum
 evangelho: Mt 13,10-17
 leituras: Jr 2,1-3.7-8.12-13 · Sl 35(36) · Mt 13,10-17
 imagem: /assets/img/2026-07-23.jpg
+citacao: "Felizes os vossos olhos, porque veem; e os vossos ouvidos, porque ouvem."
 resumo: A parábola não é uma barreira, mas a demonstração que Deus se abaixa para falar em figuras que qualquer um entende. A cegueira não é reflexo da falta de luz emitida por Ele, mas o olho fechado do homem.
 ---
 

@@ -32,6 +32,7 @@ collections:
       - { name: celebracao, label: "Celebração", widget: string, required: false, hint: "Ex.: 16º Domingo do Tempo Comum · Ano A" }
       - { name: evangelho, label: "Evangelho", widget: string, required: false, hint: "Ex.: Mt 13,24-43" }
       - { name: leituras, label: "Leituras", widget: string, required: false, hint: "Separe com · (ponto médio)" }
+      - { name: citacao, label: "Citação do Evangelho", widget: text, required: false, hint: "Versículo que aparece na faixa da home" }
       - { name: imagem, label: "Imagem de capa", widget: image, required: false }
       - { name: resumo, label: "Resumo", widget: text, hint: "Aparece no card e no preview do WhatsApp" }
       - { name: body, label: "Texto", widget: markdown }

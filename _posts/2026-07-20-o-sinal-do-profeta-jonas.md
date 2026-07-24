@@ -5,6 +5,7 @@ celebracao: "Segunda-feira da 16ª Semana do Tempo Comum"
 evangelho: "Mt 12,38-42"
 leituras: "Mq 6,1-4.6-8 · Sl 49(50) · Mt 12,38-42"
 imagem: /assets/img/2026-07-20.jpg
+citacao: "Esta geração má e adúltera pede um sinal, mas não lhe será dado outro sinal senão o do profeta Jonas."
 resumo: "Pedir mais um sinal, depois de tudo o que já viram, não é fome de fé — é um jeito educado de não crer. E o único sinal que Deus dará é um túmulo aberto no terceiro dia."
 ---
 Alguns mestres da Lei e fariseus se aproximaram de Jesus com um pedido de aparência muito religiosa: Mestre, queremos ver um sinal teu. Soa até humilde, como quem quer crer e só precisa de um empurrãozinho. Mas não era isso. Aqueles homens tinham acabado de ver Jesus devolver a fala a um mudo, endireitar o que estava torto, expulsar o mal de dentro das pessoas. Sinais não faltavam. Pedir mais um, depois de tudo aquilo, não é fome de fé; é um jeito educado de não acreditar. É querer que Deus faça a prova na bancada deles, no horário deles, do modo que eles aprovassem.

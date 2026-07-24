@@ -5,6 +5,7 @@ celebracao: "São Boaventura, bispo e doutor da Igreja · Memória"
 evangelho: "Mt 11,25-27"
 leituras: "Is 10,5-7.13-16 · Sl 93(94) · Mt 11,25-27"
 imagem: /assets/img/2026-07-15.jpg
+citacao: "Eu te louvo, ó Pai, Senhor do céu e da terra, porque escondeste estas coisas aos sábios e entendidos e as revelaste aos pequeninos."
 resumo: "Jesus explode em louvor: o Pai se revela aos pequeninos, aos que chegam de mãos vazias. São Boaventura carregou Paris inteira na cabeça e continuou criança nos braços do Pai."
 ---
 

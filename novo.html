@@ -32,7 +32,6 @@ sitemap: false
   <div class="hdr-in">
     <a class="marca" href="{{ '/' | relative_url }}">
       <span class="nome">Ide, Anunciai</span>
-      <span class="sobre">Reflexões diárias da Palavra</span>
     </a>
     <nav class="nav">
       <a class="on" href="{{ '/' | relative_url }}">Início</a>
@@ -53,7 +52,8 @@ sitemap: false
   </div>
   <div class="buscabar" id="buscabar">
     <div class="buscabar-in">
-      <input type="text" id="campo-busca" placeholder="Buscar reflexões, artigos, catequeses…">
+      <input type="text" id="campo-busca" placeholder="Buscar reflexões, artigos, catequeses…" autocomplete="off">
+      <div class="busca-res" id="busca-res"></div>
     </div>
   </div>
 </header>
@@ -184,19 +184,12 @@ sitemap: false
 
 <!-- newsletter -->
 <section class="news">
-  <div class="news-card">
+  <div class="news-card news-solo">
     <div class="news-txt">
-      <div class="sobre">Receba a Palavra em seu e-mail</div>
-      <h2>Uma reflexão por dia, direto na sua caixa de entrada</h2>
+      <div class="sobre">Participe do nosso grupo</div>
+      <h2>Uma reflexão por dia, direto no seu celular</h2>
       <p>Todos os dias, a meditação sobre as leituras da missa — para começar o dia com a Palavra.</p>
-      <form class="news-form" onsubmit="return false">
-        <input type="email" placeholder="seu@email.com" aria-label="E-mail">
-        <button type="submit">Inscrever-se</button>
-      </form>
-    </div>
-    <div class="news-img">
-      {% assign capa = recentes | first %}
-      {% if capa.imagem %}<img src="{{ capa.imagem | relative_url }}" alt="">{% endif %}
+      <a class="news-btn" href="#">Entrar no grupo →</a>
     </div>
   </div>
 </section>
@@ -225,6 +218,12 @@ sitemap: false
   <div class="rodape-bot">© 2026 Márcio Arias · Todos os direitos reservados</div>
 </footer>
 
+<script type="application/json" id="indice-busca">
+[
+{% for post in site.posts %}{"t": {{ post.title | jsonify }}, "u": "{{ post.url | relative_url }}", "s": "Reflexões", "r": {{ post.resumo | default: '' | jsonify }}}{% unless forloop.last %},{% endunless %}
+{% endfor %}{% for c in site.artigos %},{"t": {{ c.title | jsonify }}, "u": "{{ c.url | relative_url }}", "s": "Artigos", "r": {{ c.resumo | default: '' | jsonify }}}{% endfor %}{% for c in site.leituras %},{"t": {{ c.title | jsonify }}, "u": "{{ c.url | relative_url }}", "s": "Leituras", "r": {{ c.resumo | default: '' | jsonify }}}{% endfor %}{% for c in site.catequeses %},{"t": {{ c.title | jsonify }}, "u": "{{ c.url | relative_url }}", "s": "Catequeses", "r": {{ c.resumo | default: '' | jsonify }}}{% endfor %}{% for c in site.pregacoes %},{"t": {{ c.title | jsonify }}, "u": "{{ c.url | relative_url }}", "s": "Pregações", "r": {{ c.resumo | default: '' | jsonify }}}{% endfor %}
+]
+</script>
 <script type="application/json" id="santos-dados">
 {% raw %}{{% endraw %}
 {% for s in site.data.santos.lista %}"{{ s.data }}": {"nome": {{ s.nome | jsonify }}, "anos": {{ s.anos | jsonify }}, "frase": {{ s.frase | jsonify }}}{% unless forloop.last %},{% endunless %}
@@ -280,11 +279,27 @@ sitemap: false
     mostradas++;
   });
 
-  // busca (abre a faixa; filtra os cards visíveis)
+  // busca
   var bb = document.getElementById('buscabar');
+  var campo = document.getElementById('campo-busca');
+  var res = document.getElementById('busca-res');
   document.getElementById('btn-busca').addEventListener('click', function(){
     bb.classList.toggle('on');
-    if (bb.classList.contains('on')) document.getElementById('campo-busca').focus();
+    if (bb.classList.contains('on')) campo.focus();
+  });
+  var indice = [];
+  try { indice = JSON.parse(document.getElementById('indice-busca').textContent); } catch(e){}
+  function limpa(t){ return (t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  campo.addEventListener('input', function(){
+    var q = limpa(campo.value.trim());
+    if (q.length < 2){ res.innerHTML = ''; return; }
+    var achados = indice.filter(function(i){
+      return limpa(i.t).indexOf(q) > -1 || limpa(i.r).indexOf(q) > -1 || limpa(i.s).indexOf(q) > -1;
+    }).slice(0, 8);
+    if (!achados.length){ res.innerHTML = '<div class="busca-vazio">Nada encontrado.</div>'; return; }
+    res.innerHTML = achados.map(function(i){
+      return '<a href="'+i.u+'"><span class="bs">'+i.s+'</span>'+i.t+'</a>';
+    }).join('');
   });
 })();
 </script>

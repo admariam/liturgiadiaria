@@ -5,6 +5,7 @@ celebracao: Sexta-feira da 16ª Semana do Tempo Comum
 evangelho: Mt 13,18-23
 leituras: Jr 3,14-17 · Cânt. Jr 31 · Mt 13,18-23
 imagem: /assets/img/2026-07-24.jpg
+citacao: "O que recebeu a semente em terra boa é aquele que ouve a palavra e a compreende: este dá fruto."
 resumo: Em nenhum dos quatro terrenos o problema foi a semente. Ela desceu inteira, viva, capaz de dar fruto nos quatro chãos. A pergunta que fica não é se a Palavra é boa — é que terra eu ando sendo.
 ---
 

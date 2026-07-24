@@ -5,6 +5,7 @@ celebracao: "Sábado da 15ª Semana do Tempo Comum"
 evangelho: "Mt 12,14-21"
 leituras: "Mq 2,1-5 · Sl 9 · Mt 12,14-21"
 imagem: "/assets/img/2026-07-18.jpg"
+citacao: "Não quebrará a cana rachada, nem apagará a mecha que ainda fumega."
 resumo: "A cana rachada ele não vai quebrar, o pavio que ainda fumega ele não vai apagar. A esperança das nações não está num braço maior que o dos violentos, mas nas mãos que se recusam a quebrar."
 ---
 

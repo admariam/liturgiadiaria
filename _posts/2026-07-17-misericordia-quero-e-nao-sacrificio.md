@@ -5,6 +5,7 @@ celebracao: "Bem-aventurado Inácio de Azevedo e companheiros, mártires"
 evangelho: "Mt 12,1-8"
 leituras: "Is 38,1-6.21-22.7-8 · Cânt. Is 38 · Mt 12,1-8"
 imagem: "/assets/img/2026-07-17.jpg"
+citacao: "Se compreendêsseis o que significa: Misericórdia quero e não sacrifício, não condenaríeis os inocentes."
 resumo: "Diante dos discípulos famintos no campo de trigo, Jesus desmonta a acusação: Deus nunca pediu, em primeiro lugar, o rito perfeito, mas um coração que se compadece."
 ---
 

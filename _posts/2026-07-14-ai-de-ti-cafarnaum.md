@@ -5,6 +5,7 @@ celebracao: "Terça-feira da 15ª Semana do Tempo Comum"
 evangelho: "Mt 11,20-24"
 leituras: "Is 7,1-9 · Sl 47(48) · Mt 11,20-24"
 imagem: /assets/img/2026-07-14.jpg
+citacao: "E tu, Cafarnaum, serás porventura elevada até o céu? Não! Serás precipitada até a mansão dos mortos."
 resumo: "O lamento de Jesus sobre Cafarnaum é gemido de um amor que não foi correspondido — um lamento que não quer condenar, quer acordar. E ainda dá tempo de responder."
 ---
 

@@ -5,6 +5,7 @@ celebracao: "Santa Maria Madalena"
 evangelho: "Jo 20,1-2.11-18"
 leituras: "Ct 3,1-4a · Sl 62(63) · Jo 20,1-2.11-18"
 imagem: /assets/img/2026-07-22.jpg
+citacao: "Jesus lhe disse: Maria! Ela se voltou e exclamou em hebraico: Rabôni! — que quer dizer Mestre."
 resumo: "Ela veio buscar um corpo morto para chorar, e foi encontrada pelo Vivo que a chamou pelo nome. Bastou uma palavra — Maria — para a Páscoa começar a correr pela boca de uma mulher."
 ---
 Ainda estava escuro quando Maria Madalena chegou ao túmulo, no primeiro dia da semana. O sol nem tinha nascido, e ela já estava a caminho, porque quem ama assim não espera amanhecer. Chegou e encontrou a pedra tirada da entrada. O primeiro pensamento dela não foi ressurreição; foi roubo. Levaram o Senhor, e não sei onde o puseram. Correu contar a Pedro e ao outro discípulo, aflita, com a única certeza que tinha: alguém tirou o corpo do lugar.

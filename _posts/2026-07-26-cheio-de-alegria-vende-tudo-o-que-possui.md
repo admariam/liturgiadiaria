@@ -5,6 +5,7 @@ celebracao: "17º Domingo do Tempo Comum · Ano A"
 evangelho: "Mt 13,44-52"
 leituras: "1Rs 3,5.7-12 · Sl 118(119) · Rm 8,28-30 · Mt 13,44-52"
 imagem: /assets/img/2026-07-26.jpg
+citacao: "O Reino dos Céus é semelhante a um tesouro escondido no campo; um homem o encontra e, cheio de alegria, vende tudo o que possui e compra aquele campo."
 resumo: "Um lavrador bate a enxada num tesouro que já estava lá antes de ele chegar. Vende tudo o que tem — e Mateus faz questão de anotar o motivo: cheio de alegria."
 ---
 Irmãos, imaginem que hoje à noite, quando vocês fecharem os olhos, Deus aparecesse em sonho e dissesse uma frase só: "pede-me o que quiseres". Sem pegadinha, sem letra miúda. O que sairia da nossa boca? Sejamos honestos aqui dentro, que ninguém está nos ouvindo. Saúde, provavelmente. Dinheiro para pagar o que está atrasado. A cura de alguém que amamos. Talvez a conversão de um filho — e essa já seria um pedido bonito.

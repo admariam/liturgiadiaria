@@ -5,6 +5,7 @@ celebracao: "Terça-feira da 16ª Semana do Tempo Comum"
 evangelho: "Mt 12,46-50"
 leituras: "Mq 7,14-15.18-20 · Sl 84(85) · Mt 12,46-50"
 imagem: /assets/img/2026-07-21.jpg
+citacao: "E, estendendo a mão para os seus discípulos, disse: Eis minha mãe e meus irmãos."
 resumo: "Jesus estende a mão sobre um punhado de gente simples e os chama de mãe e irmãos. O que faz deles família é uma coisa só: uma família de perdoados que aprendeu a perdoar."
 ---
 Enquanto Jesus falava à multidão, vieram avisar que sua mãe e seus irmãos estavam do lado de fora, querendo falar com ele. E Jesus, em vez de se levantar, faz um gesto. Estende a mão sobre os discípulos sentados à sua volta e diz: eis minha mãe e meus irmãos. Quem faz a vontade do meu Pai que está nos céus, esse é meu irmão, minha irmã e minha mãe.

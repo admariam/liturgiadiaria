@@ -5,6 +5,7 @@ celebracao: "Bem-aventurada Virgem Maria do Monte Carmelo"
 evangelho: "Mt 12,46-50"
 leituras: "Mq 2,1-5 · Sl 9 · Mt 12,46-50"
 imagem: "/assets/img/2026-07-16.jpg"
+citacao: "Todo aquele que faz a vontade de meu Pai que está nos céus, esse é meu irmão, minha irmã e minha mãe."
 resumo: "Jesus estende a mão sobre os discípulos e revela o parentesco que vale para sempre: fazer a vontade do Pai. E ninguém a fez como Maria, mãe pela carne e pela fé."
 ---
 
