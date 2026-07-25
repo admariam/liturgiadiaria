@@ -6,7 +6,7 @@ evangelho: Mt 13,18-23
 leituras: Jr 3,14-17 · Cânt. Jr 31 · Mt 13,18-23
 citacao: 'O que recebeu a semente em terra boa é aquele que ouve a palavra e a compreende: este dá fruto.'
 imagem: /assets/img/2026-07-24.jpg
-resumo: Em nenhum dos quatro terrenos o problema foi a semente. Ela estava perfeita, viva, capaz de dar fruto. A pergunta que fica não é se a Palavra é boa, é qual tipo de terreno meu coração está sendo.
+resumo: Em nenhum dos quatro terrenos o problema foi a semente. Ela estava perfeita, viva, capaz de dar fruto. A pergunta que fica não é se a Palavra é boa, mas qual tipo de terreno meu coração está sendo.
 ---
 
 Jesus explica aos discípulos a parábola que tinha acabado de contar, a do semeador que saiu a semear. E ele vai passando por cada tipo de terra onde a semente caiu, sem pressa, um chão de cada vez. A semente é sempre a mesma, sempre boa: é a palavra do Reino. O que muda de um caso para o outro nunca é a semente. É o chão.
