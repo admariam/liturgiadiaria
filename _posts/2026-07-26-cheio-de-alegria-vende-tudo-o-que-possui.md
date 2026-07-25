@@ -6,7 +6,7 @@ evangelho: Mt 13,44-52
 leituras: 1Rs 3,5.7-12 · Sl 118(119) · Rm 8,28-30 · Mt 13,44-52
 citacao: O Reino dos Céus é semelhante a um tesouro escondido no campo; um homem o encontra e, cheio de alegria, vende tudo o que possui e compra aquele campo.
 imagem: /assets/img/2026-07-26.jpg
-resumo: 'Um lavrador bate a enxada num tesouro que já estava lá antes de ele chegar. Vende tudo o que tem — e Mateus faz questão de anotar o motivo: cheio de alegria.'
+resumo: Um homem no campo descobre um tesouro que já estava lá antes de ele chegar. Vende tudo o que tem cheio de alegria.
 ---
 
 Irmãos, imaginem se hoje à noite, ao fecharem os olhos, Deus aparecesse em sonho e dissesse: "pede-me o que quiseres".  O que sairia da nossa boca? Sejamos honestos, pois ninguém está nos ouvindo. Saúde, provavelmente. Dinheiro para pagar o que está atrasado. A cura de alguém que amamos. Talvez a conversão de um filho — e essa já seria um pedido bonito.
