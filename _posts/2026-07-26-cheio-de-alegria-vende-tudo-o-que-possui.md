@@ -9,7 +9,7 @@ imagem: /assets/img/2026-07-26.jpg
 resumo: 'Um lavrador bate a enxada num tesouro que já estava lá antes de ele chegar. Vende tudo o que tem — e Mateus faz questão de anotar o motivo: cheio de alegria.'
 ---
 
-Irmãos, imaginem que se hoje à noite, ao fecharem os olhos, Deus aparecesse em sonho e dissesse uma frase só: "pede-me o que quiseres".  O que sairia da nossa boca? Sejamos honestos, pois ninguém está nos ouvindo. Saúde, provavelmente. Dinheiro para pagar o que está atrasado. A cura de alguém que amamos. Talvez a conversão de um filho — e essa já seria um pedido bonito.
+Irmãos, imaginem se hoje à noite, ao fecharem os olhos, Deus aparecesse em sonho e dissesse: "pede-me o que quiseres".  O que sairia da nossa boca? Sejamos honestos, pois ninguém está nos ouvindo. Saúde, provavelmente. Dinheiro para pagar o que está atrasado. A cura de alguém que amamos. Talvez a conversão de um filho — e essa já seria um pedido bonito.
 
 Foi exatamente isso que aconteceu com Salomão em Gabaon. Deus disse: pede. E ele era um rapaz recém-coroado, com um reino grande demais para administrar e sem experiência. Ele mesmo confessa que não sabe nem por onde entrar e por onde sair. Estava tudo ali para ele pedir: exército, ouro, anos de vida, a cabeça dos inimigos. E o que Salomão pede é uma coisa que ninguém pediria: "dá ao teu servo um coração que escuta, para governar o teu povo e discernir o bem do mal". Coração que escuta. Está assim no hebraico, palavra por palavra. E o texto diz que o Senhor gostou desse pedido, gostou tanto que deu o resto por acréscimo.
 
@@ -21,7 +21,7 @@ A segunda história é diferente e é bom reparar na diferença. O outro é um c
 
 Um não estava procurando nada e encontrou. O outro procurou a vida inteira e achou. Os dois estão aqui nesta igreja hoje de manhã. Tem quem foi criado na fé e um dia, no meio de um dia comum, bateu a enxada em Deus sem estar procurando. E tem quem rodou o mundo, tentou de tudo, leu de tudo, e chegou aqui cansado de pérola falsa. Deus se deixa achar dos dois jeitos. Mas em ambos a história termina igual: quem encontra, abre mão do resto.
 
-Ninguém entra no Reino de Deus reclamando o que terá que deixar para trás. Quem achou esse tesouro vende tudo por alegria.
+Ninguém entra no Reino de Deus reclamando o que terá que deixar para trás. Quem achou esse tesouro vende tudo com alegria.
 
 E é aqui que a parábola nos pega, porque a nossa vida cristã tantas vezes é o contrário disso. Nós vivemos a fé com cara amarrada, cumprindo tabela, contando o que ainda vai ter que abrir mão. Missa como obrigação, oração como dívida, moral como lista de coisas proibidas. E aí nós olhamos aquele homem correndo para vender a casa por causa de um campo e achamos que ele é um herói do desprendimento. Ele não é herói coisa nenhuma. Ele é um sujeito que  viu a preciosidade do que tinha lá dentro. Quem viu não sente que está perdendo, sente que está fazendo o melhor negócio da vida.
 
