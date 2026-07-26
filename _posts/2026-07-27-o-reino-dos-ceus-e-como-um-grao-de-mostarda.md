@@ -10,27 +10,27 @@ resumo: "A menor de todas as sementes vira árvore onde os pássaros fazem ninho
 ---
 ---
 
-**O cinto de linho de Jeremias**
+## O cinto de linho de Jeremias
 
 Deus deu a Jeremias uma ordem estranha. Compra um cinto de linho, veste-o na cintura e não o deixes tocar a água. Jeremias comprou o cinto e o usou junto ao corpo. Depois veio outra ordem: leva esse cinto para longe, até o rio, e esconde-o na fenda de uma rocha. Passou muito tempo. E Deus mandou de novo: volta ao rio e apanha o cinto. Jeremias voltou, procurou na fenda, e o cinto estava apodrecido, estragado, imprestável. Não servia mais para nada.
 
 Então Deus explicou o que aquilo queria dizer. Assim como o cinto se ajusta à cintura de um homem, eu quis que toda a casa de Israel se ajustasse a mim, ficasse apegada a mim, para ser o meu povo, a minha honra, o meu orgulho. Mas eles não quiseram ouvir. Foram atrás de outros deuses e acabaram como aquele cinto largado longe do corpo: estragados, sem serventia.
 
-**Deus quer estar perto do seu povo**
+## Deus quer estar perto do seu povo
 
 Um cinto é uma coisa que se usa colada à pele, por baixo da roupa, segurando tudo no lugar. Ninguém aperta um cinto e o deixa frouxo, pendurado. Deus queria essa proximidade toda com o seu povo. Queria gente encostada nele, agarrada, presa a ele com firmeza e sem distância. E o que aconteceu foi o contrário. Israel se afastou, foi para longe, e longe da fonte da vida foi apodrecendo, como o linho enterrado na beira do rio.
 
-**O perigo de esquecer Deus**
+## O perigo de esquecer Deus
 
 O cântico de Moisés, que a liturgia reza hoje, diz a mesma coisa por outras palavras. Esqueceste a Rocha que te gerou, abandonaste o Deus que te deu a vida. Há um esquecimento que é, no fundo, um soltar. É a mão que estava segura e afrouxa. É o cinto que se desprende e vai ficando cada vez mais longe do corpo.
 
-**A semente e o fermento do Reino**
+## A semente e o fermento do Reino
 
 Aí vem o Evangelho, e parece mudar de assunto: sai de um cinto podre e vai parar numa semente que cresce. Mas é o mesmo tema, agora virado para a esperança. Jesus conta duas histórias curtas. O Reino dos céus é como um grão de mostarda, a menor de todas as sementes, que um homem planta; e aquela sementinha cresce e vira uma árvore, grande a ponto de os pássaros fazerem ninho nos seus ramos. E o Reino é como o fermento que uma mulher pega e esconde na farinha, três medidas de farinha, até a massa toda levedar.
 
 As duas histórias falam de algo pequeno e escondido que se torna grande. O grão de mostarda some debaixo da terra. O fermento some no meio da massa. Nenhum dos dois trabalha de fora, pela força ou pelo tamanho. Trabalham por dentro, encostados, misturados, apertados contra aquilo que está em volta. É justamente a proximidade que faltou ao cinto. O cinto se recusou a ficar apegado e apodreceu. O fermento se apega a cada pedacinho da farinha, e o pão inteiro cresce.
 
-**Deus recomeça pelo que é pequeno**
+## Deus recomeça pelo que é pequeno
 
 Aquilo que a soberba de Jerusalém não conseguiu ser, um povo agarrado a Deus, para honra dele, Deus agora faz nascer em silêncio, quase do nada. Ele não recomeça com uma coisa grande e imponente. Recomeça com uma semente que se perde entre os dedos, com um punhado de fermento que uma mulher amassa com as mãos dentro da farinha. O Reino de Deus chega do jeito que o cinto devia ter sido usado: perto, escondido, sem se soltar.
 
