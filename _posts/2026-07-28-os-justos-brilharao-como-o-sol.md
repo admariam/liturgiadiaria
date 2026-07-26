@@ -1,18 +1,19 @@
 ---
-title: "Os justos brilharão como o sol"
+title: Os justos brilharão como o sol
 date: 2026-07-28
-celebracao: "Terça-feira da 17ª Semana do Tempo Comum"
-evangelho: "Mt 13,36-43"
-leituras: "Jr 14,17-22 · Sl 78(79) · Mt 13,36-43"
-citacao: "Então os justos brilharão como o sol no Reino de seu Pai."
+celebracao: Terça-feira da 17ª Semana do Tempo Comum
+evangelho: Mt 13,36-43
+leituras: Jr 14,17-22 · Sl 78(79) · Mt 13,36-43
+citacao: Então os justos brilharão como o sol no Reino de seu Pai.
 imagem: /assets/img/2026-07-28.jpg
-resumo: "Jesus explica a parábola do joio à parte, só para os seus. No fim há colheita e separação — mas antes há a paciência que deixa tudo crescer junto."
+resumo: Jesus explica a parábola do joio à parte, só para os seus. No fim há colheita e separação, mas antes há a paciência que deixa tudo crescer junto.
 ---
----
+
+***
 
 ## Jesus explica a parábola do joio
 
-Já sem a multidão, dentro de casa, os discípulos pedem a Jesus que explique a parábola do joio no meio do trigo. E Jesus abre a história peça por peça. Quem semeia a boa semente é o Filho do Homem. O campo é o mundo. A boa semente são os filhos do Reino. O joio são os filhos do Maligno. O inimigo que semeou o joio é o diabo. A colheita é o fim dos tempos, e os ceifeiros são os anjos.
+Já sem a multidão, dentro de casa, os discípulos pedem a Jesus que explique a parábola do joio no meio do trigo. E Jesus explica a história parte por parte. Quem semeia a boa semente é o Filho do Homem. O campo é o mundo. A boa semente são os filhos do Reino. O joio são os filhos do Maligno. O inimigo que semeou o joio é o diabo. A colheita é o fim dos tempos, e os ceifeiros são os anjos.
 
 ## Por que Deus não arranca o joio agora
 
@@ -28,6 +29,6 @@ A colheita vem, e Jesus não esconde isso. No fim dos tempos os anjos vão recol
 
 ## Brilhar como o sol
 
-E então vem a frase que vira tudo para a luz: os justos brilharão como o sol no Reino do seu Pai. O trigo que cresceu quieto no meio do joio, sem ninguém reparar, às vezes até desprezado, esse trigo vai brilhar como o sol. A espera nunca foi para deixar o mal ganhar. Foi para levar o trigo até o ponto de ouro. Quem pediu misericórdia como Jeremias, quem se deixou ser trigo, vai brilhar.
+E então vem a frase que ilumina tudo: os justos brilharão como o sol no Reino do seu Pai. O trigo que cresceu quieto no meio do joio, sem ninguém reparar, às vezes até desprezado, esse trigo vai brilhar como o sol. A espera nunca foi para deixar o mal ganhar, mas para mostrar o verdadeiro valor do trigo. Quem pediu misericórdia como Jeremias, quem se deixou ser trigo, vai brilhar.
 
 O campo ainda está crescendo. O joio continua ali, embolado com o trigo, e o dia de separar os dois ainda não chegou. É por isso mesmo que ainda há tempo de parar de contar o joio e começar a pedir misericórdia. A colheita vai fazer o trigo brilhar como o sol.
