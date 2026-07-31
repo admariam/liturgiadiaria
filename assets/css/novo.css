@@ -131,8 +131,9 @@ img{max-width:100%;display:block}
 /* ---------- banda das seções (2x2) ---------- */
 .banda{background:var(--accentTint);padding:56px 0;border-top:1px solid oklch(92% 0.008 250);border-bottom:1px solid oklch(92% 0.008 250)}
 .banda-in{max-width:var(--largura);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:1fr 1fr;gap:44px}
-.bloco-hd{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:14px}
-.bloco-hd h2{font-family:var(--serif);font-size:23px;font-weight:700;color:var(--ink)}
+.bloco-hd{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--fio);padding-bottom:12px;margin-bottom:14px}
+.bloco-hd h2{font-family:var(--serif);font-size:23px;font-weight:700;color:var(--ink);position:relative;padding-bottom:12px}
+.bloco-hd h2::after{content:"";position:absolute;left:0;bottom:-13px;width:44px;height:2px;background:var(--accent)}
 .bloco-hd a{font-size:13.5px;font-weight:700;white-space:nowrap}
 .item{display:flex;gap:16px;padding:8px 0;color:inherit}
 .item .mini{width:104px;height:104px;border-radius:8px;object-fit:cover;flex-shrink:0;background:var(--papel)}
