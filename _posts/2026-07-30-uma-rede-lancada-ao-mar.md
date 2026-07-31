@@ -8,7 +8,6 @@ citacao: "O Reino dos Céus é ainda semelhante a uma rede lançada ao mar, que 
 imagem: /assets/img/2026-07-30.jpg
 resumo: "A rede apanha de tudo, e só na praia se separa. O Reino cabe neste mundo misturado — e a escolha, por enquanto, é deixar a rede recolher."
 ---
----
 
 ## A rede que recolhe todo tipo de peixe
 

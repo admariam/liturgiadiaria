@@ -8,7 +8,6 @@ citacao: "Eu sou a ressurreição e a vida. Aquele que crê em mim, ainda que te
 imagem: /assets/img/2026-07-29.jpg
 resumo: "Marta vai ao encontro de Jesus com uma queixa e uma esperança. Dele recebe a pergunta que atravessa os séculos: crês nisto? E responde por todos nós."
 ---
----
 
 ## A casa dos amigos de Jesus
 

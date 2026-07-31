@@ -8,7 +8,6 @@ citacao: "João dizia a Herodes: Não te é permitido ter a mulher de teu irmão
 imagem: /assets/img/2026-08-01.jpg
 resumo: "João Batista perde a cabeça por dizer a verdade a um rei. A voz que clamava no deserto cala-se num calabouço — mas a verdade que ele disse não morre com ele."
 ---
----
 
 ## Herodes ouve falar de Jesus
 

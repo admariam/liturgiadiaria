@@ -8,7 +8,6 @@ citacao: "Um profeta só é desprezado em sua pátria e em sua própria casa."
 imagem: /assets/img/2026-07-31.jpg
 resumo: "Em Nazaré conheciam demais Jesus para reconhecê-lo. A familiaridade virou muro, e a incredulidade prendeu as mãos de Deus. Ver de perto não é ver de verdade."
 ---
----
 
 ## Jesus volta à sua terra
 
