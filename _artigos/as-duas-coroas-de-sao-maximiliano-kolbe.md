@@ -5,6 +5,9 @@ categoria: "Santos"
 date: 2026-08-14
 autor: "Márcio Arias"
 imagem: /assets/img/artigo-kolbe.jpg
+fonte: "Vaticano"
+fonte_url: "https://www.vatican.va/content/john-paul-ii/pt/homilies/1982/documents/hf_jp-ii_hom_19821010_canonizzazione-kolbe.html"
+titulo_original: "Homília na Canonização de São Maximiliano Maria Kolbe"
 resumo: "Quando menino, a Virgem lhe ofereceu duas coroas — a branca da pureza e a vermelha do martírio. Ele aceitou as duas. Em Auschwitz, deu a vida por um pai de família que gritou de desespero na fila dos condenados."
 ---
 
