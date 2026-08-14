@@ -6,9 +6,9 @@ date: 2026-08-15
 autor: "Márcio Arias"
 ensino_de: "Pio XII"
 local: "Constituição Apostólica Munificentissimus Deus · 1 de novembro de 1950"
-fonte: "Pe. Antonio Royo Marín, O.P."
-fonte_url: ""
-titulo_original: "La Virgen María: Teología y espiritualidad marianas, cap. 9"
+fonte: "Vaticano"
+fonte_url: "https://www.vatican.va/content/pius-xii/la/apost_constitutions/documents/hf_p-xii_apc_19501101_munificentissimus-deus.html"
+titulo_original: "Munificentissimus Deus"
 imagem: /assets/img/catequese-assuncao.jpg
 resumo: "A Assunção não é um privilégio que afasta Maria de nós — é uma promessa que nos diz como a história de cada um pode terminar. Se ela foi elevada em corpo e alma, é porque o destino do corpo importa a Deus."
 ---
