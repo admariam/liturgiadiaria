@@ -1,11 +1,11 @@
 ---
 title: O Poderoso fez em mim maravilhas
-date: 2026-08-15
+date: 2026-08-16
 celebracao: Assunção da Bem-aventurada Virgem Maria · Solenidade
 evangelho: Lc 1,39-56
 leituras: Ap 11,19a;12,1-6a.10ab · Sl 44(45) · 1Cor 15,20-27a · Lc 1,39-56
 citacao: O Poderoso fez em mim maravilhas. Santo é o seu nome!
-imagem: /assets/img/2026-08-15.jpg
+imagem: /assets/img/2026-08-16.jpg
 resumo: 'Na solenidade da Assunção, a liturgia nos faz ouvir o Magnificat — o canto de uma mulher que enxerga o que ninguém mais vê: Deus já dispersou os soberbos, já derrubou os poderosos, já encheu de bens os famintos.'
 ---
 
