@@ -1,0 +1,253 @@
+---
+layout: home
+permalink: /quaresmas/sao-miguel/
+title: "Quaresma de São Miguel Arcanjo — 40 Dias"
+sitemap: true
+---
+
+<style>
+.qr{max-width:var(--largura);margin:0 auto;padding:40px var(--pad) 80px}
+.qr-hd{text-align:center;margin-bottom:36px}
+.qr-hd h1{font-family:var(--serif);font-size:36px;color:var(--ink);margin:0 0 8px}
+.qr-hd p{font-size:16px;color:var(--txt2);max-width:56ch;margin:0 auto}
+.qr-prog{display:flex;align-items:center;justify-content:center;gap:12px;margin:28px 0 36px;flex-wrap:wrap}
+.qr-prog .barra{flex:1;max-width:400px;height:8px;background:var(--fio);border-radius:99px;overflow:hidden}
+.qr-prog .preench{height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
+.qr-prog .label{font-size:14px;font-weight:700;color:var(--accent);white-space:nowrap}
+.qr-nav{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+.qr-nav button{width:36px;height:36px;border:1px solid var(--fio);border-radius:6px;background:var(--papel);font-size:13px;font-weight:600;color:var(--txt2);cursor:pointer;transition:all .15s}
+.qr-nav button:hover{border-color:var(--accent);color:var(--accent)}
+.qr-nav button.ativo{background:var(--accent);color:#fff;border-color:var(--accent)}
+.qr-nav button.feito{background:var(--accentTint);color:var(--accent);border-color:var(--accentSoft)}
+.qr-card{background:var(--papel);border:1px solid var(--fio);border-radius:12px;padding:32px 28px;margin-bottom:24px}
+.qr-card h2{font-family:var(--serif);font-size:24px;color:var(--ink);margin:0 0 6px}
+.qr-card .tag{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700}
+.qr-card .med{margin-top:16px;font-size:16px;line-height:1.7;color:var(--txt)}
+.qr-card .med strong{color:var(--ink)}
+.qr-fixo{margin-top:8px}
+.qr-fixo summary{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink);cursor:pointer;padding:12px 0;border-bottom:1px solid var(--fio)}
+.qr-fixo summary:hover{color:var(--accent)}
+.qr-fixo .inner{padding:20px 0;font-size:15.5px;line-height:1.7;color:var(--txt)}
+.qr-fixo blockquote{margin:12px 0;padding:12px 20px;border-left:3px solid var(--accent);background:var(--accentTint);font-style:italic;color:var(--txt2);border-radius:0 6px 6px 0}
+.qr-como{background:var(--accentTint);border:1px solid var(--accentSoft);border-radius:10px;padding:24px;margin-bottom:28px;font-size:15px;line-height:1.7}
+.qr-como h3{font-family:var(--serif);font-size:18px;margin:0 0 12px;color:var(--ink)}
+.qr-como ol{margin:0;padding-left:20px}
+@media(max-width:620px){
+  .qr-card{padding:24px 20px}
+  .qr-nav button{width:32px;height:32px;font-size:12px}
+  .qr-hd h1{font-size:28px}
+}
+</style>
+
+<div class="qr">
+  <div class="qr-hd">
+    <div class="tag">15 de agosto a 29 de setembro</div>
+    <h1>Quaresma de São Miguel Arcanjo</h1>
+    <p>40 dias de oração, penitência e combate espiritual sob a proteção do Príncipe da Milícia Celeste.</p>
+  </div>
+
+  <div class="qr-prog">
+    <span class="label" id="prog-label">Dia 1 de 40</span>
+    <div class="barra"><div class="preench" id="prog-bar" style="width:2.5%"></div></div>
+  </div>
+
+  <div class="qr-nav" id="qr-nav"></div>
+
+  <div class="qr-como">
+    <h3>Como rezar cada dia</h3>
+    <ol>
+      <li>Faça o Sinal da Cruz.</li>
+      <li>Reze o Pequeno Exorcismo de São Miguel, a Ladainha, o Salmo 34(35), o Breve de Santo Antônio e a Oração de Libertação.</li>
+      <li>Reze a meditação do dia, em silêncio e com atenção.</li>
+      <li>Viva o propósito concreto.</li>
+      <li>Conclua com a oração **Augusta Rainha**.</li>
+    </ol>
+  </div>
+
+  <div class="qr-card" id="qr-dia">
+    <div class="tag" id="dia-tag">Dia 1</div>
+    <h2 id="dia-nome"></h2>
+    <div class="med" id="dia-corpo"></div>
+  </div>
+
+  <details class="qr-fixo">
+    <summary>Orações do dia (texto-base)</summary>
+    <div class="inner" id="qr-oracoes">
+<h4>Sinal da Cruz</h4>
+
+<blockquote>Pelo sinal da Santa Cruz, livrai-nos, Deus, nosso Senhor, dos nossos inimigos. Em nome do Pai, e do Filho, e do Espírito Santo. Amém.</blockquote>
+
+<h4>Oração a São Miguel Arcanjo</h4>
+
+<blockquote>São Miguel Arcanjo, defendei-nos no combate; sede o nosso refúgio contra as maldades e ciladas do demônio. Ordene-lhe Deus, instantemente o pedimos; e vós, príncipe da milícia celeste, pela virtude divina, precipitai no inferno a Satanás e a todos os espíritos malignos que andam pelo mundo para perder as almas. Amém.</blockquote>
+
+<h4>Ladainha de São Miguel Arcanjo</h4>
+
+<blockquote>Senhor, tende piedade de nós.</blockquote>
+<p>></p>
+<blockquote>Cristo, tende piedade de nós.</blockquote>
+<p>></p>
+<blockquote>Senhor, tende piedade de nós.</blockquote>
+<p>></p>
+<blockquote>Cristo, ouvi-nos.</blockquote>
+<p>></p>
+<blockquote>Cristo, atendei-nos.</blockquote>
+<p>></p>
+<blockquote>Deus Pai dos céus, tende piedade de nós.</blockquote>
+<p>></p>
+<blockquote>Deus Filho, Redentor do mundo, tende piedade de nós.</blockquote>
+<p>></p>
+<blockquote>Deus Espírito Santo, tende piedade de nós.</blockquote>
+<p>></p>
+<blockquote>Santíssima Trindade, que sois um só Deus, tende piedade de nós.</blockquote>
+<p>></p>
+<blockquote>Santa Maria, Rainha dos Anjos, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel Arcanjo, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, cheio da graça de Deus, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, perfeito adorador do Verbo divino, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, coroado de honra e de glória, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, poderosíssimo príncipe dos exércitos do Senhor, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, porta-estandarte da Santíssima Trindade, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, guardião do Paraíso, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, guia e consolador do povo de Deus, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, esplendor e fortaleza da Igreja militante, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, honra e alegria da Igreja triunfante, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, luz dos anjos, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, baluarte dos cristãos, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, força dos que combatem sob o estandarte da Cruz, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, luz e confiança das almas na última hora, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, socorro certíssimo, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, nosso auxílio em todas as adversidades, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, arauto da sentença eterna, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, consolador das almas do Purgatório, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, encarregado de receber as almas depois da morte, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, nosso príncipe, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>São Miguel, nosso advogado, rogai por nós.</blockquote>
+<p>></p>
+<blockquote>Cordeiro de Deus, que tirais o pecado do mundo, perdoai-nos, Senhor.</blockquote>
+<p>></p>
+<blockquote>Cordeiro de Deus, que tirais o pecado do mundo, ouvi-nos, Senhor.</blockquote>
+<p>></p>
+<blockquote>Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós.</blockquote>
+<p>></p>
+<blockquote>Rogai por nós, glorioso São Miguel, príncipe da Igreja de Cristo.</blockquote>
+<p>></p>
+<blockquote>Para que sejamos dignos de suas promessas.</blockquote>
+<p>></p>
+<blockquote>**Oremos.** Senhor Jesus, santificai-nos por uma bênção sempre nova e concedei-nos, pela intercessão de São Miguel, a sabedoria que nos ensina a ajuntar riquezas no céu e a trocar os bens do tempo presente pelos da eternidade. Vós que viveis e reinais pelos séculos dos séculos. Amém.</blockquote>
+
+<h4>Salmo 34(35), 1–9</h4>
+
+<blockquote>Julga, Senhor, os que me fazem dano; combate os que me combatem.</blockquote>
+<p>></p>
+<blockquote>Toma as armas e o escudo e levanta-te em meu socorro.</blockquote>
+<p>></p>
+<blockquote>Empunha a lança e fecha o caminho aos que me perseguem; dize à minha alma: “Eu sou a tua salvação.”</blockquote>
+<p>></p>
+<blockquote>Sejam confundidos e envergonhados os que buscam a minha vida; recuem humilhados os que planejam o meu mal.</blockquote>
+<p>></p>
+<blockquote>Sejam como a palha diante do vento, quando o anjo do Senhor os dispersar.</blockquote>
+<p>></p>
+<blockquote>Torne-se o caminho deles escuro e escorregadio, quando o anjo do Senhor os perseguir.</blockquote>
+<p>></p>
+<blockquote>Pois, sem motivo, esconderam para mim a sua rede; sem razão cavaram uma cova para a minha vida.</blockquote>
+<p>></p>
+<blockquote>Venha sobre eles a ruína inesperada; prenda-os a rede que esconderam, e caiam eles mesmos na armadilha.</blockquote>
+<p>></p>
+<blockquote>Então minha alma se alegrará no Senhor e exultará em sua salvação.</blockquote>
+
+<h4>Breve de Santo Antônio</h4>
+
+<blockquote>**V.** Eis a Cruz do Senhor: fugi, potências inimigas.</blockquote>
+<p>></p>
+<blockquote>**R.** Venceu o Leão da tribo de Judá, a estirpe de Davi.</blockquote>
+<p>></p>
+<blockquote>**V.** Venha a nós, Senhor, a vossa misericórdia.</blockquote>
+<p>></p>
+<blockquote>**R.** Como esperamos em vós.</blockquote>
+
+<h4>Oração de Libertação</h4>
+
+<blockquote>Senhor Jesus Cristo, entrego-me a vós e peço a graça de permanecer na vossa verdade, na vossa paz e na vossa caridade. Libertai-me de todo pecado, de toda tentação, de toda influência contrária à vossa vontade e de todo medo que me afaste de vós.</blockquote>
+<p>></p>
+<blockquote>Pelo poder de vossa Cruz, pela intercessão da Santíssima Virgem Maria, de São Miguel Arcanjo e de todos os santos anjos, guardai-me no corpo, na mente e na alma. Dai-me a graça da vigilância, da humildade, da sobriedade e da perseverança. Amém.</blockquote>
+
+<blockquote>**Para os leigos:** reze sempre em forma de súplica, pedindo a Deus proteção e libertação; não use fórmulas imperativas dirigidas a espíritos.</blockquote>
+
+<h4>Augusta Rainha</h4>
+
+<blockquote>Augusta Rainha dos céus, soberana Mestra dos Anjos, vós que, desde o princípio, recebestes de Deus o poder e a missão de esmagar a cabeça de Satanás, nós vo-lo pedimos humildemente: enviai as vossas legiões celestes para que, sob as vossas ordens e por vosso poder, persigam os demônios, combatendo-os por toda parte, reprimindo-lhes a insolência e lançando-os no abismo.</blockquote>
+<p>></p>
+<blockquote>Quem é como Deus?</blockquote>
+<p>></p>
+<blockquote>Ó Mãe de bondade e ternura, vós sereis sempre o nosso amor e a nossa esperança. Ó Mãe divina, enviai os santos anjos para nos defenderem e repeli para longe de nós o cruel inimigo. Santos Anjos e Arcanjos, defendei-nos e guardai-nos. Amém.</blockquote>
+
+<h4>Oração final</h4>
+
+<blockquote>Senhor Jesus, ofereço-vos esta oração em honra de São Miguel Arcanjo. Recebei minha penitência, meu trabalho, minhas alegrias e minhas lutas. Concedei-me perseverar na graça, crescer na santidade e servir-vos com coração indiviso. Amém.</blockquote>
+
+<p>---</p>
+    </div>
+  </details>
+</div>
+
+<script type="application/json" id="quaresma-dados">
+[{"num": 1, "nome": "Entrar no deserto com São Miguel", "corpo": "**Leitura:** Mateus 4,1.\n\n**Meditação:** A Quaresma de São Miguel começa como toda verdadeira conversão: com a decisão de entrar no deserto. O deserto não é a fuga das responsabilidades, mas o lugar onde cessam as desculpas e o coração se coloca diante de Deus. São Francisco procurava o recolhimento, a penitência e a oração para que Cristo fosse o centro de sua vida.\n\nNão busque nestes quarenta dias apenas proteção contra dificuldades. Busque a purificação do amor: amar a Deus acima das próprias comodidades, desejos e medos. São Miguel combate sob a palavra que proclama a soberania divina: quem é como Deus? Esta pergunta deve ordenar o seu dia.\n\n**Propósito:** Escreva uma intenção principal para a Quaresma e escolha uma penitência possível, concreta e fiel."}, {"num": 2, "nome": "A verdade sobre o combate", "corpo": "**Leitura:** Efésios 6,10–18.\n\n**Meditação:** A vida cristã é combate, mas não é uma vida de pânico. São Paulo ensina a revestir-se da armadura de Deus: verdade, justiça, fé, salvação e Palavra. O cristão não vence porque conhece todos os perigos; vence porque pertence a Cristo.\n\nA primeira vitória é recusar dois extremos: negar a realidade do mal ou atribuir tudo ao mal. Há feridas humanas, hábitos, pecados pessoais e tentações; tudo precisa ser tratado com verdade, oração, sacramentos e responsabilidade. São Miguel nos ensina sobriedade: confiar muito em Deus e não alimentar curiosidade pelo inimigo.\n\n**Propósito:** Faça um exame de consciência e anote uma área em que precisa de conversão concreta."}, {"num": 3, "nome": "Humildade, a resposta ao orgulho", "corpo": "**Leitura:** Tiago 4,6–10.\n\n**Meditação:** A tradição cristã reconhece na soberba a raiz da rebelião angélica. Em contraste, o nome Miguel — “Quem é como Deus?” — é uma profissão de humildade. Ele não exalta a própria força; proclama a incomparável grandeza de Deus.\n\nToda vez que queremos controlar tudo, impor nossa vontade, vencer uma discussão ou ser reconhecidos, o coração se distancia dessa humildade. A graça não destrói a pessoa; ela a coloca no seu verdadeiro lugar: criatura amada e dependente de Deus. A humildade não é desprezo por si mesmo, mas verdade diante de Deus.\n\n**Propósito:** Aceite uma contrariedade sem reclamar e ofereça-a em silêncio."}, {"num": 4, "nome": "Obedecer como filhos", "corpo": "**Leitura:** 1 Samuel 15,22–23.\n\n**Meditação:** Deus não deseja sacrifícios isolados de uma vida desobediente. A penitência da Quaresma só agrada ao Senhor se nos torna mais disponíveis para cumprir sua vontade. São Miguel é modelo de pronta obediência; Cristo é a obediência perfeita do Filho ao Pai.\n\nPergunte-se: em que ponto eu já sei o que Deus me pede, mas continuo adiando? Pode ser uma reconciliação, uma confissão, uma reparação, maior seriedade na oração ou abandono de um pecado. A conversão começa quando deixamos de negociar com a consciência.\n\n**Propósito:** Cumpra hoje uma obrigação que vinha adiando, sem murmuração."}, {"num": 5, "nome": "O santo Nome de Jesus", "corpo": "**Leitura:** Atos 4,8–12.\n\n**Meditação:** O Nome de Jesus não é um recurso automático nem uma palavra de defesa supersticiosa. É a invocação do Salvador, aquele que morreu e ressuscitou por nós. Ao pronunciar esse Nome com fé, o coração se volta para a pessoa de Cristo e encontra seu verdadeiro refúgio.\n\nNos momentos de angústia, tentação ou confusão, simplifique. Não alimente diálogos interiores inúteis. Diga com fé: “Jesus, tende piedade de mim”; “Jesus, eu confio em vós”; “Jesus, salvai-me”. A oração breve e perseverante recolhe a mente e devolve a alma a Deus.\n\n**Propósito:** Em cada momento de ansiedade, repita devagar: “Jesus, eu confio em vós.”"}, {"num": 6, "nome": "A Cruz, sinal de pertença", "corpo": "**Leitura:** 1 Coríntios 1,18–25.\n\n**Meditação:** A Cruz não é enfeite religioso; é a vitória de Cristo sobre o pecado e a morte. Fazer o sinal da Cruz é renovar o Batismo e confessar que pertencemos ao Pai, ao Filho e ao Espírito Santo. Por isso, não faça esse gesto de modo distraído ou apressado.\n\nSão Francisco contemplava a Cruz até ser configurado a Cristo em sua própria carne. A Quaresma pede que também nós aprendamos a carregar as pequenas cruzes sem revolta. A cruz aceita por amor não destrói: purifica, amadurece e une a alma ao Senhor.\n\n**Propósito:** Faça o sinal da Cruz com atenção ao acordar, antes das refeições e ao deitar."}, {"num": 7, "nome": "Pureza de coração", "corpo": "**Leitura:** Mateus 5,8.\n\n**Meditação:** A pureza de coração é uma graça de unificação interior. Não é apenas evitar determinado pecado; é deixar que olhos, memória, afetos, imaginação e desejos aprendam a olhar para Deus. Um coração dividido se torna vulnerável às imagens, às fantasias e aos afetos desordenados.\n\nA pureza cresce com decisões concretas: selecionar conteúdos, guardar os sentidos, evitar ocasiões de queda, buscar os sacramentos e recomeçar humildemente após qualquer falha. São Miguel nos ensina a servir a Deus com inteireza. Peça a graça de um coração simples, limpo e fiel.\n\n**Propósito:** Retire hoje um conteúdo, aplicativo ou hábito que não favoreça a pureza do coração."}, {"num": 8, "nome": "A escola dos anjos", "corpo": "**Leitura:** Salmo 103(102), 20–21.\n\n**Meditação:** Os anjos são servidores de Deus, atentos à sua palavra e prontos para cumprir sua vontade. A tradição dos nove coros angélicos convida a contemplar a riqueza da criação espiritual, mas sua finalidade é sempre a adoração de Deus, não a curiosidade.\n\nRezar a Coroa Angélica pode tornar-se uma escola de virtudes: amor mais ardente, inteligência iluminada, domínio próprio, coragem, fidelidade e prontidão para servir. Ao venerar os anjos, aprenda com eles a sair do centro e a colocar Deus no centro.\n\n**Propósito:** Reze a Coroa Angélica ou, se não a tiver, ofereça nove Ave-Marias em honra dos coros angélicos."}, {"num": 9, "nome": "Serafins: aprender a amar", "corpo": "**Leitura:** Isaías 6,1–8.\n\n**Meditação:** Os serafins cantam sem cessar a santidade divina. Esse louvor mostra que o centro do céu não é a criatura, mas Deus. A oração se torna árida quando buscamos apenas soluções para os problemas; ela se torna viva quando recupera a adoração.\n\nHoje, deixe de lado por alguns minutos as suas necessidades e louve. Diga a Deus quem Ele é: santo, fiel, misericordioso, criador, salvador. São Francisco aprendeu a louvar o Senhor em toda criatura e em cada circunstância. O coração que louva não nega a dor, mas aprende a não ser dominado por ela.\n\n**Propósito:** Reserve cinco minutos para louvar a Deus sem fazer pedidos."}, {"num": 10, "nome": "Querubins: sabedoria que vem de Deus", "corpo": "**Leitura:** Provérbios 9,10–12.\n\n**Meditação:** A sabedoria cristã não é acumular opiniões ou informações. É aprender a julgar a vida à luz de Deus. Os querubins recordam que há mistérios diante dos quais a criatura deve se inclinar, não exigir explicações.\n\nPeça a graça de discernir: o que me aproxima de Deus? O que alimenta a vaidade? O que me deixa mais livre para amar? A sabedoria reconhece que nem tudo o que é permitido convém, nem tudo o que agrada por um instante produz paz verdadeira.\n\n**Propósito:** Leia lentamente Mateus 5,1–12 e guarde uma frase para repetir ao longo do dia."}, {"num": 11, "nome": "Tronos: justiça e verdade", "corpo": "**Leitura:** Salmo 89(88), 15–16.\n\n**Meditação:** A justiça divina não é frieza. Ela é verdade inseparável da misericórdia. Os Tronos nos recordam que Deus reina com retidão e chama cada pessoa a abandonar as máscaras. Não há verdadeira paz onde há mentira, autoengano, injustiça ou desculpas permanentes.\n\nExamine hoje se você foi justo: nas palavras, no trabalho, nas promessas, no uso do dinheiro, no respeito aos outros. A verdade às vezes custa, mas liberta a alma da escravidão de sustentar aparências. São Miguel nos ajuda a permanecer diante de Deus sem fingimento.\n\n**Propósito:** Repare uma injustiça concreta: devolva, corrija, peça perdão ou cumpra algo que prometeu."}, {"num": 12, "nome": "Dominações: ordenar os afetos", "corpo": "**Leitura:** 1 Coríntios 9,24–27.\n\n**Meditação:** O domínio próprio não é desprezo pelo corpo nem repressão dos afetos. É a liberdade de não ser governado por impulsos. A pessoa livre pode dizer “sim” ao bem e “não” ao que a escraviza. Sem essa liberdade interior, até os bons desejos podem tornar-se desordenados.\n\nSão Francisco viveu a penitência não como violência contra si, mas como caminho para amar mais. Pergunte-se o que tem governado seu dia: fome, pressa, celular, irritação, necessidade de aprovação, preguiça? Pequenas renúncias formam uma vontade mais disponível para Deus.\n\n**Propósito:** Escolha uma renúncia simples e específica para hoje, oferecendo-a por uma intenção."}, {"num": 13, "nome": "Potestades: firmes na fé", "corpo": "**Leitura:** Lucas 10,17–20.\n\n**Meditação:** A verdadeira autoridade cristã não nasce de força de personalidade nem de fórmulas. Ela vem de Cristo e permanece unida à humildade. Quando os discípulos se alegram pelo poder recebido, Jesus os conduz a uma alegria maior: seus nomes estão escritos no céu.\n\nNão transforme a luta espiritual em espetáculo ou em foco de medo. A vitória é viver na graça, obedecer a Deus, rejeitar o pecado e confiar na misericórdia. São Miguel nos orienta para Cristo, não para a fascinação pelo combate.\n\n**Propósito:** Diante de uma tentação, diga: “Senhor Jesus, dai-me a graça de escolher o bem.”"}, {"num": 14, "nome": "Virtudes: coragem para o bem", "corpo": "**Leitura:** 1 Coríntios 16,13–14.\n\n**Meditação:** Coragem cristã não é agir com dureza; é permanecer fiel quando o bem custa. Há pessoas que enfrentam perigos externos, mas não têm coragem de pedir perdão, de mudar um hábito ou de assumir publicamente a fé. A fortaleza começa nas decisões escondidas.\n\nSão Miguel é príncipe da milícia celeste porque serve inteiramente a Deus. Sua força nasce da fidelidade. Peça hoje a graça de não adiar o bem por comodidade, medo da opinião alheia ou cansaço. A coragem se fortalece cada vez que obedecemos à graça.\n\n**Propósito:** Faça uma ação boa que você vem adiando por medo ou comodismo."}, {"num": 15, "nome": "Principados: testemunhar a esperança", "corpo": "**Leitura:** 1 Pedro 3,13–16.\n\n**Meditação:** Defender a fé não significa vencer discussões. Significa dar razão da esperança com mansidão, respeito e uma vida coerente. A fé se torna pouco convincente quando as palavras falam de Deus, mas os atos revelam rancor, orgulho ou desespero.\n\nPeça a São Miguel a coragem de não esconder sua identidade cristã e a prudência de testemunhar sem agressividade. Em muitos ambientes, uma palavra serena, uma recusa honesta ou um gesto de caridade dizem mais do que longas explicações.\n\n**Propósito:** Dê um testemunho simples de fé: uma conversa respeitosa, uma mensagem de esperança ou um ato público de caridade."}, {"num": 16, "nome": "Arcanjos: acolher a vontade de Deus", "corpo": "**Leitura:** Lucas 1,26–38.\n\n**Meditação:** Gabriel é enviado a Maria com uma mensagem que muda a história. Maria não compreende tudo de imediato, mas acolhe a palavra de Deus e se entrega: “Faça-se em mim segundo a tua palavra.” A vontade divina não elimina a liberdade; pede uma resposta livre e amorosa.\n\nHá mensagens de Deus que chegam pelo Evangelho, por uma orientação espiritual, pela consciência bem formada ou por um dever claro. Talvez você esteja esperando uma certeza extraordinária, enquanto Deus já mostrou o passo que precisa dar. São Miguel protege a alma que quer obedecer.\n\n**Propósito:** Identifique uma inspiração boa e concreta recebida recentemente e realize-a hoje."}, {"num": 17, "nome": "O anjo da guarda, companhia de Deus", "corpo": "**Leitura:** Mateus 18,10.\n\n**Meditação:** A fé da Igreja confessa que Deus confia a cada pessoa a guarda de um anjo. Essa presença não substitui nossa liberdade nem nos dispensa de prudência; é expressão da providência amorosa de Deus. Nunca caminhamos sozinhos.\n\nO anjo da guarda conduz para Deus, inspira o bem e ajuda a evitar o pecado. Cultive uma relação sóbria e filial: agradeça, peça luz e peça ajuda para viver em estado de graça. Que essa devoção aumente sua confiança em Deus, e não curiosidade excessiva sobre o invisível.\n\n**Propósito:** Reze antes de dormir: “Santo Anjo do Senhor, meu zeloso guardador, guardai-me e conduzi-me sempre a Deus. Amém.”"}, {"num": 18, "nome": "Vencer o medo pela confiança", "corpo": "**Leitura:** 2 Timóteo 1,6–8.\n\n**Meditação:** O medo pode ser um aviso legítimo diante do perigo, mas torna-se prisão quando impede a pessoa de cumprir a vontade de Deus. São Paulo recorda que recebemos um espírito de fortaleza, amor e sobriedade. A fé não promete ausência de riscos; oferece uma presença maior que o medo.\n\nEntregue hoje a Deus aquilo que mais o inquieta. Não negue o que sente, mas não permita que o sentimento se torne senhor de suas decisões. São Miguel não nos promete uma vida sem luta; aponta-nos para o Deus que permanece fiel em toda luta.\n\n**Propósito:** Enfrente com oração uma tarefa ou conversa que você vinha adiando por medo."}, {"num": 19, "nome": "A liberdade dos filhos de Deus", "corpo": "**Leitura:** João 8,31–36.\n\n**Meditação:** Jesus não oferece uma liberdade superficial: ele liberta do pecado. Muitas escravidões começam como pequenos consentimentos e, pouco a pouco, passam a governar pensamentos, horários, afetos e escolhas. Cristo não humilha quem está preso; chama-o para fora e devolve-lhe a dignidade de filho.\n\nPeça a graça de reconhecer uma amarra concreta. Pode ser um vício, uma mágoa, uma impureza, uma mentira, uma dependência de aprovação. A libertação ordinária acontece pela oração, pelos sacramentos, pela fuga das ocasiões de pecado e pela perseverança nas pequenas decisões.\n\n**Propósito:** Reze um Pai-Nosso oferecendo a Cristo uma escravidão específica e tome uma medida prática contra ela."}, {"num": 20, "nome": "Jejum: abrir espaço para Deus", "corpo": "**Leitura:** Mateus 6,16–18.\n\n**Meditação:** O jejum cristão não é exibição de força de vontade. É uma forma de dizer que Deus é maior que aquilo de que abrimos mão. Ele revela nossas dependências e cria espaço interior para a oração, a gratidão e a caridade.\n\nSão Francisco viveu a penitência como expressão de amor e conversão. Faça um jejum proporcional à sua saúde, deveres e condição de vida. Se houver limites físicos, jejue de distrações, comodidades ou palavras inúteis. O que importa é que a renúncia conduza a um coração mais livre e disponível.\n\n**Propósito:** Faça uma penitência concreta e ofereça-a pela conversão de uma pessoa."}, {"num": 21, "nome": "O silêncio que escuta", "corpo": "**Leitura:** 1 Reis 19,11–13.\n\n**Meditação:** Deus não se impõe pelo barulho. Elias o encontra na brisa leve. Nossa época multiplica ruídos, opiniões, notificações e urgências; por isso, torna-se difícil ouvir a consciência e discernir a voz de Deus. O silêncio é uma forma de pobreza interior.\n\nNão espere primeiro sentir paz para silenciar. Entre no silêncio como quem se apresenta diante do Senhor. As distrações virão; não discuta com elas. Volte serenamente à presença de Deus e diga: “Falai, Senhor; vosso servo escuta.”\n\n**Propósito:** Faça dez minutos de silêncio sem tela, música ou conversa, oferecendo a Deus a própria atenção."}, {"num": 22, "nome": "A Eucaristia, alimento do combate", "corpo": "**Leitura:** João 6,51–58.\n\n**Meditação:** A Eucaristia é o próprio Cristo que se dá como alimento. Nenhuma devoção substitui a Missa, a comunhão recebida em estado de graça e a adoração ao Santíssimo. É na Eucaristia que a alma recebe força para vencer o pecado e perseverar no amor.\n\nAproxime-se da Missa com preparação: chegue com antecedência, recolha-se, reconheça seus pecados, escute a Palavra e agradeça após a comunhão. Quem se alimenta de Cristo aprende pouco a pouco a viver como Cristo. São Miguel conduz toda a sua milícia à adoração do Cordeiro.\n\n**Propósito:** Faça uma visita ao Santíssimo ou prepare-se com especial cuidado para a próxima Missa."}, {"num": 23, "nome": "O perdão rompe cadeias", "corpo": "**Leitura:** Mateus 18,21–35.\n\n**Meditação:** Perdoar não é chamar o mal de bem, esquecer o que aconteceu ou dispensar a justiça. Perdoar é renunciar à vingança e entregar a Deus o direito de julgar. O rancor mantém a ferida viva e prende o coração a quem o feriu.\n\nTalvez o perdão seja um processo e não uma emoção imediata. Comece por apresentar a Deus o nome da pessoa e pedir a graça de não desejar-lhe o mal. Cristo perdoa da Cruz; unido a ele, o coração encontra uma liberdade que sozinho não conseguiria produzir.\n\n**Propósito:** Reze por uma pessoa que o feriu e entregue a Deus a necessidade de vingança ou de reconhecimento."}, {"num": 24, "nome": "A família sob a proteção de Deus", "corpo": "**Leitura:** Atos 16,25–34.\n\n**Meditação:** A família é lugar de amor, mas também de feridas, diferenças e lutas. Rezar pela família não é tentar controlar a liberdade dos outros; é entregá-los ao cuidado de Deus, pedir conversão, reconciliação e proteção.\n\nNão use a oração para alimentar medo sobre seus familiares. Apresente-os com confiança, um por um, a Jesus, a Maria e a São Miguel. Onde houver distância, peça graça; onde houver conflito, peça paz; onde houver pecado, peça conversão. Deus conhece cada história melhor do que nós.\n\n**Propósito:** Reze pelos membros de sua família, mencionando-os pelo nome."}, {"num": 25, "nome": "Amar a Igreja de Cristo", "corpo": "**Leitura:** Efésios 5,25–27.\n\n**Meditação:** Cristo amou a Igreja e entregou-se por ela. Amar a Igreja não é fechar os olhos para as feridas causadas pelo pecado dos seus membros; é permanecer unido a Cristo, rezar pela conversão e colaborar com santidade. A crítica sem caridade não cura ninguém.\n\nSão Miguel é tradicionalmente invocado como defensor da Igreja. Reze pelo Papa, pelos bispos, sacerdotes, religiosos e leigos. Peça especialmente a graça de ser, você mesmo, uma pedra viva: fiel à verdade, humilde, caridoso e disponível para servir.\n\n**Propósito:** Ofereça hoje uma oração ou penitência pela santidade dos pastores da Igreja."}, {"num": 26, "nome": "Caridade pelas almas do purgatório", "corpo": "**Leitura:** 2 Macabeus 12,43–46.\n\n**Meditação:** Rezar pelos mortos é uma obra de misericórdia espiritual. A Igreja nos ensina a oferecer sufrágios pelas almas que aguardam a plena purificação para contemplar a Deus. Essa oração dilata o coração: ensina-nos a amar quem não pode retribuir e a lembrar que a vida eterna é real.\n\nSão Miguel é invocado na tradição litúrgica como aquele que apresenta as almas à luz santa. Peça por familiares falecidos, por pessoas esquecidas e pelas almas que mais necessitam da misericórdia de Deus. A esperança cristã não apaga a saudade, mas a coloca nas mãos do Ressuscitado.\n\n**Propósito:** Reze um terço, participe da Missa ou ofereça uma obra de caridade por uma alma do purgatório."}, {"num": 27, "nome": "A verdade que liberta", "corpo": "**Leitura:** João 8,42–47.\n\n**Meditação:** Toda mentira tem algo de escravidão. Ela separa o homem de Deus, dos outros e de si mesmo. Às vezes mentimos com palavras; outras vezes, com omissões, exageros, promessas que não queremos cumprir ou imagens falsas que tentamos manter.\n\nA verdade precisa de prudência e caridade, mas não pode ser trocada pela conveniência. São Miguel, cujo nome glorifica Deus, nos ensina que somente Deus é absoluto. Peça a graça de abandonar toda falsidade e de reparar, quando necessário, o dano causado.\n\n**Propósito:** Pratique hoje uma verdade concreta com caridade: corrija uma informação, reconheça uma falha ou cumpra uma palavra dada."}, {"num": 28, "nome": "Renunciar ao pecado habitual", "corpo": "**Leitura:** Romanos 6,11–14.\n\n**Meditação:** O pecado habitual cria caminhos fáceis dentro de nós. Diante de uma frustração, repetimos a mesma reação; diante de uma tentação, procuramos a mesma fuga. A graça não age magicamente, mas cria uma liberdade nova que deve ser escolhida a cada dia.\n\nNão diga: “Eu sou assim e não mudo.” Em Cristo, a mudança é possível, embora muitas vezes lenta. Identifique o primeiro passo da queda: um horário, uma conversa, uma imagem, um pensamento, uma ocasião. A vitória costuma começar antes da tentação se tornar forte.\n\n**Propósito:** Identifique uma ocasião próxima de pecado e elimine-a ou substitua-a por uma ação concreta de bem."}, {"num": 29, "nome": "A alegria da salvação", "corpo": "**Leitura:** Salmo 118(117), 14–18.\n\n**Meditação:** A alegria cristã não é euforia nem negação dos problemas. Ela nasce da certeza de que Deus é fiel e de que a última palavra pertence à ressurreição. O desânimo, quando alimentado, fecha a alma para a gratidão e faz esquecer as graças recebidas.\n\nSão Francisco cantava louvores mesmo em meio à enfermidade e à pobreza porque via todas as coisas à luz de Deus. Hoje, recorde os sinais da bondade divina em sua história. A gratidão devolve proporção às dificuldades e fortalece a esperança.\n\n**Propósito:** Escreva três graças recebidas recentemente e agradeça por elas em oração."}, {"num": 30, "nome": "A Palavra como espada do Espírito", "corpo": "**Leitura:** Efésios 6,17.\n\n**Meditação:** Jesus respondeu às tentações no deserto com a Palavra de Deus. A Escritura não é arma para ferir os outros ou justificar opiniões pessoais; é luz para a mente e verdade para o coração. Quem a medita aprende a reconhecer o que vem de Deus e o que se opõe a ele.\n\nEscolha uma frase bíblica e carregue-a consigo. Quando vier desânimo, responda com a promessa de Deus; quando vier tentação, recorde sua dignidade de batizado; quando vier confusão, peça luz ao Espírito Santo. A Palavra guardada no coração sustenta a vigilância.\n\n**Propósito:** Memorize Efésios 6,11 e repita-o em três momentos do dia."}, {"num": 31, "nome": "Oração contínua e presença de Deus", "corpo": "**Leitura:** 1 Tessalonicenses 5,16–22.\n\n**Meditação:** Orar sem cessar não significa abandonar os deveres para repetir palavras o dia inteiro. Significa viver diante de Deus, oferecendo-lhe ações, escolhas, alegrias e sofrimentos. A oração breve, repetida com amor, cria uma memória de Deus no cotidiano.\n\nFaça pequenas pausas durante o dia: antes de começar o trabalho, ao atender uma pessoa, diante de uma dificuldade, ao terminar uma tarefa. Essas pausas não roubam tempo; devolvem sentido ao tempo. São Miguel nos ensina a servir sem deixar de adorar.\n\n**Propósito:** Faça cinco pausas de um minuto para dizer: “Senhor, tudo é vosso; conduzi-me em vossa vontade.”"}, {"num": 32, "nome": "Caridade, armadura da alma", "corpo": "**Leitura:** 1 Pedro 4,7–11.\n\n**Meditação:** A caridade não é um sentimento vago. Ela se torna visível em paciência, escuta, serviço, generosidade e perdão. O amor é uma das maiores proteções da alma porque quebra o círculo da autopreservação, do egoísmo e da amargura.\n\nPergunte-se hoje: quem Deus colocou perto de mim? Que necessidade concreta eu posso enxergar? Às vezes, a caridade será uma ajuda material; outras vezes, será não responder com agressividade, ouvir alguém cansado ou realizar uma tarefa escondida.\n\n**Propósito:** Faça uma obra de caridade sem contar a ninguém."}, {"num": 33, "nome": "Perseverar na aridez", "corpo": "**Leitura:** Tiago 1,2–4.12.\n\n**Meditação:** A perseverança é uma forma madura de amor. Há dias em que rezar é fácil; em outros, parece não produzir nada. A fidelidade nos dias secos purifica a intenção: continuamos diante de Deus não porque recebemos consolação, mas porque Ele merece ser amado.\n\nNão meça a Quaresma pelo que sente. Meça-a pela fidelidade possível: levantar-se, rezar, cumprir a penitência, pedir perdão, recomeçar. São Francisco conheceu provações e consolações, mas não abandonou o caminho. Peça a graça de ser constante.\n\n**Propósito:** Cumpra integralmente seu tempo de oração hoje, mesmo sem vontade."}, {"num": 34, "nome": "Maria, Rainha dos Anjos", "corpo": "**Leitura:** Lucas 1,46–55.\n\n**Meditação:** Maria é a criatura plenamente aberta à graça. Seu Magnificat não se centra nela mesma, mas na grandeza do Senhor. Por isso, a verdadeira devoção mariana nunca afasta de Cristo: conduz a ele com confiança filial.\n\nEntregue-se hoje à proteção materna de Maria. Peça-lhe pureza, humildade, fortaleza e fidelidade. Ela conhece a luta dos filhos e os conduz a Jesus. Sob sua intercessão, os anjos servem ao plano de Deus e a alma aprende a dizer: “Faça-se em mim segundo a vossa palavra.”\n\n**Propósito:** Reze uma dezena do Rosário por sua conversão e pela proteção de sua casa."}, {"num": 35, "nome": "Sacramentais e fé da Igreja", "corpo": "**Leitura:** Marcos 16,15–18.\n\n**Meditação:** Água benta, crucifixo, medalhas e terço são sacramentais: sinais sagrados que dispõem a receber a graça e expressam a oração da Igreja. Não são amuletos. Sua eficácia não depende de um uso mecânico, mas da fé, da conversão e da confiança em Deus.\n\nUse os sacramentais com simplicidade: faça o sinal da Cruz com água benta, tenha um crucifixo em lugar digno, reze o terço, mantenha sua casa como ambiente de oração. O sinal externo deve corresponder a uma vida interior que busca a santidade.\n\n**Propósito:** Use água benta com fé e reze pela proteção de sua casa e de todos os que nela vivem."}, {"num": 36, "nome": "Confissão, misericórdia e recomeço", "corpo": "**Leitura:** 1 João 1,5–10.\n\n**Meditação:** O sacramento da Reconciliação é encontro real com a misericórdia de Cristo. A confissão exige verdade, arrependimento, propósito de emenda e confiança. Não é humilhação estéril; é a alegria de voltar para a casa do Pai.\n\nNão espere sentir-se digno para procurar a confissão. Ninguém se confessa porque é digno; confessa-se porque precisa de perdão. Prepare-se com exame de consciência sincero, sem esconder deliberadamente os pecados, e acolha a absolvição como graça de nova vida.\n\n**Propósito:** Faça um exame de consciência e programe uma confissão sacramental, se necessário."}, {"num": 37, "nome": "Preparar a consagração", "corpo": "**Leitura:** Salmo 91(90), 1–2.9–12.\n\n**Meditação:** Consagrar-se a São Miguel significa pedir de modo especial sua proteção e escolher viver mais fielmente sob o senhorio de Deus. Não é contrato mágico nem substitui a consagração batismal; é uma renovação concreta do desejo de pertencer inteiramente a Cristo.\n\nAntes da consagração, apresente a São Miguel suas lutas e responsabilidades: sua família, trabalho, vocação, fraquezas e intenções. Peça, acima de tudo, a graça de não abandonar a vida sacramental e de permanecer sob a misericórdia de Deus.\n\n**Propósito:** Escreva uma oração pessoal de entrega a Deus, pedindo a intercessão de São Miguel."}, {"num": 38, "nome": "Entrega sob a proteção de São Miguel", "corpo": "**Leitura:** Apocalipse 12,7–12.\n\n**Meditação:** A visão do Apocalipse anuncia que Miguel e seus anjos combatem o dragão, mas a vitória pertence ao Cordeiro. Toda verdadeira devoção a São Miguel deve levar à confiança em Cristo crucificado e ressuscitado. Ele é o vencedor; Miguel é seu servo fiel.\n\nRenove hoje sua decisão de rejeitar o pecado e viver para Deus. Entregue a São Miguel sua caminhada, pedindo proteção na luta, lucidez nas tentações e perseverança até o fim. A consagração deve se manifestar numa vida mais humilde, mais orante e mais caridosa.\n\n**Propósito:** Reze esta entrega: “São Miguel Arcanjo, príncipe da milícia celeste, recebei-me sob vossa proteção. Guardai-me no serviço de Jesus Cristo, ajudai-me a rejeitar o pecado e conduzi-me no caminho da santidade. Amém.”"}, {"num": 39, "nome": "Preparar a festa com gratidão", "corpo": "**Leitura:** Tobit 12,15–22.\n\n**Meditação:** Rafael se apresenta como um dos anjos que estão diante da glória de Deus. A presença dos anjos na Escritura sempre conduz à adoração, ao temor santo e à ação de graças. Às vésperas da festa dos Arcanjos, recolha os frutos da caminhada sem orgulho e sem ansiedade.\n\nO que Deus lhe mostrou? Onde você percebeu necessidade de conversão? Que graça recebeu? Agradecer não significa concluir que tudo está resolvido; significa reconhecer que Deus agiu e continuará agindo. Persevere naquilo que começou.\n\n**Propósito:** Faça uma revisão dos quarenta dias e agradeça explicitamente por cinco graças ou aprendizados."}, {"num": 40, "nome": "Festa dos Santos Arcanjos: enviados a servir", "corpo": "**Leitura:** Apocalipse 12,7–12 e Mateus 28,18–20.\n\n**Meditação:** A Quaresma termina, mas a vida espiritual continua. São Miguel nos envia de volta às tarefas comuns com uma pergunta que deve orientar todas as escolhas: “Quem é como Deus?” Nada pode ocupar o lugar que pertence ao Senhor: nem medo, nem dinheiro, nem prazer, nem opinião alheia, nem nossos próprios planos.\n\nA maior prova dos frutos desta caminhada será uma vida mais fiel: oração perseverante, confissão frequente, participação na Missa, caridade concreta e combate sereno contra o pecado. Partilhe a graça recebida sem ostentação e ajude outros a voltar-se para Cristo.\n\n**Propósito:** Partilhe um fruto espiritual da Quaresma com alguém e escolha um compromisso semanal para manter após estes quarenta dias.\n\n---\n\n## Referências e notas\n\n- Roteiro de orações para a Quaresma de São Miguel: Padre Paulo Ricardo, “Orações para a Quaresma de São Miguel”: https://padrepauloricardo.org/blog/oracoes-para-a-quaresma-de-sao-miguel\n- A tradição franciscana associa a Quaresma de São Miguel ao período de 15 de agosto a 29 de setembro e à devoção de São Francisco de Assis.\n- As meditações deste documento são originais e foram estruturadas para acompanhamento pessoal ou em grupo."}]
+</script>
+<script>
+(function(){
+  var dados = JSON.parse(document.getElementById("quaresma-dados").textContent);
+  var inicio = new Date(2026,7,15); // 15 de agosto (mês 0-indexed)
+  var hoje = new Date(); hoje.setHours(0,0,0,0);
+  var diff = Math.floor((hoje - inicio) / 86400000);
+  var diaAtual = Math.max(1, Math.min(40, diff + 1));
+  var nav = document.getElementById("qr-nav");
+
+  function mostrar(n) {
+    var d = dados[n-1];
+    document.getElementById("dia-tag").textContent = "Dia " + n + " de 40";
+    document.getElementById("dia-nome").textContent = d.nome;
+    var html = d.corpo.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\n/g, "<br>");
+    document.getElementById("dia-corpo").innerHTML = html;
+    document.getElementById("prog-label").textContent = "Dia " + n + " de 40";
+    document.getElementById("prog-bar").style.width = (n/40*100) + "%";
+    nav.querySelectorAll("button").forEach(function(b){
+      b.classList.remove("ativo");
+      if (parseInt(b.textContent) === n) b.classList.add("ativo");
+    });
+  }
+
+  for (var i = 1; i <= 40; i++) {
+    var btn = document.createElement("button");
+    btn.textContent = i;
+    btn.setAttribute("data-dia", i);
+    if (i < diaAtual) btn.classList.add("feito");
+    if (i === diaAtual) btn.classList.add("ativo");
+    btn.addEventListener("click", function(){ mostrar(parseInt(this.getAttribute("data-dia"))); });
+    nav.appendChild(btn);
+  }
+
+  mostrar(diaAtual);
+})();
+</script>
