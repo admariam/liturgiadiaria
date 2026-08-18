@@ -6,42 +6,54 @@ sitemap: true
 ---
 
 <style>
-.qr{max-width:var(--largura);margin:0 auto;padding:40px var(--pad) 80px}
+.qr{max-width:860px;margin:0 auto;padding:40px 24px 80px}
 .qr-hd{text-align:center;margin-bottom:36px}
-.qr-hd h1{font-family:var(--serif);font-size:36px;color:var(--ink);margin:0 0 8px}
-.qr-hd p{font-size:16px;color:var(--txt2);max-width:56ch;margin:0 auto}
-.qr-prog{display:flex;align-items:center;justify-content:center;gap:12px;margin:28px 0 36px;flex-wrap:wrap}
-.qr-prog .barra{flex:1;max-width:400px;height:8px;background:var(--fio);border-radius:99px;overflow:hidden}
+.qr-hd h1{font-family:var(--serif);font-size:34px;color:var(--ink);margin:0 0 8px}
+.qr-hd .periodo{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:700}
+.qr-hd p{font-size:16px;color:var(--txt2);max-width:50ch;margin:8px auto 0}
+.qr-prog{display:flex;align-items:center;justify-content:center;gap:12px;margin:28px 0 20px;flex-wrap:wrap}
+.qr-prog .barra{flex:1;max-width:360px;height:8px;background:var(--fio);border-radius:99px;overflow:hidden}
 .qr-prog .preench{height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
 .qr-prog .label{font-size:14px;font-weight:700;color:var(--accent);white-space:nowrap}
-.qr-nav{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
-.qr-nav button{width:36px;height:36px;border:1px solid var(--fio);border-radius:6px;background:var(--papel);font-size:13px;font-weight:600;color:var(--txt2);cursor:pointer;transition:all .15s}
+.qr-nav{display:flex;gap:5px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+.qr-nav button{width:34px;height:34px;border:1px solid var(--fio);border-radius:6px;background:var(--papel);font-size:13px;font-weight:600;color:var(--txt2);cursor:pointer;transition:all .15s}
 .qr-nav button:hover{border-color:var(--accent);color:var(--accent)}
 .qr-nav button.ativo{background:var(--accent);color:#fff;border-color:var(--accent)}
-.qr-nav button.feito{background:var(--accentTint);color:var(--accent);border-color:var(--accentSoft)}
-.qr-card{background:var(--papel);border:1px solid var(--fio);border-radius:12px;padding:32px 28px;margin-bottom:24px}
-.qr-card h2{font-family:var(--serif);font-size:24px;color:var(--ink);margin:0 0 6px}
-.qr-card .tag{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700}
-.qr-card .med{margin-top:16px;font-size:16px;line-height:1.7;color:var(--txt)}
-.qr-card .med strong{color:var(--ink)}
-.qr-fixo{margin-top:8px}
-.qr-fixo summary{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink);cursor:pointer;padding:12px 0;border-bottom:1px solid var(--fio)}
-.qr-fixo summary:hover{color:var(--accent)}
-.qr-fixo .inner{padding:20px 0;font-size:15.5px;line-height:1.7;color:var(--txt)}
-.qr-fixo blockquote{margin:12px 0;padding:12px 20px;border-left:3px solid var(--accent);background:var(--accentTint);font-style:italic;color:var(--txt2);border-radius:0 6px 6px 0}
-.qr-como{background:var(--accentTint);border:1px solid var(--accentSoft);border-radius:10px;padding:24px;margin-bottom:28px;font-size:15px;line-height:1.7}
-.qr-como h3{font-family:var(--serif);font-size:18px;margin:0 0 12px;color:var(--ink)}
-.qr-como ol{margin:0;padding-left:20px}
+.qr-nav button.feito{background:var(--accentTint,#eef3f8);color:var(--accent);border-color:var(--accentSoft,#6a90b3)}
+.qr-sec{background:var(--papel);border:1px solid var(--fio);border-radius:10px;margin-bottom:16px;overflow:hidden}
+.qr-sec summary{font-family:var(--serif);font-size:17px;font-weight:600;color:var(--ink);cursor:pointer;padding:16px 20px;list-style:none}
+.qr-sec summary::-webkit-details-marker{display:none}
+.qr-sec summary::before{content:"▸ ";color:var(--accent);font-size:14px}
+.qr-sec[open] summary::before{content:"▾ "}
+.qr-sec .inner{padding:0 20px 20px;font-size:15px;line-height:1.75;color:var(--txt)}
+.qr-sec .inner p{margin:0 0 8px}
+.qr-sec .inner blockquote{margin:10px 0;padding:10px 18px;border-left:3px solid var(--accent);background:var(--accentTint,#eef3f8);font-style:italic;color:var(--txt2);border-radius:0 6px 6px 0}
+.qr-sec .inner .resp{font-weight:600;color:var(--accent)}
+.qr-med{background:var(--papel);border:1px solid var(--fio);border-top:3px solid var(--accent);border-radius:10px;padding:28px 24px;margin:28px 0}
+.qr-med .tag{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700}
+.qr-med h2{font-family:var(--serif);font-size:22px;color:var(--ink);margin:8px 0 16px}
+.qr-med .corpo{font-size:15.5px;line-height:1.75;color:var(--txt)}
+.qr-med .corpo strong{color:var(--ink)}
+.qr-med .proposito{margin-top:18px;padding:14px 18px;background:var(--accentTint,#eef3f8);border-radius:8px;font-size:14.5px;line-height:1.6}
+.qr-med .proposito strong{color:var(--accent)}
+.qr-augusta{background:var(--papel);border:1px solid var(--fio);border-radius:10px;margin-top:16px;overflow:hidden}
+.qr-augusta summary{font-family:var(--serif);font-size:17px;font-weight:600;color:var(--ink);cursor:pointer;padding:16px 20px;list-style:none}
+.qr-augusta summary::-webkit-details-marker{display:none}
+.qr-augusta summary::before{content:"▸ ";color:var(--gold,#bd9a4e);font-size:14px}
+.qr-augusta[open] summary::before{content:"▾ "}
+.qr-augusta .inner{padding:0 20px 20px;font-size:15px;line-height:1.75;color:var(--txt)}
+.qr-augusta .inner p{margin:0 0 8px}
 @media(max-width:620px){
-  .qr-card{padding:24px 20px}
-  .qr-nav button{width:32px;height:32px;font-size:12px}
-  .qr-hd h1{font-size:28px}
+  .qr{padding:28px 16px 60px}
+  .qr-hd h1{font-size:26px}
+  .qr-nav button{width:30px;height:30px;font-size:11px}
+  .qr-med{padding:22px 18px}
 }
 </style>
 
 <div class="qr">
   <div class="qr-hd">
-    <div class="tag">15 de agosto a 29 de setembro</div>
+    <div class="periodo">15 de agosto a 29 de setembro</div>
     <h1>Quaresma de São Miguel Arcanjo</h1>
     <p>40 dias de oração, penitência e combate espiritual sob a proteção do Príncipe da Milícia Celeste.</p>
   </div>
@@ -53,162 +65,156 @@ sitemap: true
 
   <div class="qr-nav" id="qr-nav"></div>
 
-  <div class="qr-como">
-    <h3>Como rezar cada dia</h3>
-    <ol>
-      <li>Faça o Sinal da Cruz.</li>
-      <li>Reze o Pequeno Exorcismo de São Miguel, a Ladainha, o Salmo 34(35), o Breve de Santo Antônio e a Oração de Libertação.</li>
-      <li>Reze a meditação do dia, em silêncio e com atenção.</li>
-      <li>Viva o propósito concreto.</li>
-      <li>Conclua com a oração **Augusta Rainha**.</li>
-    </ol>
-  </div>
+  <!-- ORAÇÕES INICIAIS -->
+  <details class="qr-sec" open>
+    <summary>Sinal da Cruz</summary>
+    <div class="inner"><blockquote>Pelo sinal da Santa Cruz, livrai-nos, Deus, nosso Senhor, dos nossos inimigos. Em nome do Pai, e do Filho, e do Espírito Santo. Amém.</blockquote></div>
+  </details>
 
-  <div class="qr-card" id="qr-dia">
-    <div class="tag" id="dia-tag">Dia 1</div>
-    <h2 id="dia-nome"></h2>
-    <div class="med" id="dia-corpo"></div>
-  </div>
+  <details class="qr-sec">
+    <summary>Oração a São Miguel Arcanjo</summary>
+    <div class="inner"><blockquote>São Miguel Arcanjo, defendei-nos no combate; sede o nosso refúgio contra as maldades e ciladas do demônio. Ordene-lhe Deus, instantemente o pedimos; e vós, príncipe da milícia celeste, pela virtude divina, precipitai no inferno a Satanás e a todos os espíritos malignos que andam pelo mundo para perder as almas. Amém.</blockquote></div>
+  </details>
 
-  <details class="qr-fixo">
-    <summary>Orações do dia (texto-base)</summary>
-    <div class="inner" id="qr-oracoes">
-<h4>Sinal da Cruz</h4>
-
-<blockquote>Pelo sinal da Santa Cruz, livrai-nos, Deus, nosso Senhor, dos nossos inimigos. Em nome do Pai, e do Filho, e do Espírito Santo. Amém.</blockquote>
-
-<h4>Oração a São Miguel Arcanjo</h4>
-
-<blockquote>São Miguel Arcanjo, defendei-nos no combate; sede o nosso refúgio contra as maldades e ciladas do demônio. Ordene-lhe Deus, instantemente o pedimos; e vós, príncipe da milícia celeste, pela virtude divina, precipitai no inferno a Satanás e a todos os espíritos malignos que andam pelo mundo para perder as almas. Amém.</blockquote>
-
-<h4>Ladainha de São Miguel Arcanjo</h4>
-
-<blockquote>Senhor, tende piedade de nós.</blockquote>
-<p>></p>
+  <details class="qr-sec">
+    <summary>Ladainha de São Miguel Arcanjo</summary>
+    <div class="inner"><blockquote>Senhor, tende piedade de nós.</blockquote>
+<blockquote></blockquote>
 <blockquote>Cristo, tende piedade de nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Senhor, tende piedade de nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Cristo, ouvi-nos.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Cristo, atendei-nos.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Deus Pai dos céus, tende piedade de nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Deus Filho, Redentor do mundo, tende piedade de nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Deus Espírito Santo, tende piedade de nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Santíssima Trindade, que sois um só Deus, tende piedade de nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Santa Maria, Rainha dos Anjos, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel Arcanjo, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, cheio da graça de Deus, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, perfeito adorador do Verbo divino, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, coroado de honra e de glória, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, poderosíssimo príncipe dos exércitos do Senhor, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, porta-estandarte da Santíssima Trindade, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, guardião do Paraíso, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, guia e consolador do povo de Deus, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, esplendor e fortaleza da Igreja militante, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, honra e alegria da Igreja triunfante, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, luz dos anjos, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, baluarte dos cristãos, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, força dos que combatem sob o estandarte da Cruz, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, luz e confiança das almas na última hora, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, socorro certíssimo, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, nosso auxílio em todas as adversidades, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, arauto da sentença eterna, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, consolador das almas do Purgatório, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, encarregado de receber as almas depois da morte, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, nosso príncipe, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>São Miguel, nosso advogado, rogai por nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Cordeiro de Deus, que tirais o pecado do mundo, perdoai-nos, Senhor.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Cordeiro de Deus, que tirais o pecado do mundo, ouvi-nos, Senhor.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Rogai por nós, glorioso São Miguel, príncipe da Igreja de Cristo.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Para que sejamos dignos de suas promessas.</blockquote>
-<p>></p>
-<blockquote>**Oremos.** Senhor Jesus, santificai-nos por uma bênção sempre nova e concedei-nos, pela intercessão de São Miguel, a sabedoria que nos ensina a ajuntar riquezas no céu e a trocar os bens do tempo presente pelos da eternidade. Vós que viveis e reinais pelos séculos dos séculos. Amém.</blockquote>
+<blockquote></blockquote>
+<blockquote><strong>Oremos.</strong> Senhor Jesus, santificai-nos por uma bênção sempre nova e concedei-nos, pela intercessão de São Miguel, a sabedoria que nos ensina a ajuntar riquezas no céu e a trocar os bens do tempo presente pelos da eternidade. Vós que viveis e reinais pelos séculos dos séculos. Amém.</blockquote></div>
+  </details>
 
-<h4>Salmo 34(35), 1–9</h4>
-
-<blockquote>Julga, Senhor, os que me fazem dano; combate os que me combatem.</blockquote>
-<p>></p>
+  <details class="qr-sec">
+    <summary>Salmo 34(35), 1–9</summary>
+    <div class="inner"><blockquote>Julga, Senhor, os que me fazem dano; combate os que me combatem.</blockquote>
+<blockquote></blockquote>
 <blockquote>Toma as armas e o escudo e levanta-te em meu socorro.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Empunha a lança e fecha o caminho aos que me perseguem; dize à minha alma: “Eu sou a tua salvação.”</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Sejam confundidos e envergonhados os que buscam a minha vida; recuem humilhados os que planejam o meu mal.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Sejam como a palha diante do vento, quando o anjo do Senhor os dispersar.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Torne-se o caminho deles escuro e escorregadio, quando o anjo do Senhor os perseguir.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Pois, sem motivo, esconderam para mim a sua rede; sem razão cavaram uma cova para a minha vida.</blockquote>
-<p>></p>
+<blockquote></blockquote>
 <blockquote>Venha sobre eles a ruína inesperada; prenda-os a rede que esconderam, e caiam eles mesmos na armadilha.</blockquote>
-<p>></p>
-<blockquote>Então minha alma se alegrará no Senhor e exultará em sua salvação.</blockquote>
+<blockquote></blockquote>
+<blockquote>Então minha alma se alegrará no Senhor e exultará em sua salvação.</blockquote></div>
+  </details>
 
-<h4>Breve de Santo Antônio</h4>
+  <details class="qr-sec">
+    <summary>Breve de Santo Antônio</summary>
+    <div class="inner"><blockquote><strong>V.</strong> Eis a Cruz do Senhor: fugi, potências inimigas.</blockquote>
+<blockquote></blockquote>
+<blockquote><strong>R.</strong> Venceu o Leão da tribo de Judá, a estirpe de Davi.</blockquote>
+<blockquote></blockquote>
+<blockquote><strong>V.</strong> Venha a nós, Senhor, a vossa misericórdia.</blockquote>
+<blockquote></blockquote>
+<blockquote><strong>R.</strong> Como esperamos em vós.</blockquote></div>
+  </details>
 
-<blockquote>**V.** Eis a Cruz do Senhor: fugi, potências inimigas.</blockquote>
-<p>></p>
-<blockquote>**R.** Venceu o Leão da tribo de Judá, a estirpe de Davi.</blockquote>
-<p>></p>
-<blockquote>**V.** Venha a nós, Senhor, a vossa misericórdia.</blockquote>
-<p>></p>
-<blockquote>**R.** Como esperamos em vós.</blockquote>
-
-<h4>Oração de Libertação</h4>
-
-<blockquote>Senhor Jesus Cristo, entrego-me a vós e peço a graça de permanecer na vossa verdade, na vossa paz e na vossa caridade. Libertai-me de todo pecado, de toda tentação, de toda influência contrária à vossa vontade e de todo medo que me afaste de vós.</blockquote>
-<p>></p>
+  <details class="qr-sec">
+    <summary>Oração de Libertação</summary>
+    <div class="inner"><blockquote>Senhor Jesus Cristo, entrego-me a vós e peço a graça de permanecer na vossa verdade, na vossa paz e na vossa caridade. Libertai-me de todo pecado, de toda tentação, de toda influência contrária à vossa vontade e de todo medo que me afaste de vós.</blockquote>
+<blockquote></blockquote>
 <blockquote>Pelo poder de vossa Cruz, pela intercessão da Santíssima Virgem Maria, de São Miguel Arcanjo e de todos os santos anjos, guardai-me no corpo, na mente e na alma. Dai-me a graça da vigilância, da humildade, da sobriedade e da perseverança. Amém.</blockquote>
+<blockquote><strong>Para os leigos:</strong> reze sempre em forma de súplica, pedindo a Deus proteção e libertação; não use fórmulas imperativas dirigidas a espíritos.</blockquote></div>
+  </details>
 
-<blockquote>**Para os leigos:** reze sempre em forma de súplica, pedindo a Deus proteção e libertação; não use fórmulas imperativas dirigidas a espíritos.</blockquote>
+  <!-- MEDITAÇÃO DO DIA -->
+  <div class="qr-med" id="qr-dia">
+    <div class="tag" id="dia-tag">Dia 1 de 40</div>
+    <h2 id="dia-nome"></h2>
+    <div class="corpo" id="dia-corpo"></div>
+  </div>
 
-<h4>Augusta Rainha</h4>
-
-<blockquote>Augusta Rainha dos céus, soberana Mestra dos Anjos, vós que, desde o princípio, recebestes de Deus o poder e a missão de esmagar a cabeça de Satanás, nós vo-lo pedimos humildemente: enviai as vossas legiões celestes para que, sob as vossas ordens e por vosso poder, persigam os demônios, combatendo-os por toda parte, reprimindo-lhes a insolência e lançando-os no abismo.</blockquote>
-<p>></p>
+  <!-- ORAÇÃO FINAL -->
+  <details class="qr-augusta">
+    <summary>Augusta Rainha</summary>
+    <div class="inner"><blockquote>Augusta Rainha dos céus, soberana Mestra dos Anjos, vós que, desde o princípio, recebestes de Deus o poder e a missão de esmagar a cabeça de Satanás, nós vo-lo pedimos humildemente: enviai as vossas legiões celestes para que, sob as vossas ordens e por vosso poder, persigam os demônios, combatendo-os por toda parte, reprimindo-lhes a insolência e lançando-os no abismo.</blockquote>
+<blockquote></blockquote>
 <blockquote>Quem é como Deus?</blockquote>
-<p>></p>
-<blockquote>Ó Mãe de bondade e ternura, vós sereis sempre o nosso amor e a nossa esperança. Ó Mãe divina, enviai os santos anjos para nos defenderem e repeli para longe de nós o cruel inimigo. Santos Anjos e Arcanjos, defendei-nos e guardai-nos. Amém.</blockquote>
+<blockquote></blockquote>
+<blockquote>Ó Mãe de bondade e ternura, vós sereis sempre o nosso amor e a nossa esperança. Ó Mãe divina, enviai os santos anjos para nos defenderem e repeli para longe de nós o cruel inimigo. Santos Anjos e Arcanjos, defendei-nos e guardai-nos. Amém.</blockquote></div>
+  </details>
 
-<h4>Oração final</h4>
-
-<blockquote>Senhor Jesus, ofereço-vos esta oração em honra de São Miguel Arcanjo. Recebei minha penitência, meu trabalho, minhas alegrias e minhas lutas. Concedei-me perseverar na graça, crescer na santidade e servir-vos com coração indiviso. Amém.</blockquote>
-
+  <details class="qr-augusta" style="margin-top:8px">
+    <summary>Oração final</summary>
+    <div class="inner"><blockquote>Senhor Jesus, ofereço-vos esta oração em honra de São Miguel Arcanjo. Recebei minha penitência, meu trabalho, minhas alegrias e minhas lutas. Concedei-me perseverar na graça, crescer na santidade e servir-vos com coração indiviso. Amém.</blockquote>
 <p>---</p>
-    </div>
+<p># Meditações diárias</p></div>
   </details>
 </div>
 
@@ -218,17 +224,39 @@ sitemap: true
 <script>
 (function(){
   var dados = JSON.parse(document.getElementById("quaresma-dados").textContent);
-  var inicio = new Date(2026,7,15); // 15 de agosto (mês 0-indexed)
+  var inicio = new Date(2026,7,15);
   var hoje = new Date(); hoje.setHours(0,0,0,0);
   var diff = Math.floor((hoje - inicio) / 86400000);
   var diaAtual = Math.max(1, Math.min(40, diff + 1));
   var nav = document.getElementById("qr-nav");
 
+  function nl2br(t) {
+    return t.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")
+            .replace(/\*(.+?)\*/g,"<em>$1</em>")
+            .replace(/^> ?(.+)$/gm,"<blockquote>$1</blockquote>")
+            .replace(/\n/g,"<br>");
+  }
+
   function mostrar(n) {
     var d = dados[n-1];
     document.getElementById("dia-tag").textContent = "Dia " + n + " de 40";
     document.getElementById("dia-nome").textContent = d.nome;
-    var html = d.corpo.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\n/g, "<br>");
+
+    var partes = d.corpo.split(/\n\n+/);
+    var html = "";
+    var emProposito = false;
+    for (var i = 0; i < partes.length; i++) {
+      var p = partes[i].trim();
+      if (p.match(/^\*\*Propósito/i) || p.match(/^Propósito/i)) {
+        emProposito = true;
+      }
+      if (emProposito) {
+        html += '<div class="proposito">' + nl2br(p) + '</div>';
+        emProposito = false;
+      } else {
+        html += '<p>' + nl2br(p) + '</p>';
+      }
+    }
     document.getElementById("dia-corpo").innerHTML = html;
     document.getElementById("prog-label").textContent = "Dia " + n + " de 40";
     document.getElementById("prog-bar").style.width = (n/40*100) + "%";
@@ -247,7 +275,6 @@ sitemap: true
     btn.addEventListener("click", function(){ mostrar(parseInt(this.getAttribute("data-dia"))); });
     nav.appendChild(btn);
   }
-
   mostrar(diaAtual);
 })();
 </script>
