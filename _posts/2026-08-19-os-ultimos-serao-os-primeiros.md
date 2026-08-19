@@ -1,12 +1,12 @@
 ---
-title: "Os últimos serão os primeiros"
+title: Os últimos serão os primeiros
 date: 2026-08-19
-celebracao: "Quarta-feira da 20ª Semana do Tempo Comum"
-evangelho: "Mt 20,1-16"
-leituras: "Jz 9,6-15 · Sl 20(21) · Mt 20,1-16"
-citacao: "Assim os últimos serão os primeiros, e os primeiros serão os últimos."
+celebracao: Quarta-feira da 20ª Semana do Tempo Comum
+evangelho: Mt 20,1-16
+leituras: Jz 9,6-15 · Sl 20(21) · Mt 20,1-16
+citacao: Assim os últimos serão os primeiros, e os primeiros serão os últimos.
 imagem: /assets/img/2026-08-19.jpg
-resumo: "O dono da vinha paga o mesmo a quem trabalhou o dia todo e a quem chegou na última hora. A justiça de Deus não funciona por mérito acumulado — funciona por generosidade, e isso incomoda quem fez as contas."
+resumo: O dono da vinha paga o mesmo a quem trabalhou o dia todo e a quem chegou na última hora. A justiça de Deus não funciona por mérito, mas por generosidade.
 ---
 
 ## O dono que sai o dia inteiro à procura
