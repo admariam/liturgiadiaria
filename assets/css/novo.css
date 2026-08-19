@@ -170,6 +170,11 @@ img{max-width:100%;display:block}
 @media (max-width:900px){
   :root{--pad:18px}
   .nav{display:none}
+  .nav.aberto{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--papel);border-bottom:1px solid var(--fio);padding:8px 18px 16px;gap:0;box-shadow:0 8px 24px rgba(24,36,50,.10);z-index:30}
+  .nav.aberto a{padding:12px 0;border-bottom:1px solid var(--fio);font-size:16px}
+  .nav.aberto a:last-child{border-bottom:0}
+  .nav.aberto a::after{display:none}
+  .hdr-in{position:relative}
   .btn-menu{display:grid}
   .utilbar .versiculo{display:none}
   .hero-in{padding:56px var(--pad) 76px}
