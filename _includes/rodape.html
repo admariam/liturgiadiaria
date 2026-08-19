@@ -42,6 +42,15 @@
   var meses = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
   var el = document.getElementById('data-hoje');
   if (el) el.textContent = dias[d.getDay()]+', '+d.getDate()+' de '+meses[d.getMonth()]+' de '+d.getFullYear();
+  // menu mobile
+  var btnMenu = document.getElementById('btn-menu');
+  var navEl = document.querySelector('.nav');
+  if (btnMenu && navEl) {
+    btnMenu.addEventListener('click', function(){
+      navEl.classList.toggle('aberto');
+    });
+  }
+
   var bb = document.getElementById('buscabar');
   var campo = document.getElementById('campo-busca');
   var res = document.getElementById('busca-res');
