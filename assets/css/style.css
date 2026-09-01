@@ -1006,3 +1006,26 @@ sup[role="doc-noteref"] a:hover,
 @media (max-width: 700px) {
   .menu-liturgia-item small { font-size: 10px; }
 }
+
+/* tipografia das leituras alinhada ao corpo da reflexão */
+.leituras-completas {
+  font-family: var(--texto);
+  font-size: 17px;
+  line-height: 1.75;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.leituras-completas p {
+  margin: 0 0 18px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.leituras-completas h2,
+.leituras-completas h3 {
+  text-align: left;
+}
+@media (max-width: 620px) {
+  .leituras-completas { font-size: 17px; line-height: 1.75; }
+}
