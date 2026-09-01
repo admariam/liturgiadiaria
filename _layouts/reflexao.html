@@ -27,7 +27,7 @@ layout: default
   </header>
   {% if page.novo_formato and page.leituras %}
   <section class="liturgia-resumo" aria-labelledby="liturgia-titulo">
-    <h2 id="liturgia-titulo">Leituras do dia</h2>
+    <h2 id="liturgia-titulo">Liturgia do dia</h2>
     <p class="liturgia-referencias">{{ page.leituras }}</p>
     {% if page.evangelho or page.citacao %}
     <div class="passagem-horizontal">
@@ -39,15 +39,31 @@ layout: default
     </div>
     {% endif %}
     {% if page.leitura_include %}
-    <div class="leituras-completas">
-      {% include {{ page.leitura_include }} %}
+    <div class="liturgia-navegavel">
+      <nav class="menu-liturgia" aria-label="Seções da liturgia" role="tablist">
+        <button type="button" class="menu-liturgia-item ativo" role="tab" aria-selected="true" aria-controls="reflexao" data-target="reflexao">Reflexão</button>
+        <button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="primeira-leitura" data-target="primeira-leitura">Primeira Leitura</button>
+        {% if page.segunda_leitura_include %}<button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="segunda-leitura" data-target="segunda-leitura">Segunda Leitura</button>{% endif %}
+        <button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="salmo" data-target="salmo">Salmo</button>
+        <button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="evangelho" data-target="evangelho">Evangelho</button>
+      </nav>
+      <div class="leituras-completas">
+        <section id="reflexao" class="painel-leitura painel-reflexao ativo" role="tabpanel" aria-labelledby="tab-reflexao">
+          <div class="reflexao-texto{% if page.sem_topicos %} texto-sem-topicos{% endif %}">
+            {{ content }}
+          </div>
+        </section>
+        {% include {{ page.leitura_include }} %}
+        {% if page.segunda_leitura_include %}{% include {{ page.segunda_leitura_include }} %}{% endif %}
+      </div>
     </div>
     {% endif %}
   </section>
-  {% endif %}
-  <div class="reflexao-texto{% if page.sem_topicos %} texto-sem-topicos{% endif %}">
+  {% else %}
+  <div class="reflexao-texto">
     {{ content }}
   </div>
+  {% endif %}
   <nav class="folhear" aria-label="Navegar entre reflexões">
     {% if page.previous %}<a href="{{ page.previous.url | relative_url }}">‹ anterior</a>{% else %}<span class="vazia"></span>{% endif %}
     {% if page.next %}<a href="{{ page.next.url | relative_url }}">seguinte ›</a>{% else %}<span class="vazia"></span>{% endif %}
@@ -70,5 +86,36 @@ layout: default
     }
     window.open('https://wa.me/?text=' + encodeURIComponent(completo), '_blank', 'noopener');
   });
+})();
+</script>
+
+<script id="liturgia-tabs-script">
+(function(){
+  var menu = document.querySelector('.menu-liturgia');
+  if (!menu) return;
+  var botoes = Array.prototype.slice.call(menu.querySelectorAll('[data-target]'));
+  var paineis = Array.prototype.slice.call(document.querySelectorAll('.painel-leitura'));
+  function ativar(id, atualizarUrl) {
+    var painel = document.getElementById(id);
+    var botao = menu.querySelector('[data-target="' + id + '"]');
+    if (!painel || !botao) return;
+    paineis.forEach(function(item){
+      var ativo = item === painel;
+      item.classList.toggle('ativo', ativo);
+      item.hidden = !ativo;
+    });
+    botoes.forEach(function(item){
+      var ativo = item === botao;
+      item.classList.toggle('ativo', ativo);
+      item.setAttribute('aria-selected', ativo ? 'true' : 'false');
+    });
+    if (atualizarUrl && window.history && history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+  botoes.forEach(function(botao){
+    botao.id = 'tab-' + botao.dataset.target;
+    botao.addEventListener('click', function(){ ativar(botao.dataset.target, true); });
+  });
+  var inicial = window.location.hash ? window.location.hash.slice(1) : 'reflexao';
+  ativar(document.getElementById(inicial) ? inicial : 'reflexao', false);
 })();
 </script>

@@ -814,3 +814,45 @@ sup[role="doc-noteref"] a:hover,
 @media (max-width: 620px) {
   .leituras-completas { padding: 18px 16px 6px; font-size: 14px; }
 }
+
+/* --- menu de navegação da liturgia --- */
+.liturgia-navegavel { margin-top: 24px; }
+.menu-liturgia {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 4px;
+  margin-bottom: 12px;
+  scrollbar-width: thin;
+}
+.menu-liturgia-item {
+  flex: 0 0 auto;
+  padding: 10px 14px;
+  border: 1px solid var(--fio);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--tinta-suave);
+  font-family: var(--texto);
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color .15s ease, background .15s ease, border-color .15s ease;
+}
+.menu-liturgia-item:hover { color: var(--accent-deep); border-color: var(--accent-deep); }
+.menu-liturgia-item.ativo,
+.menu-liturgia-item[aria-selected="true"] {
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+  color: #fff;
+}
+.painel-leitura { display: none; }
+.painel-leitura.ativo { display: block; }
+.painel-leitura > .titulo-painel { display: none; }
+.painel-reflexao .reflexao-texto { margin-top: 0; }
+.painel-reflexao .reflexao-texto h2 { display: none; }
+.liturgia-completa .painel-leitura { display: block; }
+@media (max-width: 620px) {
+  .menu-liturgia { margin-right: -4px; margin-left: -4px; }
+  .menu-liturgia-item { padding: 9px 12px; font-size: 12px; }
+}
