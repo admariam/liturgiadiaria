@@ -1,6 +1,7 @@
 ---
 title: "A cura que se torna serviço"
 novo_formato: true
+leitura_include: "leituras/2026-09-02.md"
 date: 2026-09-02
 celebracao: "22ª Semana do Tempo Comum · Ano Par II"
 evangelho: "Lc 4,38-44"

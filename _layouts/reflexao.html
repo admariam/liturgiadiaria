@@ -38,6 +38,11 @@ layout: default
       {% if page.citacao %}<blockquote>“{{ page.citacao }}”</blockquote>{% endif %}
     </div>
     {% endif %}
+    {% if page.leitura_include %}
+    <div class="leituras-completas">
+      {% include {{ page.leitura_include }} %}
+    </div>
+    {% endif %}
   </section>
   {% endif %}
   <div class="reflexao-texto{% if page.sem_topicos %} texto-sem-topicos{% endif %}">

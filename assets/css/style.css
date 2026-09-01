@@ -786,3 +786,31 @@ sup[role="doc-noteref"] a:hover,
   }
   .passagem-horizontal blockquote { padding: 16px; font-size: 16px; }
 }
+
+/* --- texto integral das leituras --- */
+.leituras-completas {
+  margin-top: 24px;
+  padding: 22px 22px 8px;
+  background: rgba(255, 255, 255, .58);
+  border: 1px solid var(--fio);
+  border-radius: 12px;
+  color: var(--tinta);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.leituras-completas h3 {
+  margin: 20px 0 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--fio);
+  color: var(--accent-deep);
+  font-family: var(--display);
+  font-size: 13px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.leituras-completas h3:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.leituras-completas p { margin: 0 0 12px; }
+.leituras-completas strong { font-weight: 650; }
+@media (max-width: 620px) {
+  .leituras-completas { padding: 18px 16px 6px; font-size: 14px; }
+}

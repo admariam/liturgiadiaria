@@ -1,6 +1,7 @@
 ---
 title: "Uma palavra com autoridade"
 novo_formato: true
+leitura_include: "leituras/2026-09-01.md"
 date: 2026-09-01
 celebracao: "22ª Semana do Tempo Comum · Ano Par II"
 evangelho: "Lc 4,31-37"
