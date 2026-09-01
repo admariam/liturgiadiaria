@@ -714,3 +714,75 @@ sup[role="doc-noteref"] a:hover,
   color: var(--tinta-suave);
   white-space: nowrap;
 }
+
+/* --- leituras do dia e passagem em destaque nas reflexões --- */
+.liturgia-resumo {
+  margin: 28px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--fio);
+}
+.liturgia-resumo h2 {
+  margin: 0 0 7px;
+  font-family: var(--display);
+  font-size: 17px;
+  color: var(--tinta);
+}
+.liturgia-referencias {
+  margin: 0 0 16px;
+  color: var(--tinta-suave);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.passagem-horizontal {
+  display: flex;
+  align-items: stretch;
+  min-height: 82px;
+  overflow: hidden;
+  background: linear-gradient(115deg, rgba(122, 90, 47, .09), rgba(122, 90, 47, .035));
+  border: 1px solid var(--fio);
+  border-left: 4px solid var(--accent-deep, #7a5a2f);
+  border-radius: 10px;
+}
+.passagem-identificacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 142px;
+  padding: 14px 18px;
+  border-right: 1px solid var(--fio);
+}
+.passagem-rotulo {
+  margin-bottom: 5px;
+  color: var(--accent-deep, #7a5a2f);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.passagem-identificacao strong {
+  color: var(--tinta);
+  font-family: var(--display);
+  font-size: 16px;
+}
+.passagem-horizontal blockquote {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0;
+  padding: 14px 22px;
+  color: var(--tinta);
+  font-family: var(--display);
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.45;
+}
+@media (max-width: 620px) {
+  .passagem-horizontal { flex-direction: column; }
+  .passagem-identificacao {
+    flex-basis: auto;
+    padding: 12px 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--fio);
+  }
+  .passagem-horizontal blockquote { padding: 16px; font-size: 16px; }
+}

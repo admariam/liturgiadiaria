@@ -22,11 +22,25 @@ layout: default
   {% endif %}
   <header class="reflexao-cabecalho">
     <span class="tag">{{ page.celebracao }}</span>
-    {% if page.leituras %}<p class="leituras">{{ page.leituras }}</p>{% endif %}
     <h1>{{ page.title }}</h1>
     <p class="data">{{ page.date | date: "%d.%m.%Y" }}{% if page.autor %} · <em class="autor">por {{ page.autor }}</em>{% endif %}</p>
   </header>
-  <div class="reflexao-texto">
+  {% if page.novo_formato and page.leituras %}
+  <section class="liturgia-resumo" aria-labelledby="liturgia-titulo">
+    <h2 id="liturgia-titulo">Leituras do dia</h2>
+    <p class="liturgia-referencias">{{ page.leituras }}</p>
+    {% if page.evangelho or page.citacao %}
+    <div class="passagem-horizontal">
+      <div class="passagem-identificacao">
+        <span class="passagem-rotulo">Evangelho</span>
+        {% if page.evangelho %}<strong>{{ page.evangelho }}</strong>{% endif %}
+      </div>
+      {% if page.citacao %}<blockquote>“{{ page.citacao }}”</blockquote>{% endif %}
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+  <div class="reflexao-texto{% if page.sem_topicos %} texto-sem-topicos{% endif %}">
     {{ content }}
   </div>
   <nav class="folhear" aria-label="Navegar entre reflexões">
