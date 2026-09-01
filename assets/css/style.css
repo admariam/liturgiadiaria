@@ -1029,3 +1029,11 @@ sup[role="doc-noteref"] a:hover,
 @media (max-width: 620px) {
   .leituras-completas { font-size: 17px; line-height: 1.75; }
 }
+
+/* prioridade final: leituras com a mesma tipografia do corpo da reflexão */
+.liturgia-resumo .leituras-completas .painel-leitura p {
+  font-family: var(--texto) !important;
+  font-size: 17px !important;
+  line-height: 1.75 !important;
+  font-weight: 400;
+}
