@@ -989,3 +989,20 @@ sup[role="doc-noteref"] a:hover,
   }
   .menu-liturgia-item::after { right: 15px; left: 15px; }
 }
+
+/* referências bíblicas dentro do menu */
+.menu-liturgia-item small {
+  display: block;
+  margin-top: 5px;
+  color: var(--tinta-suave);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .01em;
+  line-height: 1.25;
+  text-transform: none;
+}
+.menu-liturgia-item.ativo small,
+.menu-liturgia-item[aria-selected="true"] small { color: var(--accent-deep); }
+@media (max-width: 700px) {
+  .menu-liturgia-item small { font-size: 10px; }
+}

@@ -3,6 +3,8 @@ title: "Uma palavra com autoridade"
 novo_formato: true
 menu_leituras: true
 leitura_include: "leituras/2026-09-01-secoes.html"
+primeira_leitura: "1Cor 2,10b-16"
+salmo: "Sl 144(145),8-9.10-14"
 date: 2026-09-01
 celebracao: "22ª Semana do Tempo Comum · Ano Par II"
 evangelho: "Lc 4,31-37"

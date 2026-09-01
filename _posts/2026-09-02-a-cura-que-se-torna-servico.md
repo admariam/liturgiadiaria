@@ -3,6 +3,8 @@ title: "A cura que se torna serviço"
 novo_formato: true
 menu_leituras: true
 leitura_include: "leituras/2026-09-02-secoes.html"
+primeira_leitura: "1Cor 3,1-9"
+salmo: "Sl 32(33),12-15.20-21"
 date: 2026-09-02
 celebracao: "22ª Semana do Tempo Comum · Ano Par II"
 evangelho: "Lc 4,38-44"

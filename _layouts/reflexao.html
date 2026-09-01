@@ -25,27 +25,15 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p class="data">{{ page.date | date: "%d.%m.%Y" }}{% if page.autor %} · <em class="autor">por {{ page.autor }}</em>{% endif %}</p>
   </header>
-  {% if page.novo_formato and page.leituras %}
-  <section class="liturgia-resumo" aria-labelledby="liturgia-titulo">
-    <h2 id="liturgia-titulo">Liturgia do dia</h2>
-    <p class="liturgia-referencias">{{ page.leituras }}</p>
-    {% if page.evangelho or page.citacao %}
-    <div class="passagem-horizontal">
-      <div class="passagem-identificacao">
-        <span class="passagem-rotulo">Evangelho</span>
-        {% if page.evangelho %}<strong>{{ page.evangelho }}</strong>{% endif %}
-      </div>
-      {% if page.citacao %}<blockquote>“{{ page.citacao }}”</blockquote>{% endif %}
-    </div>
-    {% endif %}
-    {% if page.leitura_include %}
+  {% if page.novo_formato and page.leitura_include %}
+  <section class="liturgia-resumo" aria-label="Liturgia do dia">
     <div class="liturgia-navegavel">
       <nav class="menu-liturgia" aria-label="Seções da liturgia" role="tablist">
         <button type="button" class="menu-liturgia-item ativo" role="tab" aria-selected="true" aria-controls="reflexao" data-target="reflexao">Reflexão</button>
-        <button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="primeira-leitura" data-target="primeira-leitura">Primeira Leitura</button>
-        {% if page.segunda_leitura_include %}<button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="segunda-leitura" data-target="segunda-leitura">Segunda Leitura</button>{% endif %}
-        <button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="salmo" data-target="salmo">Salmo</button>
-        <button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="evangelho" data-target="evangelho">Evangelho</button>
+        <button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="primeira-leitura" data-target="primeira-leitura">Primeira Leitura <small>{{ page.primeira_leitura }}</small></button>
+        {% if page.segunda_leitura_include %}<button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="segunda-leitura" data-target="segunda-leitura">Segunda Leitura <small>{{ page.segunda_leitura }}</small></button>{% endif %}
+        <button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="salmo" data-target="salmo">Salmo <small>{{ page.salmo }}</small></button>
+        <button type="button" class="menu-liturgia-item" role="tab" aria-selected="false" aria-controls="evangelho" data-target="evangelho">Evangelho <small>{{ page.evangelho }}</small></button>
       </nav>
       <div class="leituras-completas">
         <section id="reflexao" class="painel-leitura painel-reflexao ativo" role="tabpanel" aria-labelledby="tab-reflexao">
