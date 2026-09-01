@@ -856,3 +856,136 @@ sup[role="doc-noteref"] a:hover,
   .menu-liturgia { margin-right: -4px; margin-left: -4px; }
   .menu-liturgia-item { padding: 9px 12px; font-size: 12px; }
 }
+
+/* --- refinamento editorial do menu de liturgia --- */
+.menu-liturgia {
+  display: flex;
+  align-items: flex-end;
+  gap: 26px;
+  overflow-x: auto;
+  padding: 0 2px;
+  margin: 26px 0 0;
+  border-bottom: 1px solid var(--fio);
+  scrollbar-width: none;
+}
+.menu-liturgia::-webkit-scrollbar { display: none; }
+.menu-liturgia-item,
+.menu-liturgia-item:hover,
+.menu-liturgia-item.ativo,
+.menu-liturgia-item[aria-selected="true"] {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0 0 11px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--tinta-suave);
+  font-family: var(--texto);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color .18s ease;
+}
+.menu-liturgia-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background: transparent;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .18s ease, background .18s ease;
+}
+.menu-liturgia-item:hover { color: var(--tinta); }
+.menu-liturgia-item.ativo,
+.menu-liturgia-item[aria-selected="true"] { color: var(--accent-deep); }
+.menu-liturgia-item.ativo::after,
+.menu-liturgia-item[aria-selected="true"]::after {
+  background: var(--accent-deep);
+  transform: scaleX(1);
+}
+@media (max-width: 620px) {
+  .menu-liturgia { gap: 21px; margin-top: 22px; }
+  .menu-liturgia-item,
+  .menu-liturgia-item:hover,
+  .menu-liturgia-item.ativo,
+  .menu-liturgia-item[aria-selected="true"] {
+    padding-bottom: 10px;
+    font-size: 10px;
+    letter-spacing: .08em;
+  }
+}
+
+/* --- menu editorial final --- */
+.menu-liturgia {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+  margin: 28px 0 0;
+  border-top: 1px solid var(--fio);
+  border-bottom: 1px solid var(--fio);
+  background: transparent;
+}
+.menu-liturgia-item,
+.menu-liturgia-item:hover,
+.menu-liturgia-item.ativo,
+.menu-liturgia-item[aria-selected="true"] {
+  position: relative;
+  flex: 1 0 auto;
+  min-height: 48px;
+  margin: 0;
+  padding: 14px 18px 13px;
+  border: 0;
+  border-right: 1px solid var(--fio);
+  border-radius: 0;
+  background: transparent;
+  color: var(--tinta-suave);
+  font-family: var(--texto);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .11em;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color .18s ease, background .18s ease;
+}
+.menu-liturgia-item:last-child { border-right: 0; }
+.menu-liturgia-item:hover { background: var(--papel-2); color: var(--tinta); }
+.menu-liturgia-item.ativo,
+.menu-liturgia-item[aria-selected="true"] { background: var(--papel-2); color: var(--primary-deep); }
+.menu-liturgia-item::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  bottom: -1px;
+  left: 18px;
+  height: 2px;
+  background: transparent;
+  transform: none;
+  transition: background .18s ease;
+}
+.menu-liturgia-item.ativo::after,
+.menu-liturgia-item[aria-selected="true"]::after { background: var(--accent-deep); }
+@media (max-width: 700px) {
+  .menu-liturgia-item,
+  .menu-liturgia-item:hover,
+  .menu-liturgia-item.ativo,
+  .menu-liturgia-item[aria-selected="true"] {
+    flex: 0 0 auto;
+    min-width: 128px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 9px;
+  }
+  .menu-liturgia-item::after { right: 15px; left: 15px; }
+}
