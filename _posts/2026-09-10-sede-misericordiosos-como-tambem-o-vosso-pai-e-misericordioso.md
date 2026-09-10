@@ -12,7 +12,6 @@ evangelho: "Lc 6,27-38"
 leituras: "1Cor 8,1b-7.11-13 · Sl 138(139),1-3.13-14ab.23-24 · Lc 6,27-38"
 sem_topicos: true
 imagem: /assets/img/2026-09-10.jpg
-resumo: "Reflexão sobre o Evangelho de Lucas e o chamado à vida cristã."
 ---
 Jesus dirige sua palavra àqueles que o escutam e os conduz para além da medida espontânea das relações humanas: “Amai os vossos inimigos e fazei o bem aos que vos odeiam” (Lc 6,27). Não se trata apenas de evitar a vingança ou controlar o ressentimento. O Senhor pede uma ação positiva em favor daquele que nos feriu. A caridade cristã não fica limitada ao círculo dos que nos tratam bem; nasce de Deus e alcança também o inimigo.
 
