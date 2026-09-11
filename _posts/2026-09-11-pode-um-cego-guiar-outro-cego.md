@@ -12,6 +12,7 @@ evangelho: "Lc 6,39-42"
 leituras: "1Cor 9,16-19.22b-27 · Sl 83(84),3.4.5-6.12 · Lc 6,39-42"
 sem_topicos: true
 imagem: /assets/img/2026-09-11.jpg
+resumo: "Jesus ensina a reconhecer a própria cegueira antes de corrigir o irmão e a formar-se segundo o Mestre."
 ---
 Jesus pergunta: “Pode um cego guiar outro cego?” (Lc 6,39). A pergunta não se dirige somente aos que ensinam publicamente. Ela alcança todos os que, de algum modo, pretendem orientar, corrigir ou conduzir os outros. Quem não reconhece a própria cegueira pode levar consigo outra pessoa para o mesmo buraco. A primeira exigência de quem deseja ajudar é admitir que também precisa ser iluminado.
 

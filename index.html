@@ -6,6 +6,7 @@ permalink: /
 
 <!-- hero + destaques (candidatos por data; o JS revela o de hoje) -->
 {% for post in recentes limit: 12 %}
+{% assign celebracao_home = post.celebracao | remove: '23ª Semana do Tempo Comum, Ano Par II' | remove: ' · ' | strip %}
 <div class="candidato" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" style="display:none">
   <section class="hero">
     {% if post.imagem %}
@@ -17,7 +18,9 @@ permalink: /
     <div class="hero-in">
       <div class="hero-txt">
         <div class="hero-kicker">Reflexão do dia · {{ post.date | date: '%d.%m' }}</div>
+        {% if celebracao_home != '' %}<div class="hero-dia">{{ celebracao_home }}</div>{% endif %}
         <h1>{{ post.title }}</h1>
+        {% if post.resumo %}<p class="hero-resumo">{{ post.resumo }}</p>{% endif %}
         <a class="hero-cta" href="{{ post.url | relative_url }}">Ler reflexão completa →</a>
       </div>
     </div>
@@ -32,6 +35,7 @@ permalink: /
     <div class="dcard dcard-leituras card-lift">
       <div class="kicker">Leituras de hoje</div>
       <div class="refs">{{ post.leituras | default: post.evangelho }}</div>
+      {% if celebracao_home != '' %}<div class="celeb">{{ celebracao_home }}</div>{% endif %}
     </div>
     <div class="dcard dcard-ev card-lift">
       <div class="kicker">Evangelho</div>
@@ -57,8 +61,9 @@ permalink: /
     <a class="rcard card-lift recente" data-post-data="{{ post.date | date: '%Y-%m-%d' }}" href="{{ post.url | relative_url }}" style="display:none">
       <div class="rcard-img">{% if post.imagem %}<img src="{{ post.imagem | relative_url }}" alt="">{% endif %}</div>
       <div class="rcard-body">
-        <div class="kicker">{{ post.date | date: '%d.%m.%Y' }}</div>
+        <div class="kicker">{{ post.date | date: '%d.%m.%Y' }}{% assign celebracao_recente = post.celebracao | remove: '23ª Semana do Tempo Comum, Ano Par II' | remove: ' · ' | strip %}{% if celebracao_recente != '' %} · {{ celebracao_recente | truncate: 42 }}{% endif %}</div>
         <h3>{{ post.title }}</h3>
+        {% if post.resumo %}<p>{{ post.resumo | truncate: 150 }}</p>{% endif %}
       </div>
     </a>
     {% endfor %}

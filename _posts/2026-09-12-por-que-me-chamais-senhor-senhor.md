@@ -12,6 +12,7 @@ evangelho: "Lc 6,43-49"
 leituras: "1Cor 10,14-22 · Sl 115(116),12-13.17-18 · Lc 6,43-49"
 sem_topicos: true
 imagem: /assets/img/2026-09-12.jpg
+resumo: "Jesus mostra que a vida revela seus frutos e chama a construir sobre a rocha da sua palavra."
 ---
 Jesus começa falando da árvore e de seus frutos: “Não existe árvore boa que dê frutos ruins, nem árvore ruim que dê frutos bons” (Lc 6,43). A imagem mostra que a vida exterior revela, de algum modo, o que existe no interior. Não se trata de julgar apressadamente uma pessoa por um único momento, mas de reconhecer que as escolhas, palavras e atitudes repetidas manifestam a qualidade do coração.
 
